@@ -425,6 +425,8 @@ select {
 
 .uk-card {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+  border-radius: @global-border-radius;
+  overflow: hidden;
 
   .uk-card-body {
     padding: 15px;
@@ -517,6 +519,18 @@ select {
   }
 }
 
+.uk-accordion > *:first-child .uk-accordion-title {
+  border-radius: @global-border-radius @global-border-radius 0 0;
+}
+
+.uk-accordion > *:last-child:not(.uk-open) .uk-accordion-title {
+  border-radius: 0 0 @global-border-radius @global-border-radius;
+}
+
+.uk-accordion > *:last-child .uk-accordion-content {
+  border-radius: 0 0 @global-border-radius @global-border-radius;
+}
+
 .uk-accordion-content {
   border: 1px solid #d8d8d8;
   border-top: none;
@@ -559,6 +573,7 @@ select {
 
 .uk-textarea {
   height: 90px;
+  border-radius: @global-border-radius;
 }
 
 .tm-badge {
@@ -672,6 +687,7 @@ select {
   background-color: #f2f2f2;
   box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
   margin: 60px 0;
+  border-radius: @global-border-radius;
 
   .tm-promobox-price {
     font-size: @global-large-font-size;
@@ -696,6 +712,7 @@ select {
   color: #004085;
   background-color: #bcdeff;
   margin-bottom: 30px;
+  border-radius: @global-border-radius;
 
   &.warning {
     color: #721c24;
@@ -717,6 +734,8 @@ select {
     cursor: pointer;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.5s;
+    border-radius: @global-border-radius;
+    overflow: hidden;
 
     &.squared::before {
       content: "";
@@ -927,6 +946,14 @@ select {
         color: @global-inverse-color;
       }
     }
+
+    &:first-child {
+      border-radius: @global-border-radius 0 0 @global-border-radius;
+    }
+
+    &:last-child {
+      border-radius: 0 @global-border-radius @global-border-radius 0;
+    }
   }
 }
 
@@ -1074,6 +1101,8 @@ select {
     //width: 100%;
     cursor: pointer;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    border-radius: @global-border-radius;
+    overflow: hidden;
 
     &::before {
       position: relative;
@@ -1197,7 +1226,6 @@ select {
       text-transform: uppercase;
       white-space: nowrap;
       cursor: pointer;
-
 
       &:hover, &.uk-active {
         border-color: @global-secondary-background;
@@ -1750,6 +1778,8 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: @global-border-radius;
+  overflow: hidden;
 
   img {
     min-width: 100%;
@@ -1960,7 +1990,7 @@ select {
   padding-bottom: 30px;
   padding-left: 30px;
 
-  >h4 {
+  > h4 {
     position: relative;
     padding-left: 30px;
 
@@ -2025,7 +2055,7 @@ select {
   &:last-child {
     padding-bottom: 0;
 
-    >h4::before {
+    > h4::before {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       font-size: 22px;
@@ -2122,7 +2152,6 @@ select {
         opacity: 0.5;
       }
     }
-
 
     li.slick-active button:before {
       width: 16px;
@@ -2421,7 +2450,7 @@ select {
     font-size: 27px;
   }
 
-  >div {
+  > div {
     display: flex;
     margin-bottom: 15px;
   }
@@ -2438,12 +2467,12 @@ select {
     border-radius: 50%;
     box-shadow: 0px -20px 40px 0 rgba(0, 0, 0, 0.2);
   }
-  
-  >div:nth-child(3n+2) .tm-icon-wrapper {
+
+  > div:nth-child(3n+2) .tm-icon-wrapper {
     background-color: @global-secondary-background;
   }
 
-  >div:nth-child(3n) .tm-icon-wrapper {
+  > div:nth-child(3n) .tm-icon-wrapper {
     background-color: @global-tertiary-background;
   }
 }
@@ -2463,4 +2492,8 @@ select {
   .tm-zebra-item:nth-child(2n) {
     background-color: #e8e8e8;
   }
+}
+
+.tm-file-input {
+  border-radius: @global-border-radius;
 }
