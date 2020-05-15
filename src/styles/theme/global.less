@@ -2508,3 +2508,27 @@ select {
 .tm-file-input {
   border-radius: @global-border-radius;
 }
+
+.tm-header-fixed {
+  position: fixed;
+  //display: none;
+  top: -80px;
+  left: 0;
+  right: 0;
+  height: 70px;
+  box-shadow: 0px -20px 40px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  z-index: 5000;
+  transition: all 0.5s;
+  opacity: 0.5;
+
+  .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+    min-height: 70px;
+  }
+
+  &.tm-header-visible {
+    //display: block;
+    top: 0;
+    opacity: 1;
+  }
+}

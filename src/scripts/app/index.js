@@ -57,4 +57,22 @@ $(() => {
         })
     })();
 
+    //fixed header
+    (() => {
+        const $fixedHeader = $('.tm-header-fixed');
+        const $window = $(window);
+
+        $window.on('scroll', function () {
+            const scrollTop = $(window).scrollTop();
+
+            if(scrollTop > 100) {
+                $fixedHeader.addClass('tm-header-visible');
+            }
+            else {
+                $fixedHeader.removeClass('tm-header-visible');
+            }
+        });
+
+    })();
+
 });
