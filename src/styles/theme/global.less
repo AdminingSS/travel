@@ -554,6 +554,7 @@ select {
   box-sizing: border-box;
   height: 30px;
   line-height: 30px;
+  border-radius: @global-border-radius;
 }
 
 .uk-textarea {
@@ -1284,6 +1285,7 @@ select {
         border: solid 1px #e1e1e1;
         cursor: pointer;
         margin-bottom: 10px;
+        border-radius: @global-border-radius;
 
         &::before {
           position: absolute;
@@ -1311,6 +1313,7 @@ select {
       .uk-button {
         background-color: @global-secondary-background;
         transition: all 0.5s;
+        border-radius: 0 0 @global-border-radius 0;
 
         svg {
           transition: all 0.5s;
@@ -1383,6 +1386,7 @@ select {
   position: relative;
   font-size: 14px;
   padding-left: 25px;
+  border-radius: @global-border-radius;
 
   &::before {
     position: absolute;
@@ -1687,7 +1691,15 @@ select {
   position: relative;
   display: inline-block;
   margin-bottom: 8px;
-  width: calc(50% - 2px);
+  width: 50%;
+
+  &:first-child input {
+    border-radius: @global-border-radius 0 0 @global-border-radius;
+  }
+
+  &:last-child input {
+    border-radius: 0 @global-border-radius @global-border-radius 0;
+  }
 
   .uk-input {
     padding: 0 25px;
