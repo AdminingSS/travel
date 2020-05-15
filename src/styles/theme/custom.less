@@ -385,3 +385,17 @@ footer {
 .mCSB_inside > .mCSB_container {
   margin-right: 20px;
 }
+
+.tm-section-sided {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: calc(50% + 295px);
+    background-color: #f7f7f7;
+  }
+}

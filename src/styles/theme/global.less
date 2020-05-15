@@ -829,6 +829,8 @@ select {
     cursor: pointer;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.5s;
+    border-radius: @global-border-radius;
+    overflow: hidden;
 
     &.squared::before {
       content: "";
@@ -1573,6 +1575,7 @@ select {
   background-color: #f7f7f7;
   padding: 15px;
   width: 235px;
+  border-radius: @global-border-radius;
 
   .uk-accordion-title {
     border: none;
@@ -1637,12 +1640,13 @@ select {
 
   .tm-sidebar-sup {
     position: absolute;
-    bottom: 100%;
+    bottom: calc(100% - 1px);
     left: 0;
     right: 0;
     padding: 30px 30px 20px;
     background-color: inherit;
     box-shadow: 0 -20px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: @global-border-radius @global-border-radius 0 0;
 
     font-size: @global-small-font-size;
 
@@ -1650,6 +1654,11 @@ select {
       font-size: @global-xlarge-font-size;
       font-weight: 600;
     }
+  }
+
+  .tm-wide {
+    width: calc(100% + 30px);
+    margin-left: -15px;
   }
 }
 
@@ -1975,6 +1984,8 @@ select {
 
 .tm-video-cover {
   box-shadow: 0 -30px 60px 0 rgba(0, 0, 0, 0.2);
+  border-radius: @global-border-radius;
+  overflow: hidden;
 
   iframe {
     max-height: 310px;
