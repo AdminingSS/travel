@@ -93,6 +93,11 @@ $(() => {
         const $blockTriggers = $fixedHeader.find('.uk-navbar-nav li');
         const $blockAnchors = $('.js-anchor');
         const $window = $(window);
+        let controlPointsArray = [];
+        $blockAnchors.each(function () {
+            const position = $(this).offset().top;
+            controlPointsArray.push(position)
+        });
 
         $window.on('scroll', function () {
             const scrollTop = $(window).scrollTop();
@@ -103,6 +108,15 @@ $(() => {
             else {
                 $fixedHeader.removeClass('tm-header-visible');
             }
+
+            for(let i = 0; i < controlPointsArray.length; i++) {
+
+                if(scrollTop >= controlPointsArray[i] - 1000) {
+                    $blockTriggers.removeClass('uk-active');
+                    $($blockTriggers[i]).addClass('uk-active');
+                }
+            }
+
         });
 
         $blockTriggers.on('click', function (e) {
