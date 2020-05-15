@@ -277,6 +277,9 @@ footer {
 .tm-slider-gallery, .tm-sections-slider {
 
   .slick-prev, .slick-next {
+    top: auto;
+    bottom: 10px;
+
     &::before {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
@@ -309,9 +312,11 @@ footer {
   }
 
   .slick-dots {
-    bottom: auto;
-    top: 50%;
-    transform: translateY(-50%);
+    //bottom: auto;
+    //top: 50%;
+    //transform: translateY(-50%);
+    bottom: 20px;
+    top: auto;
 
     li button {
       height: 16px;

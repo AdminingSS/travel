@@ -67,7 +67,7 @@ $(() => {
         $window.on('scroll', function () {
             const scrollTop = $(window).scrollTop();
 
-            if(scrollTop > 100) {
+            if(scrollTop > 400) {
                 $fixedHeader.addClass('tm-header-visible');
             }
             else {
