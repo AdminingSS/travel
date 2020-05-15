@@ -120,7 +120,7 @@
                                         <div class="uk-container">
                                             <div class="uk-grid-collapse uk-child-width-1-2 uk-width-1-1" data-uk-grid>
                                                 <div>
-                                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <ul class="uk-nav uk-navbar-dropdown-nav js-complex-nav">
                                                         <li><a href="#">Пункт</a></li>
                                                         <li><a href="#">Другой пункт</a></li>
                                                         <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
@@ -261,7 +261,7 @@
                                                     Калыма
                                                 </label>
                                                 <div class="tm-sub-tier">
-                                                    <label >
+                                                    <label>
                                                         <input type="checkbox" name="checkbox1">
                                                         Магодан-магодан
                                                     </label>
@@ -301,75 +301,70 @@
                             </div>
                             <div class="uk-margin-right">
                                 <div class="tm-select">
-                                    <input class="uk-hidden" name="qty">
-                                    <div class="tm-select-pseudo">2 взрослых</div>
-                                    <div class="tm-select-pseudo-items qty"
-                                         data-uk-dropdown="mode: click; delay-hide: 50">
+                                    <input class="uk-hidden" name="what">
+                                    <div class="tm-select-pseudo">Что?</div>
+                                    <div class="tm-select-pseudo-items what"
+                                         data-uk-dropdown="mode: click; delay-hide: 50; position: bottom-right">
                                         <div class="tm-drop-header">
-                                            <div class="tm-where-caption">
-                                                Количество людей
+                                            <div class="tm-what-caption">
+                                                Выберите тип тура
                                             </div>
                                         </div>
-                                        <div class="tm-peoples">
-                                            <div class="tm-peoples-adult">
-                                                <div class="tm-people">Взрослых</div>
-                                                <div>
-                                                    <div class="tm-qty-form">
-                                                        <div>
-                                                            <button class="tm-button-minus">
-                                                                -
-                                                            </button>
+                                        <div class="tm-what-tour">
+                                            <div>
+                                                <div class="tm-tours-passive">
+                                                    <label class="uk-flex uk-flex-middle">
+                                                        <div class="tm-tours-switch-label">
+                                                            <div class="tm-tours-caption"><b>Без нагрузки</b></div>
+                                                            <div>
+                                                                Экскурсии и лёгкие нагрузки
+                                                            </div>
                                                         </div>
-                                                        <input class="uk-input" type="text" value="2">
-                                                        <div>
-                                                            <button class="tm-button-plus">
-                                                                +
-                                                            </button>
+                                                        <div class="tm-switch">
+                                                            <input type="checkbox">
+                                                            <span class="tm-crawler"></span>
                                                         </div>
-                                                    </div>
+                                                    </label>
                                                 </div>
-                                                <div>чел.</div>
+                                                <hr>
+                                                <div class="tm-tours-active uk-margin-small-bottom">
+                                                    <label class="uk-flex uk-flex-middle">
+                                                        <div class="tm-tours-switch-label">
+                                                            <div class="tm-tours-caption"><b>Активный</b></div>
+                                                            <div>
+                                                                Ощутимая физическая нагрузка
+                                                            </div>
+                                                        </div>
+                                                        <div class="tm-switch">
+                                                            <input type="checkbox">
+                                                            <span class="tm-crawler"></span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+
+                                                <div class="uk-margin-bottom">
+                                                    <label><input class="" type="checkbox" name="checkboxx5" checked>
+                                                        Нагрузка для новичков</label><br>
+                                                    <label><input class="" type="checkbox" name="checkboxx5" checked>
+                                                        Нужна хорошая форма</label><br>
+                                                    <label><input class="" type="checkbox" name="checkboxx5" checked>
+                                                        Нужен опыт и хорошая форма</label>
+                                                </div>
+
+                                                <button class="uk-button uk-button-small tm-button-secondary">Сбросить</button>
                                             </div>
-                                            <div class="tm-peoples-child">
-                                                <div class="tm-people">Ребёнок</div>
-                                                <div>
-                                                    <div class="tm-qty-form">
-                                                        <div>
-                                                            <button class="tm-button-minus">
-                                                                -
-                                                            </button>
-                                                        </div>
-                                                        <input class="uk-input" type="text" value="7">
-                                                        <div>
-                                                            <button class="tm-button-plus">
-                                                                +
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>лет</div>
-                                            </div>
-                                            <div class="tm-peoples-child">
-                                                <div class="tm-people">Ребёнок</div>
-                                                <div>
-                                                    <div class="tm-qty-form">
-                                                        <div>
-                                                            <button class="tm-button-minus">
-                                                                -
-                                                            </button>
-                                                        </div>
-                                                        <input class="uk-input" type="text" value="3">
-                                                        <div>
-                                                            <button class="tm-button-plus">
-                                                                +
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>года</div>
+                                            <div>
+                                                <ul class="tm-tours-types-list uk-nav uk-navbar-dropdown-nav js-custom-scrollbar">
+                                                    <li><a href="#">Пеший</a></li>
+                                                    <li class="uk-active"><a href="#">Афганское сафари</a></li>
+                                                    <li><a href="#">Путешествие в один конец</a></li>
+                                                    <li><a href="#">Сложный маршрут</a></li>
+                                                    <li><a href="#">Выживание</a></li>
+                                                    <li><a href="#">Цыганский табор</a></li>
+                                                    <li><a href="#">Джунгли красных Кхмеров (начало в Сайгоне)</a></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <button class="tm-button-children uk-button">Добавить ребёнка <b>+</b></button>
                                     </div>
                                 </div>
                             </div>
@@ -914,7 +909,8 @@
                             </div>
 
                             <div class="tm-filter-prices">
-                                <div class="uk-margin-small-bottom"><b>Цена, руб.</b><span class="tm-results-count">1</span></div>
+                                <div class="uk-margin-small-bottom"><b>Цена, руб.</b><span
+                                        class="tm-results-count">1</span></div>
                                 <div class="uk-flex uk-flex-middle">
                                     <div class="tm-input-selector-wrapper select-from">
                                         <input class="uk-input" type="text" value="10000">
@@ -948,7 +944,8 @@
 
                             <div data-uk-accordion="multiple: true">
                                 <div class="tm-filter-seasons uk-open">
-                                    <a href="#" class="uk-accordion-title"><b>Сезоны</b><span class="tm-results-count">1</span></a>
+                                    <a href="#" class="uk-accordion-title"><b>Сезоны</b><span
+                                            class="tm-results-count">1</span></a>
                                     <div class="uk-accordion-content">
                                         <div class="uk-margin-bottom uk-flex">
                                             <div class="uk-margin-right">
@@ -1112,7 +1109,8 @@
                                 </div>
 
                                 <div class="tm-filter-types uk-open">
-                                    <a href="#" class="uk-accordion-title"><b>Тип тура.</b><span class="tm-results-count">1</span></a>
+                                    <a href="#" class="uk-accordion-title"><b>Тип тура.</b><span
+                                            class="tm-results-count">1</span></a>
                                     <div class="uk-accordion-content">
                                         <div class="tm-tour-type tm-tour-walk button-style">
                                             Пеший тур
@@ -1174,10 +1172,14 @@
                                             <ul>
                                                 <li><a href="#">Медведи</a><i class="fas fa-arrow-right"></i></li>
                                                 <li><a href="#">Комары</a><i class="fas fa-arrow-right"></i></li>
-                                                <li><a href="#">Православные моджахеды Братства Корчинского</a><i class="fas fa-arrow-right"></i></li>
-                                                <li><a href="#">Беглые президенты</a><i class="fas fa-arrow-right"></i></li>
-                                                <li><a href="#">Росомахи (кусание)</a><i class="fas fa-arrow-right"></i></li>
-                                                <li><a href="#">Росомахи (люди икс)</a><i class="fas fa-arrow-right"></i></li>
+                                                <li><a href="#">Православные моджахеды Братства Корчинского</a><i
+                                                        class="fas fa-arrow-right"></i></li>
+                                                <li><a href="#">Беглые президенты</a><i class="fas fa-arrow-right"></i>
+                                                </li>
+                                                <li><a href="#">Росомахи (кусание)</a><i class="fas fa-arrow-right"></i>
+                                                </li>
+                                                <li><a href="#">Росомахи (люди икс)</a><i
+                                                        class="fas fa-arrow-right"></i></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1583,7 +1585,8 @@
 
                                 <div class="tm-search-form tm-file-input uk-margin-bottom">
                                     <input type="file" hidden>
-                                    <input class="uk-input uk-width-expand" type="text" disabled placeholder="Файл не выбран">
+                                    <input class="uk-input uk-width-expand" type="text" disabled
+                                           placeholder="Файл не выбран">
                                     <div class="uk-width-auto">
                                         <button class="tm-button-search tm-button-file">
                                             Browse
@@ -1894,3 +1897,64 @@
 
 </body>
 </html>
+
+<!--<div class="tm-peoples">-->
+<!--<div class="tm-peoples-adult">-->
+<!--<div class="tm-people">Взрослых</div>-->
+<!--<div>-->
+<!--<div class="tm-qty-form">-->
+<!--<div>-->
+<!--<button class="tm-button-minus">-->
+<!-- - -->
+<!--</button>-->
+<!--</div>-->
+<!--<input class="uk-input" type="text" value="2">-->
+<!--<div>-->
+<!--<button class="tm-button-plus">-->
+<!--+-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div>чел.</div>-->
+<!--</div>-->
+<!--<div class="tm-peoples-child">-->
+<!--<div class="tm-people">Ребёнок</div>-->
+<!--<div>-->
+<!--<div class="tm-qty-form">-->
+<!--<div>-->
+<!--<button class="tm-button-minus">-->
+<!-- - -->
+<!--</button>-->
+<!--</div>-->
+<!--<input class="uk-input" type="text" value="7">-->
+<!--<div>-->
+<!--<button class="tm-button-plus">-->
+<!--+-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div>лет</div>-->
+<!--</div>-->
+<!--<div class="tm-peoples-child">-->
+<!--<div class="tm-people">Ребёнок</div>-->
+<!--<div>-->
+<!--<div class="tm-qty-form">-->
+<!--<div>-->
+<!--<button class="tm-button-minus">-->
+<!-- - -->
+<!--</button>-->
+<!--</div>-->
+<!--<input class="uk-input" type="text" value="3">-->
+<!--<div>-->
+<!--<button class="tm-button-plus">-->
+<!--+-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div>года</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<button class="tm-button-children uk-button">Добавить ребёнка <b>+</b></button>-->

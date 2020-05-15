@@ -1,7 +1,8 @@
 $(() => {
 
+    //complex navbar operation
     (()=>{
-        const $dropdownContentTrigger = $('.uk-navbar-dropdown-nav li a');
+        const $dropdownContentTrigger = $('.uk-navbar-dropdown-nav.js-complex-nav li a');
         const $dropdownContentItems = $('.js-dropdown-content');
 
         $dropdownContentTrigger.on('mouseenter', function (e) {
@@ -26,6 +27,35 @@ $(() => {
 
             $dropdownContentTrigger.parent().removeClass('uk-active');
             thisTrigger.parent().addClass('uk-active');
+        })
+
+    })();
+
+    //simple navbar operation
+    (()=>{
+        const $dropdownContentTrigger = $('.tm-dropdown-simple .uk-navbar-dropdown-nav li a');
+
+        $dropdownContentTrigger.on('click', function (e) {
+            e.preventDefault();
+
+            const thisTrigger = $(this);
+
+            $dropdownContentTrigger.parent().removeClass('uk-active');
+            thisTrigger.parent().addClass('uk-active');
+        })
+
+    })();
+
+    //tour type selector
+    (()=>{
+        const $dropdownContentTrigger = $('.tm-tours-types-list li');
+
+        $dropdownContentTrigger.on('click', function (e) {
+            e.preventDefault();
+
+            const thisTrigger = $(this);
+
+            thisTrigger.toggleClass('uk-active');
         })
 
     })();
