@@ -60,6 +60,8 @@ $(() => {
     //fixed header
     (() => {
         const $fixedHeader = $('.tm-header-fixed');
+        const $blockTriggers = $fixedHeader.find('.uk-navbar-nav li');
+        const $blockAnchors = $('.js-anchor');
         const $window = $(window);
 
         $window.on('scroll', function () {
@@ -72,6 +74,21 @@ $(() => {
                 $fixedHeader.removeClass('tm-header-visible');
             }
         });
+
+        $blockTriggers.on('click', function (e) {
+            e.preventDefault();
+
+            const $thisTrigger = $(this);
+            const $thisAnchor = $($blockAnchors[$thisTrigger.index()]);
+            const scrollPosition = $thisAnchor.offset().top - 100;
+
+            $("HTML, BODY").animate({
+                scrollTop: scrollPosition
+            }, 1000);
+
+            $blockTriggers.removeClass('uk-active');
+            $thisTrigger.addClass('uk-active');
+        })
 
     })();
 
