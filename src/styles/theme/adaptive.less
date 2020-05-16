@@ -24,3 +24,166 @@
     padding-right: 15px;
   }
 }
+
+//max
+@media (max-width: 1199px) {
+  .uk-navbar-nav > li > a {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 33px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 959px) {
+
+  .uk-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .uk-navbar {
+    flex-wrap: wrap;
+  }
+
+  .uk-navbar-right {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .uk-navbar-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+    min-height: 40px;
+  }
+
+  .tm-header-top-nav {
+
+    .uk-navbar-nav > li > a, .uk-navbar-nav > li:first-child > a {
+      border: none;
+    }
+  }
+
+  .tm-header-bottom-nav {
+    display: none;
+  }
+
+  .uk-navbar-toggle {
+    flex-direction: column;
+    color: @global-color;
+    padding-top: 8px;
+    font-size: 12px;
+
+    svg {
+      width: 41px;
+    }
+  }
+
+  .uk-button-small {
+    padding: 0 15px;
+  }
+
+  .tm-column-panels >div {
+    margin-bottom: 30px;
+  }
+
+  .tm-promobox {
+    padding: 30px 15px;
+  }
+
+  .tm-navigator-item::before {
+    content: "";
+    padding-top: 100%;
+    display: block;
+  }
+
+  .uk-card {
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .tm-footer-adapitive {
+    >div {
+      margin-bottom: 30px;
+    }
+  }
+
+  .tm-top-search .tm-top-search-caption, .tm-top-slider .tm-top-slider-caption {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .uk-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .tm-header-top-nav {
+    .uk-navbar-nav {
+      flex-wrap: wrap;
+    }
+
+    .uk-navbar-nav > li > a::after {
+      display: none;
+    }
+  }
+
+  .uk-navbar-right {
+    justify-content: flex-start;
+  }
+
+  .tm-top-search-panel {
+    margin-bottom: 15px;
+
+    >div {
+      width: 100%;
+      margin-right: 0!important;
+    }
+
+    .tm-select .tm-select-pseudo {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    select {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .uk-button {
+      width: 100%;
+    }
+  }
+
+  .tm-section-solid, .tm-section-footer {
+    min-height: 380px;
+  }
+
+  .uk-breadcrumb>*>* {
+    font-size: 10px;
+  }
+
+  .tm-breadcrumb-legend {
+    font-size: 10px;
+  }
+}

@@ -36,6 +36,7 @@
                                     <li><a href="#">О нас</a></li>
                                     <li><a href="#">Политика конфиденциальности</a></li>
                                     <li><a href="#">Ещё что-нибудь</a></li>
+                                    <li><a href="#">И ещё что-нибудь</a></li>
                                     <li>
                                         <a href="#" class="tm-icon-dropdown">In english please</a>
                                         <div class="uk-navbar-dropdown"
@@ -60,6 +61,13 @@
                             <a class="uk-navbar-item uk-logo" href="/">
                                 <img class="uk-margin-right" src="images/logo.png" alt="">
                                 <span>Pasha’s Project</span>
+                            </a>
+
+                            <!--mobile menu toggle-->
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                               data-uk-toggle>
+                                <span data-uk-navbar-toggle-icon></span>
+                                <span>меню</span>
                             </a>
 
                         </div>
@@ -240,8 +248,8 @@
                 <div class="uk-container uk-height-1-1 uk-flex uk-flex-center uk-flex-middle uk-text-center">
                     <div>
                         <div class="tm-top-search-caption">Найди своё путешествие</div>
-                        <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium-bottom">
-                            <div class="uk-margin-right">
+                        <div class="tm-top-search-panel">
+                            <div>
                                 <div class="tm-select">
                                     <input class="uk-hidden" name="where">
                                     <div class="tm-select-pseudo inactive">Куда</div>
@@ -294,12 +302,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="uk-margin-right">
+                            <div>
                                 <select name="when">
                                     <option value="" selected disabled>Когда</option>
                                 </select>
                             </div>
-                            <div class="uk-margin-right">
+                            <div >
                                 <div class="tm-select">
                                     <input class="uk-hidden" name="what">
                                     <div class="tm-select-pseudo">Что?</div>
@@ -425,7 +433,7 @@
             <div class="tm-section-first tm-hr-triangles uk-section">
                 <div class="uk-container">
                     <div class="uk-flex uk-flex-middle uk-margin-medium-bottom">
-                        <div class="uk-margin-small-right">Вы здесь:</div>
+                        <div class="tm-breadcrumb-legend uk-margin-small-right">Вы здесь:</div>
                         <ul class="uk-breadcrumb uk-margin-remove">
                             <li><a href="">Главная</a></li>
                             <li><a href="">Туры</a></li>
@@ -1199,7 +1207,7 @@
             <!-- Section -->
             <div class="uk-section">
                 <div class="uk-container">
-                    <div class="uk-child-width-1-2 uk-grid-small uk-margin-large-bottom" data-uk-grid>
+                    <div class="uk-child-width-1-2@m uk-grid-small uk-margin-large-bottom" data-uk-grid>
                         <div>
                             <h2>Заголовок h2 <span class="tm-badge tm-background-tertiary">badge</span></h2>
                             <p class="uk-margin-bottom">
@@ -1214,9 +1222,9 @@
                                 PageMaker, в шаблонах которых используется Lorem Ipsum.
                             </p>
                             <div>
-                                <button class="uk-button tm-button-primary uk-margin-right">Обычная кнопка<i
+                                <button class="uk-button tm-button-primary uk-margin-right uk-margin-bottom">Обычная кнопка<i
                                         class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
-                                <button class="uk-button tm-button-secondary">вторичная кнопка<i
+                                <button class="uk-button tm-button-secondary uk-margin-bottom">вторичная кнопка<i
                                         class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
                             </div>
                         </div>
@@ -1227,7 +1235,7 @@
                         </div>
                     </div>
 
-                    <div class="tm-column-panels uk-child-width-1-3 uk-grid-small uk-margin-large-bottom" data-uk-grid>
+                    <div class="tm-column-panels uk-child-width-1-3@m uk-grid-small uk-margin-large-bottom" data-uk-grid>
                         <div>
                             <div class="tm-panel-column">
                                 <div class="tm-icon-image-wrapper-solid">
@@ -1273,22 +1281,22 @@
                     </div>
 
                     <div class="tm-promobox uk-margin-large-bottom">
-                        <div class="uk-grid-small uk-flex-middle" data-uk-grid>
-                            <div class="uk-width-2-3">
+                        <div class="uk-grid-small uk-flex-middle uk-margin-bottom" data-uk-grid>
+                            <div class="uk-width-2-3@m">
                                 <h4>внимание промобокс - Заголовок h4 <span
                                         class="tm-badge tm-background-primary">badge</span></h4>
                                 <p><b>Колонка 2/3.</b> Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто
                                     используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                                     текстов.</p>
-                                <div class="tm-text-icon"><i class="fas fa-mobile-alt"></i> Текст с иконкой (телефон
-                                    например)
-                                </div>
                             </div>
-                            <div class="uk-width-1-3">
-                                <button class="uk-button uk-button-large tm-button-secondary uk-width-expand">Большая
+                            <div class="uk-width-1-3@m">
+                                <button class="uk-button uk-button-large tm-button-secondary uk-width-auto uk-width-1-1@m">Большая
                                     кнопка<i
                                             class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
                             </div>
+                        </div>
+                        <div class="tm-text-icon"><i class="fas fa-mobile-alt"></i> Текст с иконкой (телефон
+                            например)
                         </div>
                     </div>
 
@@ -1302,7 +1310,7 @@
                         </div>
                     </div>
 
-                    <div class="tm-column-panels uk-child-width-1-3 uk-grid-small uk-margin-large-bottom" data-uk-grid>
+                    <div class="tm-column-panels uk-child-width-1-3@m uk-grid-small uk-margin-large-bottom" data-uk-grid>
                         <div>
                             <div class="tm-panel-column">
                                 <div class="tm-icon-image-wrapper">
@@ -1345,7 +1353,7 @@
                     <div class="tm-navigator uk-margin-large-bottom">
                         <h5>Навигатор по разделам - Заголовок h5 <span class="tm-badge tm-button-secondary">badge</span>
                         </h5>
-                        <div class="uk-grid-match uk-child-width-1-2" data-uk-grid>
+                        <div class="uk-grid-match uk-child-width-1-2@m" data-uk-grid>
                             <div>
                                 <div class="tm-navigator-item tm-hover-primary squared tm-navigator-main uk-cover-container">
                                     <img src="images/img-hits.png" alt="" data-uk-cover>
@@ -1362,7 +1370,7 @@
                             <div>
                                 <div class="uk-grid-match uk-child-width-1-2" data-uk-grid>
                                     <div>
-                                        <div class="tm-navigator-item tm-hover-tertiary uk-cover-container">
+                                        <div class="tm-navigator-item squared tm-hover-tertiary uk-cover-container">
                                             <img src="images/img-bron.png" alt="" data-uk-cover>
                                             <div class="tm-navigator-item-inner">
                                                 <div>
@@ -1377,7 +1385,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="tm-navigator-item tm-hover-secondary uk-cover-container">
+                                        <div class="tm-navigator-item squared tm-hover-secondary uk-cover-container">
                                             <img src="images/img-hovers.png" alt="" data-uk-cover>
                                             <div class="tm-navigator-item-inner">
                                                 <div>
@@ -1392,7 +1400,7 @@
                                         </div>
                                     </div>
                                     <div class="uk-width-1-1">
-                                        <div class="tm-navigator-item tm-hover-danger uk-cover-container">
+                                        <div class="tm-navigator-item half-squared tm-hover-danger uk-cover-container">
                                             <img src="images/img-rope.png" alt="" data-uk-cover>
                                             <div class="tm-navigator-item-inner">
                                                 <div>
@@ -1560,7 +1568,7 @@
                         </li>
                     </ul>
 
-                    <div class="uk-child-width-1-2" data-uk-grid>
+                    <div class="uk-child-width-1-2@m" data-uk-grid>
                         <div>
                             <h3>Формы - заголовок h3</h3>
                             <form class="uk-form" action="na_lunu.php">
@@ -1753,7 +1761,7 @@
                 <div class="uk-container uk-text-center">
                     <h3>Новости - заголовок h3</h3>
 
-                    <div class="uk-child-width-1-3 uk-grid-match uk-margin-medium-bottom" data-uk-grid>
+                    <div class="uk-child-width-1-3@m uk-grid-match uk-margin-medium-bottom" data-uk-grid>
                         <div>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
@@ -1801,7 +1809,7 @@
                     </div>
 
                     <div class="uk-flex-middle" data-uk-grid>
-                        <div class="uk-width-1-3">
+                        <div class="uk-width-1-3@m">
                             <ul class="tm-pagination">
                                 <li><a href="#">Пред.</a></li>
                                 <li><a href="#">1</a></li>
@@ -1810,7 +1818,7 @@
                                 <li><a href="#">След.</a></li>
                             </ul>
                         </div>
-                        <div class="uk-width-2-3 uk-text-left">
+                        <div class="uk-width-2-3@m uk-text-left">
                             Пагинатор тут просто так, но в блоге/новостях пригодится. Там также посты можно сделать в 3
                             колонки карточками.
                         </div>
@@ -1824,7 +1832,7 @@
         <footer class="tm-section-footer uk-section uk-cover-container">
             <img class="tm-bg-image" src="images/bg-solid-footer.png" alt="" data-uk-cover>
             <div class="uk-container">
-                <div class="uk-grid-small uk-child-width-1-3" data-uk-grid>
+                <div class="tm-footer-adapitive uk-grid-small uk-child-width-1-3@m" data-uk-grid>
                     <div>
                         <div>
                             <!--logo-->

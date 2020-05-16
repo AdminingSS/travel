@@ -484,6 +484,7 @@ select {
   color: @global-inverse-color;
   padding: 0 25px;
   border: none;
+  white-space: nowrap;
 
   border-radius: @global-border-radius;
 
@@ -2660,5 +2661,21 @@ select {
     //display: block;
     top: 0;
     opacity: 1;
+  }
+}
+
+.tm-top-search-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+
+  >div {
+    margin-bottom: 8px;
+
+    &:nth-child(-n+3) {
+      margin-right: 15px;
+    }
   }
 }
