@@ -543,6 +543,8 @@ select {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
   border-radius: @global-border-radius;
   overflow: hidden;
+  height: 100%;
+  margin-right: 30px;
 
   .uk-card-body {
     padding: 15px;
@@ -2676,6 +2678,220 @@ select {
 
     &:nth-child(-n+3) {
       margin-right: 15px;
+    }
+  }
+}
+
+.tm-links-slider-controls {
+  display: none;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+
+  a {
+    padding: 0 15px;
+    line-height: 29px;
+    color: @global-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover, &.uk-active {
+      background-color: @global-secondary-background;
+      color: @global-inverse-color;
+    }
+  }
+}
+
+.tm-news-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 30px;
+
+  >div {
+    margin-bottom: 15px;
+  }
+}
+
+.tm-news-container {
+  .slick-prev, .slick-next {
+    top: auto;
+    bottom: -30px;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 26px;
+      color: @global-secondary-background;
+      opacity: 1;
+    }
+
+    &:hover::before {
+      opacity: 0.75;
+    }
+  }
+
+  .slick-prev {
+    left: 15px;
+    z-index: 10;
+
+    &::before {
+      content: "\f104";
+    }
+  }
+
+  .slick-next {
+    right: 15px;
+    z-index: 10;
+
+    &::before {
+      content: "\f105";
+    }
+  }
+
+  .slick-dots {
+    //bottom: auto;
+    //top: 50%;
+    //transform: translateY(-50%);
+    bottom: -20px;
+    top: auto;
+
+    li button {
+      height: 16px;
+      width: 16px;
+
+      &::before {
+        box-sizing: border-box;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        width: 6px;
+        height: 6px;
+        line-height: 6px;
+        background-color: @global-secondary-background;
+        border: none;
+        opacity: 1;
+        border-radius: 50%;
+        transition: all 0.5s;
+      }
+
+      &:hover::before {
+        opacity: 0.5;
+      }
+    }
+
+
+    li.slick-active button:before {
+      width: 16px;
+      height: 16px;
+      background-color: transparent;
+      opacity: 1;
+      border: 2px solid @global-secondary-background;
+    }
+  }
+}
+
+.tm-mobile-header {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 5001;
+  transition: all 0.5s;
+
+  .uk-navbar-left {
+    width: auto;
+  }
+
+  .uk-navbar-right {
+    width: auto;
+    margin-left: auto;
+  }
+
+  &.top-visible {
+    top: 0;
+  }
+}
+
+.uk-offcanvas-bar {
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: @global-color;
+  padding: 20px 0;
+  width: 100%;
+
+  a {
+    color: @global-color;
+
+    &:hover {
+      color: @global-color;
+      background-color: #dee2e6;
+    }
+  }
+
+  .uk-card {
+    box-shadow: none;
+  }
+
+  .uk-nav {
+    width: 100%;
+
+    li a {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .uk-navbar-dropdown {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+
+  .js-dropdown-content {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    //display: flex;
+    align-items: center;
+    background-color: #fff;
+
+    &.uk-active {
+      //display: flex;
+    }
+
+    &.hover {
+      //display: flex;
+      //z-index: 2000;
+    }
+  }
+
+  .uk-offcanvas-close {
+    color: @global-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    top: 0;
+    right: 0;
+
+    &:hover {
+      color: #000000;
+    }
+
+    svg {
+      height: 19px;
+      width: 19px;
+      margin: 0 0 3px 8px;
+
+      line {
+        stroke-width: 4;
+      }
     }
   }
 }

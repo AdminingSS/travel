@@ -2,8 +2,10 @@ $(() => {
 
     //complex navbar operation
     (()=>{
-        const $dropdownContentTrigger = $('.uk-navbar-dropdown-nav.js-complex-nav li a');
-        const $dropdownContentItems = $('.js-dropdown-content');
+        const $dropdownContentTrigger = $('.tm-header-bottom-nav .uk-navbar-dropdown-nav.js-complex-nav li a');
+        const $offcanvasDropdownTrigger = $('.uk-offcanvas-bar .uk-navbar-dropdown-nav.js-complex-nav li a');
+        const $dropdownContentItems = $('.tm-header-bottom-nav .js-dropdown-content');
+        const $offcanvasDropdownItems = $('.uk-offcanvas-bar .js-dropdown-content');
 
         $dropdownContentTrigger.on('mouseenter', function (e) {
             const thisTrigger = $(this);
@@ -27,7 +29,20 @@ $(() => {
 
             $dropdownContentTrigger.parent().removeClass('uk-active');
             thisTrigger.parent().addClass('uk-active');
-        })
+        });
+
+        $offcanvasDropdownTrigger.on('click', function (e) {
+            e.preventDefault();
+
+            const thisTrigger = $(this);
+            const thisIndex = thisTrigger.parent().index();
+
+            $offcanvasDropdownItems.removeClass('uk-active');
+            $offcanvasDropdownItems.eq(thisIndex).addClass('uk-active');
+
+            $offcanvasDropdownTrigger.parent().removeClass('uk-active');
+            thisTrigger.parent().addClass('uk-active');
+        });
 
     })();
 
@@ -134,6 +149,22 @@ $(() => {
             $thisTrigger.addClass('uk-active');
         })
 
+    })();
+
+    //mobile fixed header
+    (() => {
+        const $mobileFixedHeader = $('.tm-mobile-header');
+
+        $(window).on('scroll', function () {
+            const scrollTop = $(window).scrollTop();
+
+            if(scrollTop > 300) {
+                $mobileFixedHeader.addClass('top-visible');
+            }
+            else {
+                $mobileFixedHeader.removeClass('top-visible');
+            }
+        })
     })();
 
 });

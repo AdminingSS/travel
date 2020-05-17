@@ -242,6 +242,37 @@
                 </div>
             </header>
 
+            <div class="tm-mobile-header">
+                <div class="uk-container">
+                    <nav data-uk-navbar>
+                        <div class="uk-navbar-left">
+                            <div class="uk-navbar-item">
+                                <div class="tm-workhours">
+                                    <div>
+                                        <div>пн-пт 10:00-20:00</div>
+                                        <div>сб-вс 11:00-19:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-navbar-item">
+                                <div class="tm-phone">
+                                    <div>8 (800) 123-45-67</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-navbar-right">
+
+                            <!--mobile menu toggle-->
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                               data-uk-toggle>
+                                <span data-uk-navbar-toggle-icon></span>
+                                <span>меню</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
             <!-- Section -->
             <div class="tm-section-solid tm-top-search uk-section uk-cover-container">
                 <img class="tm-bg-image" src="images/bg-solid-1.jpg" alt="" data-uk-cover>
@@ -307,7 +338,7 @@
                                     <option value="" selected disabled>Когда</option>
                                 </select>
                             </div>
-                            <div >
+                            <div>
                                 <div class="tm-select">
                                     <input class="uk-hidden" name="what">
                                     <div class="tm-select-pseudo">Что?</div>
@@ -359,7 +390,8 @@
                                                         Нужен опыт и хорошая форма</label>
                                                 </div>
 
-                                                <button class="uk-button uk-button-small tm-button-secondary">Сбросить</button>
+                                                <button class="uk-button uk-button-small tm-button-secondary">Сбросить
+                                                </button>
                                             </div>
                                             <div>
                                                 <ul class="tm-tours-types-list uk-nav uk-navbar-dropdown-nav js-custom-scrollbar">
@@ -1222,8 +1254,9 @@
                                 PageMaker, в шаблонах которых используется Lorem Ipsum.
                             </p>
                             <div>
-                                <button class="uk-button tm-button-primary uk-margin-right uk-margin-bottom">Обычная кнопка<i
-                                        class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
+                                <button class="uk-button tm-button-primary uk-margin-right uk-margin-bottom">Обычная
+                                    кнопка<i
+                                            class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
                                 <button class="uk-button tm-button-secondary uk-margin-bottom">вторичная кнопка<i
                                         class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
                             </div>
@@ -1235,7 +1268,8 @@
                         </div>
                     </div>
 
-                    <div class="tm-column-panels uk-child-width-1-3@m uk-grid-small uk-margin-large-bottom" data-uk-grid>
+                    <div class="tm-column-panels uk-child-width-1-3@m uk-grid-small uk-margin-large-bottom"
+                         data-uk-grid>
                         <div>
                             <div class="tm-panel-column">
                                 <div class="tm-icon-image-wrapper-solid">
@@ -1290,9 +1324,10 @@
                                     текстов.</p>
                             </div>
                             <div class="uk-width-1-3@m">
-                                <button class="uk-button uk-button-large tm-button-secondary uk-width-auto uk-width-1-1@m">Большая
+                                <button class="uk-button uk-button-large tm-button-secondary uk-width-auto uk-width-1-1@m">
+                                    Большая
                                     кнопка<i
-                                            class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
+                                        class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
                             </div>
                         </div>
                         <div class="tm-text-icon"><i class="fas fa-mobile-alt"></i> Текст с иконкой (телефон
@@ -1310,7 +1345,8 @@
                         </div>
                     </div>
 
-                    <div class="tm-column-panels uk-child-width-1-3@m uk-grid-small uk-margin-large-bottom" data-uk-grid>
+                    <div class="tm-column-panels uk-child-width-1-3@m uk-grid-small uk-margin-large-bottom"
+                         data-uk-grid>
                         <div>
                             <div class="tm-panel-column">
                                 <div class="tm-icon-image-wrapper">
@@ -1470,7 +1506,13 @@
 
                     <div class="uk-margin-medium-bottom">
                         <h6>Красивые списочки ссылок в ul - Заголовок h6</h6>
-                        <div class="uk-grid-small uk-child-width-1-4 uk-margin-medium-bottom" data-uk-grid>
+                        <div class="tm-links-slider-controls">
+                            <a class="uk-active" href="#">Экстрим-туры</a>
+                            <a href="#">Опасные живтоне</a>
+                            <a href="#">Важная информация</a>
+                            <a href="#">Ещё колонка</a>
+                        </div>
+                        <div class="uk-child-width-auto uk-child-width-1-4@s uk-flex uk-flex-between uk-margin-medium-bottom js-slider-mobile-links">
                             <div>
                                 <h6>Экстрим-туры</h6>
                                 <ul class="tm-ulist">
@@ -1761,7 +1803,7 @@
                 <div class="uk-container uk-text-center">
                     <h3>Новости - заголовок h3</h3>
 
-                    <div class="uk-child-width-1-3@m uk-grid-match uk-margin-medium-bottom" data-uk-grid>
+                    <div class="tm-news-container uk-child-width-1-1 uk-child-width-1-3@m js-mobile-slider-news">
                         <div>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
@@ -1891,13 +1933,134 @@
     <!-- Off-canvas -->
     <div id="offcanvas-overlay" data-uk-offcanvas="mode: push; overlay: true">
         <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+            <button class="uk-offcanvas-close" type="button" data-uk-close>Закрыть</button>
 
             <div class="uk-card uk-flex uk-flex-center">
                 <ul class="uk-nav">
-                    <li><a href="#"></a></li>
+                    <li class="uk-active"><a href="#">Главная</a></li>
+                    <li>
+                        <a href="#" class="tm-icon-dropdown">С выпадайкой</a>
+                        <div class="tm-dropdown-simple uk-navbar-dropdown"
+                             data-uk-dropdown="mode: click">
+                            <div>
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Пункт</a></li>
+                                    <li><a href="#">Другой пункт</a></li>
+                                    <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                    <li><a href="#">Ну и тут тоже пункт</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="tm-icon-dropdown">С выпадайкой 2</a>
+                        <div class="uk-navbar-dropdown"
+                             data-uk-dropdown="mode: click">
+                            <div>
+                                <div class="uk-grid-collapse uk-child-width-1-1 uk-width-1-1" data-uk-grid>
+                                    <div>
+                                        <ul class="uk-nav uk-navbar-dropdown-nav js-complex-nav">
+                                            <li><a href="#">Пункт</a></li>
+                                            <li><a href="#">Другой пункт</a></li>
+                                            <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                            <li><a href="#">Ну и тут тоже пункт</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="uk-position-relative">
+                                        <div class="js-dropdown-content">
+                                            <div class="uk-margin-right">
+                                                <div class="tm-image-dropdown">
+                                                    <img src="images/img-drop-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                    ЯРОСТЬ ТЫСЯЧ
+                                                    МЕДВЕДЕЙ
+                                                </div>
+                                                <div class="uk-margin-small-bottom">
+                                                    Просто колонка
+                                                    для любого текста
+                                                </div>
+                                                <button class="uk-button uk-button-small tm-button-primary">
+                                                    Подробнее<i
+                                                        class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="js-dropdown-content">
+                                            <div class="uk-margin-right">
+                                                <div class="tm-image-dropdown">
+                                                    <img src="images/img-drop-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                    ЯРОСТЬ ТЫСЯЧ
+                                                    МЕДВЕДЕЙ
+                                                </div>
+                                                <div class="uk-margin-small-bottom">
+                                                    Просто колонка
+                                                    для любого текста
+                                                </div>
+                                                <button class="uk-button uk-button-small tm-button-primary">
+                                                    Подробнее<i
+                                                        class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="js-dropdown-content uk-active">
+                                            <div class="uk-margin-right">
+                                                <div class="tm-image-dropdown">
+                                                    <img src="images/img-drop-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                    ЯРОСТЬ ТЫСЯЧ
+                                                    МЕДВЕДЕЙ
+                                                </div>
+                                                <div class="uk-margin-small-bottom">
+                                                    Просто колонка
+                                                    для любого текста
+                                                </div>
+                                                <button class="uk-button uk-button-small tm-button-primary">
+                                                    Подробнее<i
+                                                        class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="js-dropdown-content">
+                                            <div class="uk-margin-right">
+                                                <div class="tm-image-dropdown">
+                                                    <img src="images/img-drop-4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                    ЯРОСТЬ ТЫСЯЧ
+                                                    МЕДВЕДЕЙ
+                                                </div>
+                                                <div class="uk-margin-small-bottom">
+                                                    Просто колонка
+                                                    для любого текста
+                                                </div>
+                                                <button class="uk-button uk-button-small tm-button-primary">
+                                                    Подробнее<i
+                                                        class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Без выпадайки</a></li>
+                    <li><a href="#">100500 пунктов влезет теперь</a></li>
                 </ul>
             </div>
+
         </div>
     </div>
 
