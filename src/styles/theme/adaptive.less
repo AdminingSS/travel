@@ -53,6 +53,28 @@
 
   .tm-sidebar {
     display: none;
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+    z-index: 5500;
+    overflow-y: auto;
+
+    &.uk-active {
+      display: block;
+    }
+
+    .sidebar-close-outer {
+      position: fixed;
+      top: 75px;
+      right: 280px;
+      font-size: 36px;
+      color: @global-inverse-color;
+    }
+  }
+
+  .tm-sidebar-toggle {
+    display: block;
   }
 
   .tm-content-options {
@@ -69,7 +91,7 @@
       flex-wrap: wrap;
       height: auto;
 
-      >div {
+      > div {
         width: 100%;
       }
 
@@ -146,7 +168,7 @@
     padding: 0 15px;
   }
 
-  .tm-column-panels >div {
+  .tm-column-panels > div {
     margin-bottom: 30px;
   }
 
@@ -166,7 +188,7 @@
   }
 
   .tm-footer-adapitive {
-    >div {
+    > div {
       margin: 0 auto 15px;
     }
   }
@@ -180,7 +202,7 @@
     max-height: 320px;
   }
 
-  .tm-what-tour >div {
+  .tm-what-tour > div {
     max-width: 50%;
   }
 
@@ -217,9 +239,9 @@
   .tm-top-search-panel {
     margin-bottom: 15px;
 
-    >div {
+    > div {
       width: 100%;
-      margin-right: 0!important;
+      margin-right: 0 !important;
     }
 
     .tm-select .tm-select-pseudo {
@@ -241,7 +263,7 @@
     min-height: 380px;
   }
 
-  .uk-breadcrumb>*>* {
+  .uk-breadcrumb > * > * {
     font-size: 10px;
   }
 
@@ -271,7 +293,7 @@
     flex-wrap: wrap;
   }
 
-  .tm-what-tour >div {
+  .tm-what-tour > div {
     max-width: 100%;
     width: 100%;
 
@@ -287,4 +309,8 @@
     }
   }
 
+  .tm-popover {
+    width: 260px;
+    min-width: 260px;
+  }
 }

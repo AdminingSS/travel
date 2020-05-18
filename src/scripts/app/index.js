@@ -167,4 +167,22 @@ $(() => {
         })
     })();
 
+    //sidebar toggle
+    (() => {
+        const $sidebarToggle = $('.tm-sidebar-toggle');
+        const $sidebarItem = $('.tm-sidebar');
+        const $sidebarClose = $('.sidebar-close-outer');
+        const $body = $('body');
+
+        $sidebarToggle.on('click', function () {
+            $sidebarItem.addClass('uk-active');
+            $body.addClass('body-grayed');
+        });
+
+        $sidebarClose.on('click', function () {
+            $sidebarItem.removeClass('uk-active');
+            $body.removeClass('body-grayed');
+        });
+    })();
+
 });
