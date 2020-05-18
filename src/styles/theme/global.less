@@ -2817,7 +2817,7 @@ select {
 }
 
 .uk-offcanvas-bar {
-  background-color: #fff;
+  background-color: rgba(0,0,0,0.7);
   text-transform: uppercase;
   font-size: 14px;
   color: @global-color;
@@ -2835,6 +2835,8 @@ select {
 
   .uk-card {
     box-shadow: none;
+    background-color: #fff;
+    padding-top: 30px;
   }
 
   .uk-nav {
@@ -2850,6 +2852,8 @@ select {
     position: relative;
     width: 100%;
     padding: 0;
+    margin: 0;
+    box-shadow: none;
   }
 
   .js-dropdown-content {
@@ -2861,6 +2865,7 @@ select {
     //display: flex;
     align-items: center;
     background-color: #fff;
+    padding: 8px 15px;
 
     &.uk-active {
       //display: flex;
@@ -2894,4 +2899,28 @@ select {
       }
     }
   }
+
+  .uk-navbar-dropdown .uk-navbar-dropdown-nav > li > a {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '\f054';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 6px;
+    }
+  }
+}
+
+body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
+  left: 0;
+}
+
+.uk-offcanvas-overlay {
+  z-index: 5500;
 }
