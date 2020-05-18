@@ -113,6 +113,10 @@
   .tm-badge.tm-badge-small {
     position: static;
   }
+
+  .tm-section-sided::before {
+    display: none;
+  }
 }
 
 @media (max-width: 959px) {
@@ -176,7 +180,7 @@
     padding: 30px 15px;
   }
 
-  .tm-navigator-item::before {
+  .tm-navigator-item::before, .tm-gallery-item::before {
     content: "";
     padding-top: 100%;
     display: block;
@@ -211,6 +215,14 @@
     .tm-content-panel {
       max-width: 48%;
       width: auto;
+    }
+  }
+
+  .tm-form-expert {
+    flex-wrap: wrap;
+
+    >div:first-child {
+      margin-bottom: 15px;
     }
   }
 }
@@ -312,5 +324,45 @@
   .tm-popover {
     width: 260px;
     min-width: 260px;
+  }
+
+  .tm-tour-features {
+
+    .uk-grid-medium>.uk-grid-margin {
+      margin: 0;
+    }
+
+    >div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .tm-tour-feature {
+      width: 50%;
+    }
+  }
+
+  .tm-accomodation-item {
+    flex-wrap: wrap;
+
+    >div:first-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  .tm-feedback-filter {
+    display: inline-flex;
+    flex-direction: column;
+
+    >li {
+      display: inline-block;
+      margin-right: auto;
+    }
+  }
+
+  .tm-contact-expert .tm-caption {
+    font-size: 48px;
   }
 }
