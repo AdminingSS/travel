@@ -169,7 +169,7 @@ $(() => {
 
     //sidebar toggle
     (() => {
-        const $sidebarToggle = $('.tm-sidebar-toggle');
+        const $sidebarToggle = $('.tm-sidebar-toggle, .tm-dop-info');
         const $sidebarItem = $('.tm-sidebar');
         const $sidebarClose = $('.sidebar-close-outer');
         const $body = $('body');

@@ -243,6 +243,35 @@
             </header>
 
             <div class="tm-header-fixed">
+                <div class="uk-container uk-hidden@m uk-margin-small-bottom">
+                    <nav data-uk-navbar>
+                        <div class="uk-navbar-left">
+                            <div class="uk-navbar-item">
+                                <div class="tm-workhours">
+                                    <div>
+                                        <div>пн-пт 10:00-20:00</div>
+                                        <div>сб-вс 11:00-19:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-navbar-item">
+                                <div class="tm-phone">
+                                    <div>8 (800) 123-45-67</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-navbar-right">
+
+                            <!--mobile menu toggle-->
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                               data-uk-toggle>
+                                <span data-uk-navbar-toggle-icon></span>
+                                <span>меню</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <hr class="uk-hidden@m">
                 <div class="uk-container">
                     <div class="uk-flex uk-flex-middle uk-flex-between">
                         <div>
@@ -256,7 +285,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div class="uk-visible@m">
                             <div>
                                 <button class="uk-button tm-button-primary uk-width-1-1">Оформить заказ<i
                                         class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></button>
@@ -266,6 +295,26 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="tm-sidebar-toggle-tour">
+                <div class="uk-width-expand">
+                    <div class="price">55 800 руб.</div>
+                    <div class="uk-margin-small-bottom">+ билеты до места начала тура</div>
+                    <div class="tm-dates uk-margin-small-bottom">2 июня 2020 - 6 июня 2020</div>
+                </div>
+                <div class="uk-width-auto">
+                    <a href="#" class="tm-dop-info">
+                        Доп.<br/>
+                        инфо
+                    </a>
+                </div>
+                <div class="uk-width-auto">
+                    <a href="#" class="tm-dop-order">
+                        оформить<br/>
+                        заказ
+                    </a>
                 </div>
             </div>
 
@@ -1025,6 +1074,9 @@
                     </div>
                     <div>
                         <div class="tm-sidebar">
+                            <a class="sidebar-close-outer" href="#">
+                                <i class="fas fa-times"></i>
+                            </a>
                             <div class="tm-sidebar-sup">
                                 <div class="price">55 800 руб.</div>
                                 <div class="uk-margin-small-bottom">+ билеты до места начала тура</div>
@@ -1244,7 +1296,7 @@
         </div>
 
         <!--Footer-->
-        <footer class="tm-section-footer uk-section uk-cover-container">
+        <footer class="tm-section-footer tm-footer-tour uk-section uk-cover-container">
             <img class="tm-bg-image" src="images/bg-solid-footer.png" alt="" data-uk-cover>
             <div class="uk-container">
                 <div class="tm-footer-adapitive uk-grid-small uk-child-width-1-3@m" data-uk-grid>
