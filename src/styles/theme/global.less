@@ -92,8 +92,8 @@ select {
   .tm-select-pseudo {
     box-sizing: border-box;
     width: 150px;
-    height: 30px;
-    line-height: 30px;
+    height: 48px;
+    line-height: 48px;
     text-align: left;
     padding: 0 10px;
     background-color: #fff;
@@ -120,7 +120,7 @@ select {
     &.what {
       width: 600px;
       padding: 15px 0;
-      max-height: 300px;
+      max-height: 320px;
     }
 
     .tm-drop-header {
@@ -2751,6 +2751,11 @@ select {
       margin-right: 15px;
     }
   }
+
+  .uk-button:not(.uk-button-small) {
+    height: 48px;
+    line-height: 48px;
+  }
 }
 
 .tm-links-slider-controls {
@@ -3123,3 +3128,41 @@ body {
   }
 }
 
+.tm-content-switch-mobile {
+  display: none;
+
+  button {
+
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background-color: #fff;
+    color: @global-color;
+    border-radius: @global-border-radius;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+  }
+
+  [class*=uk-dropdown-bottom] {
+    margin-top: 0;
+  }
+
+  .uk-dropdown {
+    padding: 8px 0;
+    width: auto;
+    min-width: 0;
+    border: 1px solid #cccccc;
+
+    >div {
+      padding: 0 15px;
+      cursor: default;
+
+      &:hover {
+        background-color: @global-secondary-background;
+        color: @global-inverse-color;
+      }
+    }
+  }
+}
