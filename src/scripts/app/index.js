@@ -185,4 +185,19 @@ $(() => {
         });
     })();
 
+    //plus accords
+    (() => {
+        const $accordTriggers = $('label .tm-plus');
+
+        $accordTriggers.on('click', function (e) {
+            e.preventDefault();
+
+            const $accordPlus = $(this);
+            const $accordLabel = $accordPlus.parent();
+            const $accordBox = $accordLabel.next('.tm-sub-tier');
+
+            $accordBox.toggleClass('uk-open');
+        })
+    })();
+
 });

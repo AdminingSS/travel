@@ -124,7 +124,18 @@
 .tm-phone {
   position: relative;
   padding-left: 19px;
-  font-weight: 600;
+
+  a {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
 
   &::before {
     font-family: 'Font Awesome 5 Free';
@@ -171,6 +182,19 @@
 
   .tm-top-slider-desc {
     margin-bottom: 25px;
+  }
+}
+
+.tm-top-search {
+  position: relative;
+
+  .tm-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
   }
 }
 
@@ -227,6 +251,18 @@ footer {
     font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase;
+
+    a {
+      display: block;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: inherit;
+      }
+    }
 
     &::before {
       font-family: 'Font Awesome 5 Free';

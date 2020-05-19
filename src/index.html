@@ -93,7 +93,7 @@
                             </div>
                             <div class="uk-navbar-item">
                                 <div class="tm-phone">
-                                    <div>8 (800) 123-45-67</div>
+                                    <a href="tel:78121234567">8 (800) 123-45-67</a>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +256,7 @@
                             </div>
                             <div class="uk-navbar-item">
                                 <div class="tm-phone">
-                                    <div>8 (800) 123-45-67</div>
+                                    <a href="tel:78121234567">8 (800) 123-45-67</a>
                                 </div>
                             </div>
                         </div>
@@ -274,12 +274,16 @@
             </div>
 
             <div class="tm-sidebar-toggle">
-                <button class="uk-button uk-width-1-1 uk-text-center tm-button-primary"><i class="fas fa-filter"></i> Фильтр-поиск по турам</button>
+                <button class="uk-button uk-width-1-1 uk-text-center tm-button-primary"><i class="fas fa-filter"></i>
+                    Фильтр-поиск по турам
+                </button>
             </div>
 
             <!-- Section -->
-            <div class="tm-section-solid tm-top-search uk-section uk-cover-container">
-                <img class="tm-bg-image" src="images/bg-solid-1.jpg" alt="" data-uk-cover>
+            <div class="tm-section-solid tm-top-search uk-section">
+                <div class="tm-cover uk-cover-container">
+                    <img class="tm-bg-image" src="images/bg-solid-1.jpg" alt="" data-uk-cover>
+                </div>
                 <div class="uk-container uk-height-1-1 uk-flex uk-flex-center uk-flex-middle uk-text-center">
                     <div>
                         <div class="tm-top-search-caption">Найди своё путешествие</div>
@@ -287,7 +291,7 @@
                             <div>
                                 <div class="tm-select">
                                     <input class="uk-hidden" name="where">
-                                    <div class="tm-select-pseudo inactive">Куда</div>
+                                    <div class="tm-select-pseudo">Куда?</div>
                                     <div class="tm-select-pseudo-items" data-uk-dropdown="mode: click; delay-hide: 50">
                                         <div class="tm-drop-header">
                                             <div class="tm-where-caption">
@@ -303,7 +307,7 @@
                                                     <input class="" type="checkbox" name="checkbox1">
                                                     Калыма
                                                 </label>
-                                                <div class="tm-sub-tier">
+                                                <div class="tm-sub-tier uk-open">
                                                     <label>
                                                         <input type="checkbox" name="checkbox1">
                                                         Магодан-магодан
@@ -338,9 +342,19 @@
                                 </div>
                             </div>
                             <div>
-                                <select name="when">
-                                    <option value="" selected disabled>Когда</option>
-                                </select>
+                                <div class="tm-select">
+                                    <input class="uk-hidden" name="where">
+                                    <div class="tm-select-pseudo">Когда?</div>
+                                    <div class="tm-select-pseudo-items" data-uk-dropdown="mode: click; delay-hide: 50">
+                                        <div class="tm-drop-header">
+                                            <div class="tm-where-caption">
+                                                Выберите дату
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div>
                                 <div class="tm-select">
@@ -468,7 +482,7 @@
             <!-- Section -->
             <div class="tm-section-first tm-hr-triangles uk-section">
                 <div class="uk-container">
-                    <div class="uk-flex uk-flex-middle uk-margin-medium-bottom">
+                    <div class="tm-breadcrumb-holder">
                         <div class="tm-breadcrumb-legend uk-margin-small-right">Вы здесь:</div>
                         <ul class="uk-breadcrumb uk-margin-remove">
                             <li><a href="">Главная</a></li>
@@ -501,8 +515,8 @@
                 <div class="uk-container uk-flex">
                     <div class="uk-width-auto@s">
                         <div class="tm-sidemain">
-                            <div class="uk-flex uk-flex-middle uk-margin-medium-bottom">
-                                <div class="uk-margin-small-right">Вы здесь:</div>
+                            <div class="tm-breadcrumb-holder">
+                                <div class="tm-breadcrumb-legend uk-margin-small-right">Вы здесь:</div>
                                 <ul class="uk-breadcrumb uk-margin-remove">
                                     <li><a href="">Главная</a></li>
                                     <li><a href="">Туры</a></li>
@@ -534,6 +548,14 @@
                                     <div class="uk-width-auto@l">
                                         <div class="tm-panel-image-wrapper">
                                             <img src="images/img-panel-1.png" alt="">
+                                            <div class="tm-panel-image-icons">
+                                                <div class="tm-icon-places">
+                                                    <b>2</b> мест осталось
+                                                </div>
+                                                <div class="tm-icon-see">
+                                                    <b>8</b> человек смотрит
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div>
@@ -626,6 +648,11 @@
                                     <div class="uk-width-auto@l">
                                         <div class="tm-panel-image-wrapper">
                                             <img src="images/img-panel-2.png" alt="">
+                                            <div class="tm-panel-image-icons">
+                                                <div class="tm-icon-see">
+                                                    <b>2</b> человек смотрит
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div>
@@ -1519,7 +1546,7 @@
                             <a href="#">Важная информация</a>
                             <a href="#">Ещё колонка</a>
                         </div>
-                        <div class="uk-child-width-auto uk-child-width-1-4@s uk-flex uk-flex-between uk-margin-medium-bottom js-slider-mobile-links">
+                        <div class="tm-links-slider-content uk-child-width-auto uk-child-width-1-4@s js-slider-mobile-links">
                             <div>
                                 <h6>Экстрим-туры</h6>
                                 <ul class="tm-ulist">
@@ -1913,8 +1940,10 @@
                     </div>
                     <div>
                         <h3>нАШИ КОНТАКТЫ</h3>
-                        <div class="tm-phone">+7 (812) 123-45-67</div>
-                        <div class="tm-mail">INFO@PASHASPROJECT.RU</div>
+                        <div class="tm-phone">
+                            <a href="tel:78121234567">+7 (812) 123-45-67</a>
+                        </div>
+                        <div class="tm-mail"><a href="mailto:INFO@PASHASPROJECT.RU">INFO@PASHASPROJECT.RU</a></div>
                         <div class="tm-address">сАНКТ-пЕТЕРБУРГ,
                             УЛ. пОДВОЙСКОГО. Д.3,
                             ОФ. 902
@@ -2065,13 +2094,41 @@
                     </li>
                     <li><a href="#">Без выпадайки</a></li>
                     <li><a href="#">100500 пунктов влезет теперь</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Ещё что-нибудь</a></li>
+                    <li><a href="#">И ещё что-нибудь</a></li>
+                    <li>
+                        <a href="#" class="tm-icon-dropdown">In english please</a>
+                        <div class="uk-navbar-dropdown"
+                             data-uk-drop="mode: click">
+                            <div class="uk-container">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">?</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
+
             </div>
 
         </div>
     </div>
 
 </div>
+
+<a href="#" class="tm-button-seen tm-visible">
+    <i class="fas fa-eye"></i>
+    <span>22</span>
+</a>
+
+<a href="#" class="tm-button-totop tm-visible">
+    <i class="fas fa-chevron-up"></i>
+</a>
 
 </body>
 </html>

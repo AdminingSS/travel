@@ -149,7 +149,12 @@ select {
     .tm-search {
 
       .tm-sub-tier {
+        display: none;
         padding: 0 30px;
+
+        &.uk-open {
+          display: block;
+        }
       }
 
       label {
@@ -700,6 +705,7 @@ select {
   color: @global-inverse-color;
   border-radius: @global-border-radius;
   margin-left: 5px;
+  white-space: nowrap;
 
   &.tm-badge-small {
     position: absolute;
@@ -1385,8 +1391,48 @@ select {
     }
 
     .tm-panel-image-wrapper {
+      position: relative;
       width: 255px;
       height: 255px;
+
+      .tm-panel-image-icons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 10px;
+        color: @global-inverse-color;
+        padding: 0 0 8px 15px;
+
+        .tm-icon-places, .tm-icon-see {
+          position: relative;
+          padding-left: 25px;
+          margin-bottom: 8px;
+
+          &::before {
+            position: absolute;
+            display: block;
+            top: 50%;
+            transform:translateY(-50%);
+            left: 0;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+
+          }
+        }
+
+        .tm-icon-places::before {
+          font-size: 14px;
+          content: '\f7e4';
+          color: #d88f1d;
+        }
+
+        .tm-icon-see::before {
+          font-size: 12px;
+          content: '\f06e';
+          color: #d81d1d;
+        }
+
+      }
     }
 
     .tm-panel-desc {
@@ -1951,7 +1997,12 @@ select {
   margin-bottom: 10px !important;
 
   .tm-sub-tier {
+    display: none;
     padding: 0 15px;
+
+    &.uk-open {
+      display: block;
+    }
   }
 
   label {
@@ -2169,6 +2220,10 @@ select {
 
   &:nth-child(3n)::before {
     background-image: linear-gradient(to top, #1868a0, #a86223);
+  }
+
+  &:last-child::before {
+    display: none;
   }
 
   &::after {
@@ -2533,6 +2588,10 @@ select {
     padding: 0 30px;
     font-size: 22px;
   }
+
+  a {
+    color: inherit;
+  }
 }
 
 .tm-banner {
@@ -2549,9 +2608,19 @@ select {
 
   .tm-phone {
     position: relative;
-    font-weight: 600;
-    text-transform: uppercase;
     padding-left: 25px;
+
+    a {
+      display: block;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: inherit;
+      }
+    }
 
     &::before {
       position: absolute;
@@ -2647,7 +2716,8 @@ select {
 .tm-header-fixed {
   position: fixed;
   //display: none;
-  top: -110px;
+  top: -150px;
+  opacity: 0;
   left: 0;
   right: 0;
   height: 70px;
@@ -2655,7 +2725,6 @@ select {
   background-color: #fff;
   z-index: 5000;
   transition: all 0.5s;
-  opacity: 0.5;
 
   .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
     min-height: 70px;
@@ -2701,6 +2770,12 @@ select {
       color: @global-inverse-color;
     }
   }
+}
+
+.tm-links-slider-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .tm-news-container {
@@ -2797,12 +2872,13 @@ select {
 
 .tm-mobile-header {
   position: fixed;
-  top: -100px;
+  top: -150px;
   left: 0;
   right: 0;
   background-color: #fff;
   z-index: 5001;
   transition: all 0.5s;
+  opacity: 0;
 
   .uk-navbar-left {
     width: auto;
@@ -2811,10 +2887,6 @@ select {
   .uk-navbar-right {
     width: auto;
     margin-left: auto;
-  }
-
-  &.top-visible {
-    top: 0;
   }
 }
 
@@ -2826,6 +2898,10 @@ select {
   color: @global-color;
   padding: 20px 0;
   width: 100%;
+
+  hr {
+    border-top-color: #eeeeee;
+  }
 
   a {
     color: @global-color;
@@ -2997,3 +3073,53 @@ body {
     font-size: 10px;
   }
 }
+
+.tm-sidebar .sidebar-close-outer {
+  display: none;
+}
+
+.tm-breadcrumb-holder {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tm-button-seen, .tm-button-totop {
+  position: fixed;
+  bottom: -150px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  color: @global-inverse-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @global-inverse-color;
+  }
+}
+
+.tm-button-seen {
+  background-color: @global-primary-background;
+  font-size: 10px;
+
+  &.tm-visible {
+    bottom: 80px;
+  }
+}
+
+.tm-button-totop {
+  background-color: @global-secondary-background;
+  font-size: 16px;
+
+  &.tm-visible {
+    bottom: 45px;
+  }
+}
+

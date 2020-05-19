@@ -75,6 +75,7 @@
       right: 280px;
       font-size: 36px;
       color: @global-inverse-color;
+      display: block;
     }
   }
 
@@ -259,6 +260,15 @@
       background-color: #fafafa;
     }
   }
+
+  .tm-header-top-nav {
+    display: none;
+  }
+
+  .tm-mobile-header.top-visible {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 639px) {
@@ -398,5 +408,112 @@
 
   .tm-contact-expert .tm-caption {
     font-size: 48px;
+  }
+}
+
+@media(max-width: 424px) {
+  .uk-logo {
+    flex-direction: column;
+  }
+
+  .tm-select .tm-select-pseudo-items {
+    max-width: 100%;
+  }
+
+  .tm-select .tm-select-pseudo-items .tm-drop-header {
+    margin-bottom: 0;
+  }
+
+  .tm-tours-active.uk-margin-small-bottom {
+    margin-bottom: 0 !important;
+  }
+
+  .tm-top-search .tm-top-search-caption, .tm-top-slider .tm-top-slider-caption {
+    font-size: 26px;
+  }
+
+  .tm-breadcrumb-legend {
+    white-space: nowrap;
+  }
+
+  .tm-mobile-header, .tm-header-fixed {
+    padding-bottom: 4px;
+  }
+
+  .tm-mobile-header .uk-navbar-left, .tm-header-fixed .uk-navbar-left {
+    flex-direction: column;
+    align-items: start;
+
+    .uk-navbar-item {
+      min-height: 30px;
+    }
+  }
+
+  .tm-navigator .tm-icon-image-wrapper {
+    margin: 0 auto 4px;
+  }
+
+  .tm-navigator .tm-navigator-item .tm-navigator-item-inner {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .tm-navigator .tm-navigator-item.tm-navigator-main .tm-navigator-item-inner {
+    font-size: 26px;
+  }
+
+  .tm-links-slider-content {
+    margin-bottom: 8px;
+
+    .tm-ulist {
+      padding-left: 20px;
+      list-style: none;
+      margin: 0;
+    }
+  }
+
+  .uk-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .tm-sidebar-toggle-tour .price {
+    font-size: 26px;
+  }
+
+  .tm-sidebar-toggle-tour {
+    font-size: 10px;
+  }
+
+  .tm-tour-alike {
+    h4{
+      font-size: 16px;
+    }
+  }
+
+  .tm-contact-expert {
+    padding: 15px;
+  }
+
+  .tm-contact-expert .tm-caption {
+    font-size: 36px;
+  }
+
+  .tm-contact-expert .uk-button {
+    font-size: 19px;
+    padding: 0 15px;
+  }
+
+  .tm-adittional-items .tm-tour-additional-item {
+    flex-direction: column;
+  }
+
+  .tm-adittional-items .tm-tour-additional-item .tm-image-wrapper {
+    margin: 0 auto 8px;
+  }
+
+  .tm-header-fixed {
+    .uk-navbar-nav > li > a {
+      padding: 0 4px;
+    }
   }
 }
