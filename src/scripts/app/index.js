@@ -167,6 +167,52 @@ $(() => {
         })
     })();
 
+    //mobile fixed buttons
+    (() => {
+        const $mobileFixedButtons = $('.tm-button-seen, .tm-button-totop');
+        const $toTop = $mobileFixedButtons.filter('.tm-button-totop');
+
+        $(window).on('scroll', function () {
+            const scrollTop = $(window).scrollTop();
+
+            if(scrollTop > 300) {
+                $mobileFixedButtons.addClass('tm-visible');
+            }
+            else {
+                $mobileFixedButtons.removeClass('tm-visible');
+            }
+        });
+
+        $toTop.on('click', function (e) {
+            e.preventDefault();
+
+            console.log(1)
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000);
+        })
+    })();
+
+    //animate image icons
+    (() => {
+        const $imageIcons = $('.tm-panel-image-icons');
+        const $window = $(window);
+
+        $window.on('scroll', function () {
+
+            $imageIcons.each(function () {
+                const $imageIconsItem = $(this);
+
+                if ($window.scrollTop() + $window.height() >= $imageIconsItem.offset().top) {
+                    setTimeout(function () {
+                        $imageIconsItem.addClass('tm-visible');
+                    }, 2000);
+                }
+            })
+        });
+
+    })();
+
     //sidebar toggle
     (() => {
         const $sidebarToggle = $('.tm-sidebar-toggle, .tm-dop-info');
