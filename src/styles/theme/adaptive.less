@@ -417,6 +417,18 @@
   .tm-content-switch-mobile {
     display: inline-block;
   }
+
+  .tm-modal-dates .tm-content-switch {
+    //display: none;
+  }
+
+  .tm-modal-dates .tm-content-item .tm-dates-dates span {
+    font-size: inherit;
+  }
+
+  .tm-modal-dates .tm-dates-content {
+    max-height: 200px;
+  }
 }
 
 @media(max-width: 424px) {
@@ -531,5 +543,37 @@
 
   .tm-modal-seen .tm-tour-item {
     font-size: 14px;
+  }
+
+  .tm-modal-body-top {
+    flex-wrap: wrap;
+  }
+
+  .tm-content-options {
+    >div {
+      flex-wrap: wrap;
+    }
+  }
+
+  .tm-content-item {
+    flex-wrap: wrap;
+
+    >div {
+      width: 100% !important;
+      margin-bottom: 8px;
+    }
+
+    .uk-button {
+      width: 100%;
+    }
+  }
+
+  .tm-content-item .tm-adaptive-micromobile {
+    //align-items: center;
+
+    //>div {
+    //  width: 100% !important;
+    //  margin-bottom: 8px;
+    //}
   }
 }

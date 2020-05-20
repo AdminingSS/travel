@@ -3180,6 +3180,10 @@ body {
 
 //modals
 
+.uk-modal {
+  z-index: 6000;
+}
+
 .uk-modal-dialog {
   border-radius: @global-border-radius;
 }
@@ -3260,6 +3264,24 @@ body {
     width: auto;
   }
 
+  .uk-modal-body {
+    padding: 15px 0 0;
+
+    >div {
+      padding: 0 15px;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+
+  .tm-modal-body-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
   .tm-dates-image-wrapper {
     width: 100px;
     height: 100px;
@@ -3274,6 +3296,14 @@ body {
       min-width: 100%;
       min-height: 100%;
       max-width: none;
+    }
+  }
+
+  .tm-dates-content {
+    max-height: 500px;
+
+    .mCSB_inside > .mCSB_container {
+      margin-right: 0;
     }
   }
 
@@ -3329,13 +3359,14 @@ body {
     align-items: center;
     padding: 8px 15px;
     
-    &:nth-child(even) {
+    &:nth-child(odd) {
       background-color: #dddddd;
     }
 
     .days, .nights {
       position: relative;
       padding-left: 25px;
+      margin-bottom: 8px;
 
       &::before {
         position: absolute;
@@ -3364,7 +3395,17 @@ body {
 
     .tm-dates-dates, .tm-dates-details {
       display: flex;
+      align-items: center;
       flex-wrap: wrap;
+    }
+
+    .tm-dates-dates span {
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .tm-dates-details {
+      font-weight: 600;
     }
 
     .tm-dates-duration {
