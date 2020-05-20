@@ -2808,6 +2808,29 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   display: flex;
   flex-wrap: wrap;
 }
+.tm-lk-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 780px;
+}
+.tm-lk-tabs .uk-tab {
+  margin-right: 30px;
+  height: 100%;
+}
+.tm-lk-tabs .uk-tab > * > a {
+  padding: 10px 15px;
+  color: #1868a0;
+  font-size: 19px;
+  text-decoration: none;
+  border: none;
+  text-align: left;
+}
+.tm-lk-tabs .uk-tab > .uk-active > a,
+.tm-lk-tabs .uk-tab > *:hover > a {
+  color: #ffffff;
+  border-color: #1868a0;
+  background-color: #1868a0;
+}
 .uk-navbar-nav > li > a.tm-icon-dropdown {
   position: relative;
   padding-right: 24px;
@@ -3415,6 +3438,11 @@ footer .tm-address::before {
     top: 0;
     opacity: 1;
   }
+  .tm-lk-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+  }
 }
 @media (max-width: 639px) {
   .uk-container {
@@ -3529,6 +3557,19 @@ footer .tm-address::before {
   }
   .tm-modal-dates .tm-dates-content {
     max-height: 200px;
+  }
+  .tm-lk-tabs {
+    width: 100%;
+    border-left: 1px solid #cccccc;
+  }
+  .tm-lk-tabs .uk-tab {
+    flex-direction: column;
+  }
+  .tm-lk-tabs .uk-tab::before {
+    display: none;
+  }
+  .tm-lk-tabs .uk-switcher {
+    padding-left: 15px;
   }
 }
 @media (max-width: 424px) {

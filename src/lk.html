@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100i,300,300i,600&display=swap" rel="stylesheet">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+        <div>
+
+            <!--Header-->
+            <header class="uk-navbar-transparent">
+                <div class="uk-container-expand tm-header-top-nav">
+                    <div class="uk-container uk-position-relative">
+                        <nav data-uk-navbar>
+                            <div class="uk-navbar-left">
+                                <div class="uk-navbar-item uk-text-uppercase">Чем мы занимаемся тут можно написать</div>
+                            </div>
+
+                            <div class="uk-navbar-right">
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Политика конфиденциальности</a></li>
+                                    <li><a href="#">Ещё что-нибудь</a></li>
+                                    <li><a href="#">И ещё что-нибудь</a></li>
+                                    <li>
+                                        <a href="#" class="tm-icon-dropdown">In english please</a>
+                                        <div class="uk-navbar-dropdown"
+                                             data-uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
+                                            <div class="uk-container">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
+                                                    <li><a href="#">?</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="uk-container uk-position-relative">
+                    <nav data-uk-navbar>
+                        <div class="uk-navbar-left">
+
+                            <!--logo-->
+                            <a class="uk-navbar-item uk-logo" href="/">
+                                <img class="uk-margin-right" src="images/logo.png" alt="">
+                                <span>Pasha’s Project</span>
+                            </a>
+
+                            <!--mobile menu toggle-->
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                               data-uk-toggle>
+                                <span data-uk-navbar-toggle-icon></span>
+                                <span>меню</span>
+                            </a>
+
+                        </div>
+
+                        <div class="uk-navbar-right">
+                            <div class="uk-navbar-item">
+                                <div class="tm-search-form">
+                                    <input class="uk-input" type="text" placeholder="Найди своё путешествие...">
+                                    <div>
+                                        <button class="tm-button-search">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-navbar-item">
+                                <div class="tm-workhours">
+                                    <div>
+                                        <div>пн-пт 10:00-20:00</div>
+                                        <div>сб-вс 11:00-19:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-navbar-item">
+                                <div class="tm-phone">
+                                    <a href="tel:78121234567">8 (800) 123-45-67</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <hr>
+                <div class="uk-container uk-position-relative tm-header-bottom-nav">
+                    <nav data-uk-navbar>
+                        <div class="uk-navbar-left">
+
+                            <!--navbar menu-->
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="#">Главная</a></li>
+                                <li>
+                                    <a href="#" class="tm-icon-dropdown">С выпадайкой</a>
+                                    <div class="tm-dropdown-simple uk-navbar-dropdown"
+                                         data-uk-drop>
+                                        <div class="uk-container">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Пункт</a></li>
+                                                <li><a href="#">Другой пункт</a></li>
+                                                <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                                <li><a href="#">Ну и тут тоже пункт</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="tm-icon-dropdown">С выпадайкой 2</a>
+                                    <div class="uk-navbar-dropdown"
+                                         data-uk-drop>
+                                        <div class="uk-container">
+                                            <div class="uk-grid-collapse uk-child-width-1-2 uk-width-1-1" data-uk-grid>
+                                                <div>
+                                                    <ul class="uk-nav uk-navbar-dropdown-nav js-complex-nav">
+                                                        <li><a href="#">Пункт</a></li>
+                                                        <li><a href="#">Другой пункт</a></li>
+                                                        <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                                        <li><a href="#">Ну и тут тоже пункт</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="uk-position-relative">
+                                                    <div class="js-dropdown-content">
+                                                        <div class="uk-margin-right">
+                                                            <div class="tm-image-dropdown">
+                                                                <img src="images/img-drop-1.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                                ЯРОСТЬ ТЫСЯЧ
+                                                                МЕДВЕДЕЙ
+                                                            </div>
+                                                            <div class="uk-margin-small-bottom">
+                                                                Просто колонка
+                                                                для любого текста
+                                                            </div>
+                                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                                Подробнее<i
+                                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-dropdown-content">
+                                                        <div class="uk-margin-right">
+                                                            <div class="tm-image-dropdown">
+                                                                <img src="images/img-drop-2.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                                ЯРОСТЬ ТЫСЯЧ
+                                                                МЕДВЕДЕЙ
+                                                            </div>
+                                                            <div class="uk-margin-small-bottom">
+                                                                Просто колонка
+                                                                для любого текста
+                                                            </div>
+                                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                                Подробнее<i
+                                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-dropdown-content uk-active">
+                                                        <div class="uk-margin-right">
+                                                            <div class="tm-image-dropdown">
+                                                                <img src="images/img-drop-3.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                                ЯРОСТЬ ТЫСЯЧ
+                                                                МЕДВЕДЕЙ
+                                                            </div>
+                                                            <div class="uk-margin-small-bottom">
+                                                                Просто колонка
+                                                                для любого текста
+                                                            </div>
+                                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                                Подробнее<i
+                                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-dropdown-content">
+                                                        <div class="uk-margin-right">
+                                                            <div class="tm-image-dropdown">
+                                                                <img src="images/img-drop-4.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                                ЯРОСТЬ ТЫСЯЧ
+                                                                МЕДВЕДЕЙ
+                                                            </div>
+                                                            <div class="uk-margin-small-bottom">
+                                                                Просто колонка
+                                                                для любого текста
+                                                            </div>
+                                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                                Подробнее<i
+                                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Без выпадайки</a></li>
+                                <li><a href="#">100500 пунктов влезет теперь</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="uk-navbar-right">
+                            <div class="uk-navbar-item">
+                                <div>
+                                    <i class="fas fa-eye uk-margin-small-right"></i>Вы смотрели: <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="uk-section">
+                <div class="uk-container">
+                    <h1>Личный кабинет</h1>
+
+                    <div class="tm-lk-tabs">
+                        <div class="uk-width-auto">
+                            <ul class="uk-tab-left" data-uk-tab="connect: #tabLeft; animation: uk-animation-fade">
+                                <li><a href="#">Личные данные</a></li>
+                                <li><a href="#">Заказы(1)</a></li>
+                                <li><a href="#">Изменить пароль</a></li>
+                                <li><a href="#">Отзывы(2)</a></li>
+                                <li><a href="#">Выйти <i class="fas fa-sign-out-alt uk-margin-small-left"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <div id="tabLeft" class="uk-switcher">
+                                <div>
+                                    <h3>Ваши личные данные</h3>
+                                    <div class="uk-grid-small uk-flex-middle uk-margin-bottom" data-uk-grid>
+                                        <div class="uk-width-1-3@s">
+                                            ФИО:
+                                        </div>
+                                        <div class="uk-width-2-3@s">
+                                            <input type="text" class="uk-input">
+                                        </div>
+                                        <div class="uk-width-1-3@s">
+                                            Телефон:
+                                        </div>
+                                        <div class="uk-width-2-3@s">
+                                            <input type="text" class="uk-input">
+                                        </div>
+                                        <div class="uk-width-1-3@s">
+                                            Тотемное животное:
+                                        </div>
+                                        <div class="uk-width-2-3@s">
+                                            <select class="uk-select">
+                                                <option value="1" selected>Я бешеная куница!</option>
+                                                <option value="2">Я медведь, мне б пореветь</option>
+                                                <option value="3">Я комар Куливар</option>
+                                            </select>
+                                        </div>
+                                        <div class="uk-width-1-3@s">
+
+                                        </div>
+                                        <div class="uk-width-2-3@s">
+                                            <label><input class="" type="checkbox" name="checkboxx6" checked>
+                                                Даю какое-то там ещё согласие <a href="#">ссылка</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="uk-button uk-button-large tm-button-secondary">Сохранить</button>
+                                </div>
+                                <div>
+
+                                </div>
+                                <div>
+
+                                </div>
+                                <div>
+
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="tm-section-footer tm-footer-tour uk-section uk-cover-container">
+        <img class="tm-bg-image" src="images/bg-solid-footer.png" alt="" data-uk-cover>
+        <div class="uk-container">
+            <div class="tm-footer-adapitive uk-grid-small uk-child-width-1-3@m" data-uk-grid>
+                <div>
+                    <div>
+                        <!--logo-->
+                        <a class="uk-logo" href="/">
+                            <img class="uk-margin-right" src="images/logo.png" alt="">
+                            <span>Pasha’s Project</span>
+                        </a>
+                    </div>
+                    <p>© <b>2020</b> Pasha’s Project. Все права защищены. Копирование материалов сайта атата!</p>
+                    <div class="tm-social-links">
+                        <div>
+                            <a class="tm-social-icon" href="#">
+                                <img src="images/icon-telegram.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="tm-social-icon" href="#">
+                                <img src="images/icon-watsapp.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="tm-social-icon" href="#">
+                                <img src="images/icon-insta.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="uk-button tm-button-primary">Искать туры<i
+                            class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
+                </div>
+                <div>
+                    <h3>нАШИ КОНТАКТЫ</h3>
+                    <div class="tm-phone">+7 (812) 123-45-67</div>
+                    <div class="tm-mail">
+                        <a href="mailto:INFO@PASHASPROJECT.RU">INFO@PASHASPROJECT.RU</a></div>
+                    <div class="tm-address">сАНКТ-пЕТЕРБУРГ,
+                        УЛ. пОДВОЙСКОГО. Д.3,
+                        ОФ. 902
+                    </div>
+                </div>
+                <div>
+                    <h3>Важные страницы</h3>
+                    <div class="tm-important-links">
+                        <div><a href="#">О нас</a></div>
+                        <div><a href="#">Условия обслуживание</a></div>
+                        <div><a href="#">Гарантии</a></div>
+                        <div><a href="#">Пользовательское соглашение</a></div>
+                        <div><a href="#">Политика конфиденциальности</a></div>
+                        <div><a href="#">Новости</a></div>
+                        <div><a href="#">Контакты</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Off-canvas -->
+<div id="offcanvas-overlay" data-uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <div class="uk-card uk-flex uk-flex-center uk-position-relative">
+            <button class="uk-offcanvas-close" type="button" data-uk-close>Закрыть</button>
+            <ul class="uk-nav">
+                <li class="uk-active"><a href="#">Главная</a></li>
+                <li>
+                    <a href="#" class="tm-icon-dropdown">С выпадайкой</a>
+                    <div class="tm-dropdown-simple uk-navbar-dropdown"
+                         data-uk-dropdown="mode: click">
+                        <div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Пункт</a></li>
+                                <li><a href="#">Другой пункт</a></li>
+                                <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                <li><a href="#">Ну и тут тоже пункт</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="tm-icon-dropdown">С выпадайкой 2</a>
+                    <div class="uk-navbar-dropdown"
+                         data-uk-dropdown="mode: click">
+                        <div>
+                            <div class="uk-grid-collapse uk-child-width-1-1 uk-width-1-1" data-uk-grid>
+                                <div>
+                                    <ul class="uk-nav uk-navbar-dropdown-nav js-complex-nav">
+                                        <li><a href="#">Пункт</a></li>
+                                        <li><a href="#">Другой пункт</a></li>
+                                        <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                        <li><a href="#">Ну и тут тоже пункт</a></li>
+                                    </ul>
+                                </div>
+                                <div class="uk-position-relative">
+                                    <div class="js-dropdown-content">
+                                        <div class="uk-margin-right">
+                                            <div class="tm-image-dropdown">
+                                                <img src="images/img-drop-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                ЯРОСТЬ ТЫСЯЧ
+                                                МЕДВЕДЕЙ
+                                            </div>
+                                            <div class="uk-margin-small-bottom">
+                                                Просто колонка
+                                                для любого текста
+                                            </div>
+                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                Подробнее<i
+                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="js-dropdown-content">
+                                        <div class="uk-margin-right">
+                                            <div class="tm-image-dropdown">
+                                                <img src="images/img-drop-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                ЯРОСТЬ ТЫСЯЧ
+                                                МЕДВЕДЕЙ
+                                            </div>
+                                            <div class="uk-margin-small-bottom">
+                                                Просто колонка
+                                                для любого текста
+                                            </div>
+                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                Подробнее<i
+                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="js-dropdown-content uk-active">
+                                        <div class="uk-margin-right">
+                                            <div class="tm-image-dropdown">
+                                                <img src="images/img-drop-3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                ЯРОСТЬ ТЫСЯЧ
+                                                МЕДВЕДЕЙ
+                                            </div>
+                                            <div class="uk-margin-small-bottom">
+                                                Просто колонка
+                                                для любого текста
+                                            </div>
+                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                Подробнее<i
+                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="js-dropdown-content">
+                                        <div class="uk-margin-right">
+                                            <div class="tm-image-dropdown">
+                                                <img src="images/img-drop-4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                ЯРОСТЬ ТЫСЯЧ
+                                                МЕДВЕДЕЙ
+                                            </div>
+                                            <div class="uk-margin-small-bottom">
+                                                Просто колонка
+                                                для любого текста
+                                            </div>
+                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                Подробнее<i
+                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Без выпадайки</a></li>
+                <li><a href="#">100500 пунктов влезет теперь</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Ещё что-нибудь</a></li>
+                <li><a href="#">И ещё что-нибудь</a></li>
+                <li>
+                    <a href="#" class="tm-icon-dropdown">In english please</a>
+                    <div class="uk-navbar-dropdown"
+                         data-uk-drop="mode: click">
+                        <div class="uk-container">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>

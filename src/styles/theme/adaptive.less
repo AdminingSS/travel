@@ -269,6 +269,16 @@
     top: 0;
     opacity: 1;
   }
+
+  .tm-lk-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+  }
+
+  .uk-tab {
+    //flex-direction: column;
+  }
 }
 
 @media (max-width: 639px) {
@@ -429,6 +439,24 @@
   .tm-modal-dates .tm-dates-content {
     max-height: 200px;
   }
+
+  .tm-lk-tabs {
+    width: 100%;
+    border-left: 1px solid #cccccc;
+
+    .uk-tab {
+      flex-direction: column;
+    }
+
+    .uk-tab::before {
+      display: none;
+    }
+
+    .uk-switcher {
+      padding-left: 15px;
+    }
+  }
+
 }
 
 @media(max-width: 424px) {

@@ -3422,3 +3422,31 @@ body {
     }
   }
 }
+
+.tm-lk-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 780px;
+
+  .uk-tab {
+    margin-right: 30px;
+    height: 100%;
+  }
+
+  .uk-tab>*>a {
+    padding: 10px 15px;
+    color: @global-secondary-color;
+    font-size: 19px;
+    text-decoration: none;
+    border: none;
+    text-align: left;
+  }
+
+  .uk-tab>.uk-active>a, .uk-tab>*:hover>a {
+    color: @global-inverse-color;
+    border-color: @global-secondary-color;
+    background-color: @global-secondary-color;
+  }
+
+
+}
