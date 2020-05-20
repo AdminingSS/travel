@@ -1275,6 +1275,8 @@ select.disabled {
   cursor: pointer;
   margin-bottom: 10px;
   border-radius: 3px;
+  color: #444444;
+  text-decoration: none;
 }
 .tm-sidemain .tm-content-panel .tm-panel-details .tm-tour-dates-other::before {
   position: absolute;
@@ -2567,6 +2569,7 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-breadcrumb-holder {
   display: flex;
   align-items: center;
+  margin-top: 30px;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
@@ -2636,6 +2639,12 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   background-color: #1868a0;
   color: #ffffff;
 }
+.uk-modal-dialog {
+  border-radius: 3px;
+}
+.uk-modal-header {
+  border-radius: 3px 3px 0 0;
+}
 .uk-modal-title {
   font-size: 16px;
 }
@@ -2682,6 +2691,106 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   min-width: 100%;
   min-height: 100%;
   max-width: none;
+}
+.tm-modal-dates .uk-modal-dialog {
+  width: auto;
+}
+.tm-modal-dates .tm-dates-image-wrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.tm-modal-dates .tm-dates-image-wrapper img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+}
+.tm-modal-dates .tm-content-options {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.tm-modal-dates .tm-content-options > div {
+  margin-bottom: 8px;
+}
+.tm-modal-dates .tm-content-switch {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tm-modal-dates .tm-content-switch button {
+  font-size: 12px;
+  border: solid 1px #e1e1e1;
+  background-color: #ffffff;
+  color: #444444;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.tm-modal-dates .tm-content-switch button:hover,
+.tm-modal-dates .tm-content-switch button.uk-active {
+  border-color: #1868a0;
+  background-color: #1868a0;
+  color: #ffffff;
+}
+.tm-modal-dates .tm-content-switch button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.tm-modal-dates .tm-content-switch button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.tm-modal-dates .tm-content-switch.dates-items button {
+  padding: 4px;
+}
+.tm-modal-dates .tm-content-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+}
+.tm-modal-dates .tm-content-item:nth-child(even) {
+  background-color: #dddddd;
+}
+.tm-modal-dates .tm-content-item .days,
+.tm-modal-dates .tm-content-item .nights {
+  position: relative;
+  padding-left: 25px;
+}
+.tm-modal-dates .tm-content-item .days::before,
+.tm-modal-dates .tm-content-item .nights::before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #1868a0;
+}
+.tm-modal-dates .tm-content-item .days {
+  margin-right: 20px;
+}
+.tm-modal-dates .tm-content-item .days::before {
+  content: '\F185';
+}
+.tm-modal-dates .tm-content-item .nights::before {
+  font-size: 18px;
+  content: '\F186';
+}
+.tm-modal-dates .tm-content-item .tm-dates-dates,
+.tm-modal-dates .tm-content-item .tm-dates-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tm-modal-dates .tm-content-item .tm-dates-duration {
+  display: flex;
+  flex-wrap: wrap;
 }
 .uk-navbar-nav > li > a.tm-icon-dropdown {
   position: relative;
@@ -2863,7 +2972,7 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 }
 .tm-section-first {
   position: relative;
-  padding: 30px 0 50px;
+  padding: 0 0 50px;
 }
 .tm-hr-triangles {
   position: relative;
