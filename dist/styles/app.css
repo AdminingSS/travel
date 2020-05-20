@@ -2636,6 +2636,53 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   background-color: #1868a0;
   color: #ffffff;
 }
+.uk-modal-title {
+  font-size: 16px;
+}
+.uk-modal-header,
+.uk-modal-body {
+  padding: 15px;
+}
+.uk-modal-close-default svg {
+  height: 19px;
+  width: 19px;
+  margin: 0 0 3px 8px;
+  color: #444444;
+}
+.uk-modal-close-default svg line {
+  stroke-width: 4;
+}
+.uk-modal-close-default:hover svg {
+  color: #000000;
+}
+.tm-modal-seen .uk-modal-dialog {
+  width: 500px;
+}
+.tm-modal-seen .tm-tour-item {
+  display: flex;
+  align-items: stretch;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.tm-modal-seen .tm-tour-item:last-child {
+  margin-bottom: 0;
+}
+.tm-modal-seen .tm-tour-item button {
+  margin-bottom: 8px;
+}
+.tm-modal-seen .tm-tour-item-image-wrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.tm-modal-seen .tm-tour-item-image-wrapper img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+}
 .uk-navbar-nav > li > a.tm-icon-dropdown {
   position: relative;
   padding-right: 24px;
@@ -3434,5 +3481,11 @@ footer .tm-address::before {
   }
   .tm-header-fixed .uk-navbar-nav > li > a {
     padding: 0 4px;
+  }
+  .uk-modal-title {
+    font-size: 14px;
+  }
+  .tm-modal-seen .tm-tour-item {
+    font-size: 14px;
   }
 }
