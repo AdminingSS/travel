@@ -1357,39 +1357,23 @@ select.disabled {
 .tm-tour-type {
   position: relative;
   font-size: 14px;
-  padding-left: 25px;
   border-radius: 3px;
 }
-.tm-tour-type::before {
-  position: absolute;
-  display: block;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 14px;
-  color: #1868a0;
+.tm-tour-type svg {
+  margin-right: 4px;
 }
 .tm-tour-type.button-style {
   font-size: 12px;
-  padding: 4px 10px 7px 25px;
+  padding: 4px 10px 7px 10px;
   border: solid 1px #e1e1e1;
   cursor: default;
   text-transform: uppercase;
   display: inline-block;
 }
-.tm-tour-type.button-style::before {
-  font-size: 12px;
-  color: #444444;
-}
 .tm-tour-type.button-style:hover,
 .tm-tour-type.button-style.uk-active {
   background-color: #1868a0;
   color: #ffffff;
-}
-.tm-tour-type.tm-tour-walk::before {
-  content: '\F6EC';
 }
 .tm-popover {
   padding: 15px;

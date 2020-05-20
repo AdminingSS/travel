@@ -1601,43 +1601,51 @@ select {
 .tm-tour-type {
   position: relative;
   font-size: 14px;
-  padding-left: 25px;
+  //padding-left: 25px;
   border-radius: @global-border-radius;
 
-  &::before {
-    position: absolute;
-    display: block;
-    left: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 14px;
-    color: @global-secondary-color;
+  svg {
+    margin-right: 4px;
   }
+
+  //&::before {
+  //  position: absolute;
+  //  display: block;
+  //  left: 4px;
+  //  top: 50%;
+  //  transform: translateY(-50%);
+  //  font-family: "Font Awesome 5 Free";
+  //  font-weight: 900;
+  //  font-size: 14px;
+  //  color: @global-secondary-color;
+  //}
 
   &.button-style {
     font-size: 12px;
-    padding: 4px 10px 7px 25px;
+    padding: 4px 10px 7px 10px;
     border: solid 1px #e1e1e1;
     cursor: default;
     text-transform: uppercase;
     display: inline-block;
 
-    &::before {
-      font-size: 12px;
-      color: @global-color;
-    }
+    //&::before {
+    //  font-size: 12px;
+    //  color: @global-color;
+    //}
 
     &:hover, &.uk-active {
       background-color: @global-secondary-background;
       color: @global-inverse-color;
+
+      //&::before {
+      //  color: @global-inverse-color;
+      //}
     }
   }
 
-  &.tm-tour-walk::before {
-    content: '\f6ec';
-  }
+  //&.tm-tour-walk::before {
+  //  content: '\f6ec';
+  //}
 }
 
 .tm-popover {
