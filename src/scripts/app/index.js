@@ -246,4 +246,15 @@ $(() => {
         })
     })();
 
+    //proximity toggler
+    (() => {
+        const $proxyToggler = $('.tm-toggler-proximity');
+
+        $proxyToggler.on('click', function (e) {
+            e.preventDefault();
+            $(this).next().removeClass('uk-hidden');
+            $(this).addClass('uk-hidden');
+        })
+    })();
+
 });

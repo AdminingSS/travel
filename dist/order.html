@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100i,300,300i,600&display=swap" rel="stylesheet">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
+<link href="styles/app.css" rel="stylesheet"><link href="styles/vendors.css" rel="stylesheet"></head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+        <div>
+
+            <!--Header-->
+            <header class="uk-navbar-transparent">
+                <div class="uk-container-expand tm-header-top-nav">
+                    <div class="uk-container uk-position-relative">
+                        <nav data-uk-navbar>
+                            <div class="uk-navbar-left">
+                                <div class="uk-navbar-item uk-text-uppercase">Чем мы занимаемся тут можно написать</div>
+                            </div>
+
+                            <div class="uk-navbar-right">
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Политика конфиденциальности</a></li>
+                                    <li><a href="#">Ещё что-нибудь</a></li>
+                                    <li><a href="#">И ещё что-нибудь</a></li>
+                                    <li>
+                                        <a href="#" class="tm-icon-dropdown">In english please</a>
+                                        <div class="uk-navbar-dropdown"
+                                             data-uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
+                                            <div class="uk-container">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
+                                                    <li><a href="#">?</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="uk-container uk-position-relative">
+                    <nav data-uk-navbar>
+                        <div class="uk-navbar-left">
+
+                            <!--logo-->
+                            <a class="uk-navbar-item uk-logo" href="/">
+                                <img class="uk-margin-right" src="images/logo.png" alt="">
+                                <span>Pasha’s Project</span>
+                            </a>
+
+                            <!--mobile menu toggle-->
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                               data-uk-toggle>
+                                <span data-uk-navbar-toggle-icon></span>
+                                <span>меню</span>
+                            </a>
+
+                        </div>
+
+                        <div class="uk-navbar-right">
+                            <div class="uk-navbar-item">
+                                <div class="tm-search-form">
+                                    <input class="uk-input" type="text" placeholder="Найди своё путешествие...">
+                                    <div>
+                                        <button class="tm-button-search">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-navbar-item">
+                                <div class="tm-workhours">
+                                    <div>
+                                        <div>пн-пт 10:00-20:00</div>
+                                        <div>сб-вс 11:00-19:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-navbar-item">
+                                <div class="tm-phone">
+                                    <a href="tel:78121234567">8 (800) 123-45-67</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <hr>
+                <div class="uk-container uk-position-relative tm-header-bottom-nav">
+                    <nav data-uk-navbar>
+                        <div class="uk-navbar-left">
+
+                            <!--navbar menu-->
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="#">Главная</a></li>
+                                <li>
+                                    <a href="#" class="tm-icon-dropdown">С выпадайкой</a>
+                                    <div class="tm-dropdown-simple uk-navbar-dropdown"
+                                         data-uk-drop>
+                                        <div class="uk-container">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Пункт</a></li>
+                                                <li><a href="#">Другой пункт</a></li>
+                                                <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                                <li><a href="#">Ну и тут тоже пункт</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="tm-icon-dropdown">С выпадайкой 2</a>
+                                    <div class="uk-navbar-dropdown"
+                                         data-uk-drop>
+                                        <div class="uk-container">
+                                            <div class="uk-grid-collapse uk-child-width-1-2 uk-width-1-1" data-uk-grid>
+                                                <div>
+                                                    <ul class="uk-nav uk-navbar-dropdown-nav js-complex-nav">
+                                                        <li><a href="#">Пункт</a></li>
+                                                        <li><a href="#">Другой пункт</a></li>
+                                                        <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                                        <li><a href="#">Ну и тут тоже пункт</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="uk-position-relative">
+                                                    <div class="js-dropdown-content">
+                                                        <div class="uk-margin-right">
+                                                            <div class="tm-image-dropdown">
+                                                                <img src="images/img-drop-1.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                                ЯРОСТЬ ТЫСЯЧ
+                                                                МЕДВЕДЕЙ
+                                                            </div>
+                                                            <div class="uk-margin-small-bottom">
+                                                                Просто колонка
+                                                                для любого текста
+                                                            </div>
+                                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                                Подробнее<i
+                                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-dropdown-content">
+                                                        <div class="uk-margin-right">
+                                                            <div class="tm-image-dropdown">
+                                                                <img src="images/img-drop-2.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                                ЯРОСТЬ ТЫСЯЧ
+                                                                МЕДВЕДЕЙ
+                                                            </div>
+                                                            <div class="uk-margin-small-bottom">
+                                                                Просто колонка
+                                                                для любого текста
+                                                            </div>
+                                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                                Подробнее<i
+                                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-dropdown-content uk-active">
+                                                        <div class="uk-margin-right">
+                                                            <div class="tm-image-dropdown">
+                                                                <img src="images/img-drop-3.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                                ЯРОСТЬ ТЫСЯЧ
+                                                                МЕДВЕДЕЙ
+                                                            </div>
+                                                            <div class="uk-margin-small-bottom">
+                                                                Просто колонка
+                                                                для любого текста
+                                                            </div>
+                                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                                Подробнее<i
+                                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-dropdown-content">
+                                                        <div class="uk-margin-right">
+                                                            <div class="tm-image-dropdown">
+                                                                <img src="images/img-drop-4.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                                ЯРОСТЬ ТЫСЯЧ
+                                                                МЕДВЕДЕЙ
+                                                            </div>
+                                                            <div class="uk-margin-small-bottom">
+                                                                Просто колонка
+                                                                для любого текста
+                                                            </div>
+                                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                                Подробнее<i
+                                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Без выпадайки</a></li>
+                                <li><a href="#">100500 пунктов влезет теперь</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="uk-navbar-right">
+                            <div class="uk-navbar-item">
+                                <div>
+                                    <i class="fas fa-eye uk-margin-small-right"></i>Вы смотрели: <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="uk-section">
+                <div class="uk-container">
+                    <h1>Оформление заказа</h1>
+
+                    <div class="tm-order">
+                        <div class="tm-order-header">
+                            <div class="uk-width-auto@s">
+                                <div class="tm-order-image-wrapper">
+                                    <img src="images/yarost.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Ярость тысяч медведей</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dignissimos
+                                    distinctio eius, hic, id ipsa, magnam maiores minus molestias nostrum nulla placeat
+                                    quibusdam quod repudiandae veritatis voluptatem voluptatibus. Ad, magnam!</p>
+                                <div class="tm-dates">2 июня 2020 - 6 июня 2020</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h2>Укажите количество участников</h2>
+                            <div class="tm-peoples">
+                                <div class="tm-peoples-adult">
+                                    <div class="tm-people">Взрослых</div>
+                                    <div>
+                                        <div class="tm-qty-form">
+                                            <div>
+                                                <button class="tm-button-minus">
+                                                    -
+                                                </button>
+                                            </div>
+                                            <input class="uk-input" type="text" value="99">
+                                            <div>
+                                                <button class="tm-button-plus">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>чел.</div>
+                                </div>
+                                <div class="tm-peoples-child">
+                                    <div class="tm-people">Дети</div>
+                                    <div>
+                                        <div class="tm-qty-form">
+                                            <div>
+                                                <button class="tm-button-minus">
+                                                    -
+                                                </button>
+                                            </div>
+                                            <input class="uk-input" type="text" value="7">
+                                            <div>
+                                                <button class="tm-button-plus">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>чел.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h2>Категория номера:</h2>
+                            <div class="tm-apartments">
+                                <div class="tm-apts">
+                                    <div class="tm-apt-name">Одноместный зиндан</div>
+                                    <div>
+                                        <div class="tm-qty-form">
+                                            <div>
+                                                <button class="tm-button-minus">
+                                                    -
+                                                </button>
+                                            </div>
+                                            <input class="uk-input" type="text" value="999">
+                                            <div>
+                                                <button class="tm-button-plus">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>шт.</div>
+                                </div>
+                                <div class="tm-apts">
+                                    <div class="tm-apt-name">Двухместный ублиет</div>
+                                    <div>
+                                        <div class="tm-qty-form">
+                                            <div>
+                                                <button class="tm-button-minus">
+                                                    -
+                                                </button>
+                                            </div>
+                                            <input class="uk-input" type="text" value="1">
+                                            <div>
+                                                <button class="tm-button-plus">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>шт.</div>
+                                </div>
+                                <div class="tm-apts">
+                                    <div class="tm-apt-name">Трёхместный острог (детский)</div>
+                                    <div>
+                                        <div class="tm-qty-form">
+                                            <div>
+                                                <button class="tm-button-minus">
+                                                    -
+                                                </button>
+                                            </div>
+                                            <input class="uk-input" type="text" value="1">
+                                            <div>
+                                                <button class="tm-button-plus">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>шт.</div>
+                                </div>
+                            </div>
+                            <div class="tm-message warning uk-text-center">
+                                <b>Внимание!</b> Разместить нужно обязательно всех пленных.
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h2 class="uk-margin-medium-bottom">Дополнительные опции:</h2>
+                            <div class="tm-tour-program">
+                                <div class="tm-tour-program-item">
+                                    <h4><b>День 1</b> - Ветры войны (2 июня 2020, среда)</h4>
+                                    <a class="tm-toggler-proximity" href="#">Показать полное описание</a>
+                                    <div class="uk-hidden">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                            euismod ex sit amet luctus. Curabitur vel imperdiet ante. Phasellus sit amet
+                                            arcu libero. Nam eu libero ipsum. Aenean ultrices erat at nisl viverra
+                                            tempor.
+                                            Sed varius enim id nisl egestas, sit amet elementum ligula tristique. Donec
+                                            congue felis ut elit accumsan luctus. Phasellus mi ante, dictum ut dapibus
+                                            ultricies, rhoncus in justo. Maecenas sed massa libero. Vivamus vitae ligula
+                                            velit.</p>
+                                    </div>
+                                    <div class="tm-adittional-items">
+                                        <h4>Дополнительные развлечения:</h4>
+                                        <div class="tm-tour-additional-item">
+                                            <div>
+                                                <div class="tm-image-wrapper">
+                                                    <img src="images/img-addition-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="tm-caption">Конная прогулка на кавказском медведе (1
+                                                    час)
+                                                    <b> +3000 руб.</b></div>
+                                                <div class="uk-margin-small-bottom">Прокатитесь на медведях по
+                                                    долине
+                                                    близ Грозного! В стоимость
+                                                    включён медведь, сбруя и удерживание медведя на время посадки.
+                                                </div>
+                                                <label class="uk-flex uk-flex-middle">
+                                                    <div class="tm-switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="tm-crawler"></span>
+                                                    </div>
+                                                    <span>Добавлено!</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tm-tour-additional-item">
+                                            <div>
+                                                <div class="tm-image-wrapper">
+                                                    <img src="images/img-addition-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="tm-caption">Спрей от кавказского комара (1 фл.)
+                                                    <b> +500 руб.</b></div>
+                                                <div class="uk-margin-small-bottom">Комары Кавказа ужасно кусачи и
+                                                    крупны, обычный спрей на них не
+                                                    действует. Рекомендуем выбрать эту опцию.
+                                                </div>
+                                                <label class="uk-flex uk-flex-middle">
+                                                    <div class="tm-switch">
+                                                        <input type="checkbox">
+                                                        <span class="tm-crawler"></span>
+                                                    </div>
+                                                    <span>Нажмите. чтобы добавить</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tm-caption">Итого: <b> +3000 руб. </b></div>
+                                    </div>
+                                </div>
+                                <div class="tm-tour-program-item">
+                                    <h4><b>День 2</b> - Вдоль реки тобот</h4>
+                                    <a class="tm-toggler-proximity" href="#">Показать полное описание</a>
+                                    <div class="uk-hidden">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                            euismod ex sit amet luctus. Curabitur vel imperdiet ante. Phasellus sit amet
+                                            arcu libero. Nam eu libero ipsum. Aenean ultrices erat at nisl viverra
+                                            tempor.
+                                            Sed varius enim id nisl egestas, sit amet elementum ligula tristique. Donec
+                                            congue felis ut elit accumsan luctus. Phasellus mi ante, dictum ut dapibus
+                                            ultricies, rhoncus in justo. Maecenas sed massa libero. Vivamus vitae ligula
+                                            velit.</p>
+
+                                        <p>In ante lacus, lobortis quis fringilla non, lacinia non dui. Sed at elit non
+                                            lectus ullamcorper rutrum ac quis lectus. Nunc porttitor, sapien varius
+                                            vestibulum semper, justo velit pharetra leo, ac tempus mi odio quis lorem.
+                                            Donec
+                                            vulputate aliquet leo a
+                                            hendrerit. Vestibulum consequat tortor at velit laoreet suscipit. Maecenas
+                                            auctor quam velit, vel vestibulum sem lacinia at. Aenean sagittis pretium
+                                            neque,
+                                            vitae luctus lacus auctor eu. Maecenas posuere nisl justo, in sagittis ex
+                                            cursus
+                                            quis. Praesent sed dui quis elit ultrices gravida. Aenean mattis dui quis
+                                            pellentesque tempus. Suspendisse vitae tortor in quam vestibulum suscipit ac
+                                            eget mi.varius mattis. Curabitur ornare eros nec velit imperdiet, vel
+                                            imperdiet
+                                            massa posuere.</p>
+                                    </div>
+                                </div>
+                                <div class="tm-tour-program-item">
+                                    <h4><b>День 3</b> - неожиданная встреча</h4>
+                                    <a class="tm-toggler-proximity" href="#">Показать полное описание</a>
+                                    <div class="uk-hidden">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                            euismod ex sit amet luctus. Curabitur vel imperdiet ante. Phasellus sit amet
+                                            arcu libero. Nam eu libero ipsum. Aenean ultrices erat at nisl viverra
+                                            tempor.
+                                            Sed varius enim id nisl egestas, sit amet elementum ligula tristique. Donec
+                                            congue felis ut elit accumsan luctus. Phasellus mi ante, dictum ut dapibus
+                                            ultricies, rhoncus in justo. Maecenas sed massa libero. Vivamus vitae ligula
+                                            velit.</p>
+
+                                        <p>In ante lacus, lobortis quis fringilla non, lacinia non dui. Sed at elit non
+                                            lectus ullamcorper rutrum ac quis lectus. Nunc porttitor, sapien varius
+                                            vestibulum semper, justo velit pharetra leo, ac tempus mi odio quis lorem.
+                                            Donec
+                                            vulputate aliquet leo a
+                                            hendrerit. Vestibulum consequat tortor at velit laoreet suscipit. Maecenas
+                                            auctor quam velit, vel vestibulum sem lacinia at. Aenean sagittis pretium
+                                            neque,
+                                            vitae luctus lacus auctor eu. Maecenas posuere nisl justo, in sagittis ex
+                                            cursus
+                                            quis. Praesent sed dui quis elit ultrices gravida. Aenean mattis dui quis
+                                            pellentesque tempus. Suspendisse vitae tortor in quam vestibulum suscipit ac
+                                            eget mi.varius mattis. Curabitur ornare eros nec velit imperdiet, vel
+                                            imperdiet
+                                            massa posuere.</p>
+                                    </div>
+                                </div>
+                                <div class="tm-tour-program-item">
+                                    <h4><b>День 4</b> - плен в Цоци-Юрте</h4>
+                                    <a class="tm-toggler-proximity" href="#">Показать полное описание</a>
+                                    <div class="uk-hidden">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                            euismod ex sit amet luctus. Curabitur vel imperdiet ante. Phasellus sit amet
+                                            arcu libero. Nam eu libero ipsum. Aenean ultrices erat at nisl viverra
+                                            tempor.
+                                            Sed varius enim id nisl egestas, sit amet elementum ligula tristique. Donec
+                                            congue felis ut elit accumsan luctus. Phasellus mi ante, dictum ut dapibus
+                                            ultricies, rhoncus in justo. Maecenas sed massa libero. Vivamus vitae ligula
+                                            velit.</p>
+
+                                        <p>In ante lacus, lobortis quis fringilla non, lacinia non dui. Sed at elit non
+                                            lectus ullamcorper rutrum ac quis lectus. Nunc porttitor, sapien varius
+                                            vestibulum semper, justo velit pharetra leo, ac tempus mi odio quis lorem.
+                                            Donec
+                                            vulputate aliquet leo a
+                                            hendrerit. Vestibulum consequat tortor at velit laoreet suscipit. Maecenas
+                                            auctor quam velit, vel vestibulum sem lacinia at. Aenean sagittis pretium
+                                            neque,
+                                            vitae luctus lacus auctor eu. Maecenas posuere nisl justo, in sagittis ex
+                                            cursus
+                                            quis. Praesent sed dui quis elit ultrices gravida. Aenean mattis dui quis
+                                            pellentesque tempus. Suspendisse vitae tortor in quam vestibulum suscipit ac
+                                            eget mi.varius mattis. Curabitur ornare eros nec velit imperdiet, vel
+                                            imperdiet
+                                            massa posuere.</p>
+                                    </div>
+                                </div>
+                                <div class="tm-tour-program-item">
+                                    <h4><b>Возвращение домой</b></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h2>Полная стоимость тура: <b class="uk-text-lowercase">15 000 моджахедов</b></h2>
+                        </div>
+                        <hr>
+                        <div class="tm-order-personal">
+                            <h2>Введите контактные данные:</h2>
+                            <div class="uk-grid-small uk-flex-middle uk-margin-bottom" data-uk-grid>
+                                <div class="uk-width-1-3@s">
+                                    ФИО:
+                                </div>
+                                <div class="uk-width-2-3@s">
+                                    <input type="text" class="uk-input">
+                                </div>
+                                <div class="uk-width-1-3@s">
+                                    Телефон:
+                                </div>
+                                <div class="uk-width-2-3@s">
+                                    <input type="text" class="uk-input">
+                                </div>
+                                <div class="uk-width-1-3@s">
+                                    Email:
+                                </div>
+                                <div class="uk-width-2-3@s">
+                                    <input type="text" class="uk-input">
+                                </div>
+                                <div class="uk-width-1-3@s">
+                                    Комментарий:
+                                </div>
+                                <div class="uk-width-2-3@s">
+                                    <textarea class="uk-textarea"></textarea>
+                                </div>
+                                <div class="uk-width-1-3@s">
+
+                                </div>
+                                <div class="uk-width-2-3@s">
+                                    <label><input class="" type="checkbox" name="checkboxx6" checked>
+                                        Даю какое-то там ещё согласие <a href="#">ссылка</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tm-message warning uk-text-center">
+                            <b>Ты чот проебал, браток!</b> Походу ты не туда свернул.
+                        </div>
+                        <button class="uk-button uk-button-large tm-button-secondary">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="tm-section-footer tm-footer-tour uk-section uk-cover-container">
+        <img class="tm-bg-image" src="images/bg-solid-footer.png" alt="" data-uk-cover>
+        <div class="uk-container">
+            <div class="tm-footer-adapitive uk-grid-small uk-child-width-1-3@m" data-uk-grid>
+                <div>
+                    <div>
+                        <!--logo-->
+                        <a class="uk-logo" href="/">
+                            <img class="uk-margin-right" src="images/logo.png" alt="">
+                            <span>Pasha’s Project</span>
+                        </a>
+                    </div>
+                    <p>© <b>2020</b> Pasha’s Project. Все права защищены. Копирование материалов сайта атата!</p>
+                    <div class="tm-social-links">
+                        <div>
+                            <a class="tm-social-icon" href="#">
+                                <img src="images/icon-telegram.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="tm-social-icon" href="#">
+                                <img src="images/icon-watsapp.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="tm-social-icon" href="#">
+                                <img src="images/icon-insta.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="uk-button tm-button-primary">Искать туры<i
+                            class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
+                </div>
+                <div>
+                    <h3>нАШИ КОНТАКТЫ</h3>
+                    <div class="tm-phone">+7 (812) 123-45-67</div>
+                    <div class="tm-mail">
+                        <a href="mailto:INFO@PASHASPROJECT.RU">INFO@PASHASPROJECT.RU</a></div>
+                    <div class="tm-address">сАНКТ-пЕТЕРБУРГ,
+                        УЛ. пОДВОЙСКОГО. Д.3,
+                        ОФ. 902
+                    </div>
+                </div>
+                <div>
+                    <h3>Важные страницы</h3>
+                    <div class="tm-important-links">
+                        <div><a href="#">О нас</a></div>
+                        <div><a href="#">Условия обслуживание</a></div>
+                        <div><a href="#">Гарантии</a></div>
+                        <div><a href="#">Пользовательское соглашение</a></div>
+                        <div><a href="#">Политика конфиденциальности</a></div>
+                        <div><a href="#">Новости</a></div>
+                        <div><a href="#">Контакты</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Off-canvas -->
+<div id="offcanvas-overlay" data-uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <div class="uk-card uk-flex uk-flex-center uk-position-relative">
+            <button class="uk-offcanvas-close" type="button" data-uk-close>Закрыть</button>
+            <ul class="uk-nav">
+                <li class="uk-active"><a href="#">Главная</a></li>
+                <li>
+                    <a href="#" class="tm-icon-dropdown">С выпадайкой</a>
+                    <div class="tm-dropdown-simple uk-navbar-dropdown"
+                         data-uk-dropdown="mode: click">
+                        <div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Пункт</a></li>
+                                <li><a href="#">Другой пункт</a></li>
+                                <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                <li><a href="#">Ну и тут тоже пункт</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="tm-icon-dropdown">С выпадайкой 2</a>
+                    <div class="uk-navbar-dropdown"
+                         data-uk-dropdown="mode: click">
+                        <div>
+                            <div class="uk-grid-collapse uk-child-width-1-1 uk-width-1-1" data-uk-grid>
+                                <div>
+                                    <ul class="uk-nav uk-navbar-dropdown-nav js-complex-nav">
+                                        <li><a href="#">Пункт</a></li>
+                                        <li><a href="#">Другой пункт</a></li>
+                                        <li class="uk-active"><a href="#">Пункт ховер/активный</a></li>
+                                        <li><a href="#">Ну и тут тоже пункт</a></li>
+                                    </ul>
+                                </div>
+                                <div class="uk-position-relative">
+                                    <div class="js-dropdown-content">
+                                        <div class="uk-margin-right">
+                                            <div class="tm-image-dropdown">
+                                                <img src="images/img-drop-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                ЯРОСТЬ ТЫСЯЧ
+                                                МЕДВЕДЕЙ
+                                            </div>
+                                            <div class="uk-margin-small-bottom">
+                                                Просто колонка
+                                                для любого текста
+                                            </div>
+                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                Подробнее<i
+                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="js-dropdown-content">
+                                        <div class="uk-margin-right">
+                                            <div class="tm-image-dropdown">
+                                                <img src="images/img-drop-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                ЯРОСТЬ ТЫСЯЧ
+                                                МЕДВЕДЕЙ
+                                            </div>
+                                            <div class="uk-margin-small-bottom">
+                                                Просто колонка
+                                                для любого текста
+                                            </div>
+                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                Подробнее<i
+                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="js-dropdown-content uk-active">
+                                        <div class="uk-margin-right">
+                                            <div class="tm-image-dropdown">
+                                                <img src="images/img-drop-3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                ЯРОСТЬ ТЫСЯЧ
+                                                МЕДВЕДЕЙ
+                                            </div>
+                                            <div class="uk-margin-small-bottom">
+                                                Просто колонка
+                                                для любого текста
+                                            </div>
+                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                Подробнее<i
+                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="js-dropdown-content">
+                                        <div class="uk-margin-right">
+                                            <div class="tm-image-dropdown">
+                                                <img src="images/img-drop-4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-text-uppercase uk-margin-small-bottom">
+                                                ЯРОСТЬ ТЫСЯЧ
+                                                МЕДВЕДЕЙ
+                                            </div>
+                                            <div class="uk-margin-small-bottom">
+                                                Просто колонка
+                                                для любого текста
+                                            </div>
+                                            <button class="uk-button uk-button-small tm-button-primary">
+                                                Подробнее<i
+                                                    class="fas fa-long-arrow-alt-right uk-margin-left"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Без выпадайки</a></li>
+                <li><a href="#">100500 пунктов влезет теперь</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Ещё что-нибудь</a></li>
+                <li><a href="#">И ещё что-нибудь</a></li>
+                <li>
+                    <a href="#" class="tm-icon-dropdown">In english please</a>
+                    <div class="uk-navbar-dropdown"
+                         data-uk-drop="mode: click">
+                        <div class="uk-container">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="scripts/app.js"></script><script type="text/javascript" src="scripts/vendors.js"></script></body>
+</html>
