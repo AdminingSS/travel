@@ -2639,6 +2639,9 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   background-color: #1868a0;
   color: #ffffff;
 }
+.uk-modal {
+  z-index: 6000;
+}
 .uk-modal-dialog {
   border-radius: 3px;
 }
@@ -2695,6 +2698,20 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-modal-dates .uk-modal-dialog {
   width: auto;
 }
+.tm-modal-dates .uk-modal-body {
+  padding: 15px 0 0;
+}
+.tm-modal-dates .uk-modal-body > div {
+  padding: 0 15px;
+}
+.tm-modal-dates .uk-modal-body > div:last-child {
+  padding: 0;
+}
+.tm-modal-dates .tm-modal-body-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
 .tm-modal-dates .tm-dates-image-wrapper {
   width: 100px;
   height: 100px;
@@ -2707,6 +2724,12 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   min-width: 100%;
   min-height: 100%;
   max-width: none;
+}
+.tm-modal-dates .tm-dates-content {
+  max-height: 500px;
+}
+.tm-modal-dates .tm-dates-content .mCSB_inside > .mCSB_container {
+  margin-right: 0;
 }
 .tm-modal-dates .tm-content-options {
   display: flex;
@@ -2753,13 +2776,14 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   align-items: center;
   padding: 8px 15px;
 }
-.tm-modal-dates .tm-content-item:nth-child(even) {
+.tm-modal-dates .tm-content-item:nth-child(odd) {
   background-color: #dddddd;
 }
 .tm-modal-dates .tm-content-item .days,
 .tm-modal-dates .tm-content-item .nights {
   position: relative;
   padding-left: 25px;
+  margin-bottom: 8px;
 }
 .tm-modal-dates .tm-content-item .days::before,
 .tm-modal-dates .tm-content-item .nights::before {
@@ -2786,7 +2810,15 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-modal-dates .tm-content-item .tm-dates-dates,
 .tm-modal-dates .tm-content-item .tm-dates-details {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+}
+.tm-modal-dates .tm-content-item .tm-dates-dates span {
+  font-size: 26px;
+  font-weight: 600;
+}
+.tm-modal-dates .tm-content-item .tm-dates-details {
+  font-weight: 600;
 }
 .tm-modal-dates .tm-content-item .tm-dates-duration {
   display: flex;
@@ -3508,6 +3540,12 @@ footer .tm-address::before {
   .tm-content-switch-mobile {
     display: inline-block;
   }
+  .tm-modal-dates .tm-content-item .tm-dates-dates span {
+    font-size: inherit;
+  }
+  .tm-modal-dates .tm-dates-content {
+    max-height: 200px;
+  }
 }
 @media (max-width: 424px) {
   .uk-logo {
@@ -3596,5 +3634,21 @@ footer .tm-address::before {
   }
   .tm-modal-seen .tm-tour-item {
     font-size: 14px;
+  }
+  .tm-modal-body-top {
+    flex-wrap: wrap;
+  }
+  .tm-content-options > div {
+    flex-wrap: wrap;
+  }
+  .tm-content-item {
+    flex-wrap: wrap;
+  }
+  .tm-content-item > div {
+    width: 100% !important;
+    margin-bottom: 8px;
+  }
+  .tm-content-item .uk-button {
+    width: 100%;
   }
 }
