@@ -102,10 +102,26 @@ $(() => {
         })
     })();
 
+    //to order form scroll
+    (() => {
+        const $orderForm = $('.tm-order-form');
+        const $orderTriggers = $('.js-order-trigger');
+
+        $orderTriggers.on('click', function (e) {
+            e.preventDefault();
+            const formTop = $orderForm.offset().top;
+
+            $('html, body').animate({
+                scrollTop: formTop
+            }, 1000);
+        })
+    })();
+
     //fixed header
     (() => {
         const $fixedHeader = $('.tm-header-fixed');
         const $blockTriggers = $fixedHeader.find('.uk-navbar-nav li');
+        const $orderForm = $('.tm-order-form');
         const $blockAnchors = $('.js-anchor');
         const $window = $(window);
         let controlPointsArray = [];
@@ -130,6 +146,13 @@ $(() => {
                     $blockTriggers.removeClass('uk-active');
                     $($blockTriggers[i]).addClass('uk-active');
                 }
+            }
+
+            if(scrollTop + 100 > $orderForm.offset().top && scrollTop < $orderForm.offset().top + $orderForm.height()) {
+                $fixedHeader.addClass('tm-header-opaque');
+            }
+            else {
+                $fixedHeader.removeClass('tm-header-opaque');
             }
 
         });
@@ -252,8 +275,8 @@ $(() => {
 
         $proxyToggler.on('click', function (e) {
             e.preventDefault();
-            $(this).next().removeClass('uk-hidden');
-            $(this).addClass('uk-hidden');
+            $(this).next().toggleClass('uk-hidden');
+            ($(this).html() === 'Заполнить информацию позже') ? $(this).html('Заполнить информацию') : $(this).html('Заполнить информацию позже');
         })
     })();
 
