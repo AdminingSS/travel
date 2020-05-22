@@ -1605,6 +1605,7 @@ select {
   border-radius: @global-border-radius;
 
   svg {
+    color: @global-secondary-color;
     margin-right: 4px;
   }
 
@@ -1627,6 +1628,7 @@ select {
     cursor: default;
     text-transform: uppercase;
     display: inline-block;
+    margin-right: 8px;
 
     //&::before {
     //  font-size: 12px;
@@ -1749,7 +1751,11 @@ select {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  padding-left: 25px;
+
+  svg  {
+    color: @global-secondary-color;
+    margin-right: 4px;
+  }
 
   &::before {
     position: absolute;
@@ -1764,7 +1770,7 @@ select {
   }
 
   &.tm-tour-camp::before {
-    content: '\f6bb';
+    //content: '\f6bb';
   }
 }
 

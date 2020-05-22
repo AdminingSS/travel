@@ -1360,6 +1360,7 @@ select.disabled {
   border-radius: 3px;
 }
 .tm-tour-type svg {
+  color: #1868a0;
   margin-right: 4px;
 }
 .tm-tour-type.button-style {
@@ -1369,6 +1370,7 @@ select.disabled {
   cursor: default;
   text-transform: uppercase;
   display: inline-block;
+  margin-right: 8px;
 }
 .tm-tour-type.button-style:hover,
 .tm-tour-type.button-style.uk-active {
@@ -1446,7 +1448,10 @@ select.disabled {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  padding-left: 25px;
+}
+.tm-tour-night svg {
+  color: #1868a0;
+  margin-right: 4px;
 }
 .tm-tour-night::before {
   position: absolute;
@@ -1458,9 +1463,6 @@ select.disabled {
   font-weight: 900;
   font-size: 14px;
   color: #1868a0;
-}
-.tm-tour-night.tm-tour-camp::before {
-  content: '\F6BB';
 }
 .tm-sidebar,
 .tm-sidebar-absolute {
