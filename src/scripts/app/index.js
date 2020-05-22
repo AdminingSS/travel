@@ -148,6 +148,8 @@ $(() => {
                 }
             }
 
+            if(!$orderForm.length) return;
+
             if(scrollTop + 100 > $orderForm.offset().top && scrollTop < $orderForm.offset().top + $orderForm.height()) {
                 $fixedHeader.addClass('tm-header-opaque');
             }
