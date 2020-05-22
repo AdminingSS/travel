@@ -3472,6 +3472,7 @@ footer .tm-address::before {
   padding-left: 50px;
   cursor: pointer;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 .tm-faq-order-trigger::before {
   content: "";
