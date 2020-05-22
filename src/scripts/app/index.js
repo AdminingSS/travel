@@ -109,7 +109,7 @@ $(() => {
 
         $orderTriggers.on('click', function (e) {
             e.preventDefault();
-            const formTop = $orderForm.offset().top;
+            const formTop = $('.tm-faq-order-trigger').offset().top - 100;
 
             $('html, body').animate({
                 scrollTop: formTop
@@ -150,7 +150,9 @@ $(() => {
 
             if(!$orderForm.length) return;
 
-            if(scrollTop + 100 > $orderForm.offset().top && scrollTop < $orderForm.offset().top + $orderForm.height()) {
+            const topPosition = $('.tm-faq-order-trigger').offset().top;
+
+            if(scrollTop + 200 > topPosition && scrollTop < $orderForm.offset().top + $orderForm.height()) {
                 $fixedHeader.addClass('tm-header-opaque');
             }
             else {

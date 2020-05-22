@@ -1585,7 +1585,7 @@ select {
 
 .tm-tour-place, .tm-tour-season {
   position: relative;
-  font-size: 14px;
+  font-size: 16px; //was 14 (test)
   padding-left: 25px;
   margin-bottom: 5px;
 
@@ -3358,6 +3358,10 @@ body {
     font-weight: 600;
     margin-bottom: 15px;
   }
+
+  .tm-tour-place {
+    margin-bottom: 15px;
+  }
 }
 
 .tm-peoples {
@@ -3588,9 +3592,8 @@ body {
 
   .tm-content-options {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     text-transform: uppercase;
-    flex-wrap: wrap;
     margin-bottom: 30px;
 
     >div {
@@ -3612,6 +3615,7 @@ body {
       text-transform: uppercase;
       white-space: nowrap;
       cursor: pointer;
+      margin: 0 4px 4px 0;
 
       &:hover, &.uk-active {
         border-color: @global-secondary-background;

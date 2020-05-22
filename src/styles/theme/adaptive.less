@@ -131,6 +131,84 @@
   .tm-footer-tour {
     padding-bottom: 80px;
   }
+
+  .tm-sidebar-absolute {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+
+    >* {
+      margin-right: 15px;
+    }
+
+    .tm-adaptive-sidehead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+    }
+
+    .tm-adaptive-tourists {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      >*:first-child {
+        margin-right: 15px;
+      }
+
+      .tm-peoples {
+        margin-bottom: 0;
+        display: flex;
+        align-items: start;
+
+        .tm-peoples-adult, .tm-peoples-child {
+          width: auto;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .tm-adaptive-apartments {
+      display: flex;
+      align-items: start;
+      width: 100%;
+
+      >*:first-child {
+        margin-right: 15px;
+        line-height: 25px;
+      }
+
+      .tm-apartments {
+        margin-bottom: 0;
+        display: flex;
+        align-items: start;
+
+        .tm-apts {
+          width: auto;
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .tm-adaptive-other {
+      margin-right: 30px;
+    }
+
+    .tm-adaptive-phone {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 959px) {
@@ -284,6 +362,11 @@
 
   .uk-tab {
     //flex-direction: column;
+  }
+
+  .tm-sidebar-absolute .price {
+    min-width: 180px;
+    font-size: 30px;
   }
 }
 
@@ -463,8 +546,16 @@
     }
   }
 
+  .tm-order-form {
+    padding: 15px;
+  }
+
   .tm-order-personal {
     width: 100%;
+
+    h2 {
+      font-size: 26px;
+    }
   }
 
   .tm-order-header {
@@ -478,6 +569,45 @@
 
   .tm-tours-types-list {
     padding-left: 0;
+  }
+
+  .tm-sidebar-absolute .tm-adaptive-sidehead {
+    flex-wrap: wrap;
+
+    .price {
+      min-width: 0;
+    }
+  }
+
+  .tm-sidebar-absolute .tm-adaptive-tourists {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .tm-sidebar-absolute .tm-adaptive-apartments {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .tm-sidebar-absolute .tm-adaptive-tourists .tm-peoples .tm-peoples-adult, .tm-sidebar-absolute .tm-adaptive-tourists .tm-peoples .tm-peoples-child {
+    width: 100%;
+  }
+
+  .tm-sidebar-absolute .tm-adaptive-apartments .tm-apartments .tm-apts {
+    width: 100%;
+  }
+
+  .tm-faq-order-trigger {
+    font-size: 12px;
+    padding-left: 35px;
+
+    &::before {
+      left: 4px;
+    }
+  }
+
+  .tm-order-personal .uk-button {
+    margin-bottom: 8px;
   }
 }
 
@@ -629,5 +759,17 @@
 
   .tm-apartments .tm-apts {
     flex-wrap: wrap;
+  }
+
+  .tm-sidebar-absolute .name {
+    font-size: 22px;
+  }
+
+  .tm-order-personal .uk-button {
+    min-width: 0;
+  }
+
+  .tm-faq-order-trigger {
+    display: none;
   }
 }

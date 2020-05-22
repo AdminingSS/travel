@@ -23,7 +23,9 @@ $(() => {
         const optionsLinks = {
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: true
+            infinite: true,
+            arrows: false,
+            dots: false
         };
 
         let sliderLinksCreated = false;
