@@ -234,9 +234,13 @@ select {
         padding-left: 15px;
         max-height: 230px;
 
+        .mCSB_inside > .mCSB_container {
+          margin-right: 10px;
+        }
+
         li {
           position: relative;
-          padding: 8px 8px 8px 40px;
+          padding: 8px 8px 8px 48px;
 
           &::before {
             position: absolute;
@@ -245,7 +249,7 @@ select {
             font-weight: 900;
             font-size: 20px;
             top: 5px;
-            left: 0;
+            left: 8px;
             color: @global-secondary-color;
           }
 
@@ -283,7 +287,15 @@ select {
           }
 
           &.uk-active, &:hover {
-            background-color: #f0f0f0;
+            background-color: @global-primary-background;
+
+            a {
+              color: @global-inverse-color;
+            }
+
+            &::before {
+              color: @global-inverse-color;
+            }
           }
         }
       }
@@ -1604,6 +1616,10 @@ select {
   //padding-left: 25px;
   border-radius: @global-border-radius;
 
+  img {
+    margin-right: 4px;
+  }
+
   svg {
     color: @global-secondary-color;
     margin-right: 4px;
@@ -1751,6 +1767,10 @@ select {
   position: relative;
   display: inline-block;
   font-size: 14px;
+
+  img {
+    margin-right: 4px;
+  }
 
   svg  {
     color: @global-secondary-color;
@@ -3609,7 +3629,12 @@ body {
     }
 
     &.dates-items button {
-      padding: 4px;
+      width: 24px;
+      height: 24px;
+      line-height: 22px;
+      text-align: center;
+      margin: 0 4px 4px 0;
+      padding: 0;
     }
   }
 

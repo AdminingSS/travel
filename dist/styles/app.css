@@ -278,9 +278,12 @@ select.disabled {
   padding-left: 15px;
   max-height: 230px;
 }
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list .mCSB_inside > .mCSB_container {
+  margin-right: 10px;
+}
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li {
   position: relative;
-  padding: 8px 8px 8px 40px;
+  padding: 8px 8px 8px 48px;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li::before {
   position: absolute;
@@ -289,7 +292,7 @@ select.disabled {
   font-weight: 900;
   font-size: 20px;
   top: 5px;
-  left: 0;
+  left: 8px;
   color: #1868a0;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:nth-child(1)::before {
@@ -319,7 +322,15 @@ select.disabled {
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li.uk-active,
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:hover {
-  background-color: #f0f0f0;
+  background-color: #2a8d1d;
+}
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li.uk-active a,
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:hover a {
+  color: #ffffff;
+}
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li.uk-active::before,
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:hover::before {
+  color: #ffffff;
 }
 .uk-section {
   box-sizing: border-box;
@@ -1359,6 +1370,9 @@ select.disabled {
   font-size: 14px;
   border-radius: 3px;
 }
+.tm-tour-type img {
+  margin-right: 4px;
+}
 .tm-tour-type svg {
   color: #1868a0;
   margin-right: 4px;
@@ -1448,6 +1462,9 @@ select.disabled {
   position: relative;
   display: inline-block;
   font-size: 14px;
+}
+.tm-tour-night img {
+  margin-right: 4px;
 }
 .tm-tour-night svg {
   color: #1868a0;
@@ -2945,7 +2962,12 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   border-radius: 0 3px 3px 0;
 }
 .tm-modal-dates .tm-content-switch.dates-items button {
-  padding: 4px;
+  width: 24px;
+  height: 24px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 4px 4px 0;
+  padding: 0;
 }
 .tm-modal-dates .tm-content-item {
   display: flex;
@@ -3434,6 +3456,38 @@ footer .tm-address::before {
   opacity: 0!important;
   z-index: 3000;
 }
+.tm-faq-order-trigger {
+  position: relative;
+  width: 100%;
+  height: 39px;
+  line-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #2a8d1d;
+  background-color: #edffdb;
+  box-shadow: 0 2px 4px hsla(0, 0%, 57%, 0.5);
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.tm-faq-order-trigger::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/emoji-thinking-face.png);
+  background-repeat: no-repeat;
+  background-size: 26px;
+}
+.tm-faq-order-trigger .uk-button {
+  border-radius: 0 3px 3px 0;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
@@ -3789,6 +3843,9 @@ footer .tm-address::before {
   .tm-order-image-wrapper {
     margin: auto;
     margin-bottom: 15px;
+  }
+  .tm-tours-types-list {
+    padding-left: 0;
   }
 }
 @media (max-width: 424px) {

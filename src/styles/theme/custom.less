@@ -462,3 +462,44 @@ footer {
   opacity: 0!important;
   z-index: 3000;
 }
+
+.tm-faq-order-trigger {
+  position: relative;
+  width: 100%;
+  height: 39px;
+  line-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: @global-primary-color;
+
+  background-color: #edffdb;
+
+  box-shadow: 0 2px 4px hsla(0,0%,57%,.5);
+  border-radius: @global-border-radius;
+
+  box-sizing: border-box;
+  padding-left: 50px;
+
+  cursor: pointer;
+
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../images/emoji-thinking-face.png");
+    background-repeat: no-repeat;
+    background-size: 26px;
+  }
+
+  .uk-button {
+    border-radius: 0 @global-border-radius @global-border-radius 0;
+  }
+}
