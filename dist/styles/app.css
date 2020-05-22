@@ -1415,6 +1415,9 @@ select.disabled {
   background-color: #cccccc;
   border-radius: 50%;
 }
+.tm-tour-difficulty span.uk-active {
+  background-color: #1868a0;
+}
 .tm-tour-difficulty.tm-tour-hard span {
   background-color: #1868a0;
 }
