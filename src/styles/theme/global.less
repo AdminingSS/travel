@@ -1407,6 +1407,18 @@ select {
       width: 255px;
       height: 255px;
 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        max-width: none;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        object-fit: cover;
+      }
+
       .tm-panel-image-icons {
         position: absolute;
         bottom: -100px;
@@ -1654,6 +1666,11 @@ select {
     &:hover, &.uk-active {
       background-color: @global-secondary-background;
       color: @global-inverse-color;
+
+      svg {
+        color: @global-inverse-color;
+        margin-right: 4px;
+      }
 
       //&::before {
       //  color: @global-inverse-color;
@@ -3122,6 +3139,10 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
 
 body {
   position: relative;
+
+  &.body-grayed {
+    overflow: hidden;
+  }
 
   &.body-grayed::before {
     position: absolute;

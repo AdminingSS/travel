@@ -1195,6 +1195,16 @@ select.disabled {
   position: relative;
   width: 255px;
   height: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tm-sidemain .tm-content-panel .tm-panel-image-wrapper img {
+  max-width: none;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  object-fit: cover;
 }
 .tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-icons {
   position: absolute;
@@ -1390,6 +1400,11 @@ select.disabled {
 .tm-tour-type.button-style.uk-active {
   background-color: #1868a0;
   color: #ffffff;
+}
+.tm-tour-type.button-style:hover svg,
+.tm-tour-type.button-style.uk-active svg {
+  color: #ffffff;
+  margin-right: 4px;
 }
 .tm-popover {
   padding: 15px;
@@ -2579,6 +2594,9 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
 }
 body {
   position: relative;
+}
+body.body-grayed {
+  overflow: hidden;
 }
 body.body-grayed::before {
   position: absolute;

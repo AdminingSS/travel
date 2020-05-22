@@ -10,7 +10,9 @@ $(window).on("load", function() {
         $customScrollbars.mCustomScrollbar({
             theme: 'dark',
             setTop: 0,
-            scrollInertia: 100,
+            scrollInertia: 50,
+            autoDraggerLength: false,
+            mouseWheel:{ scrollAmount: 30 },
             advanced:{ updateOnContentResize: true }
         });
 

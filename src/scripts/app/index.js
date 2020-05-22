@@ -104,12 +104,12 @@ $(() => {
 
     //to order form scroll
     (() => {
-        const $orderForm = $('.tm-order-form');
+        const $orderForm = $('.tm-faq-order-trigger');
         const $orderTriggers = $('.js-order-trigger');
 
         $orderTriggers.on('click', function (e) {
             e.preventDefault();
-            const formTop = $('.tm-faq-order-trigger').offset().top - 100;
+            const formTop = ($orderForm.offset().top) ? $orderForm.offset().top - 100 : $('.tm-order-form').offset().top - 100;
 
             $('html, body').animate({
                 scrollTop: formTop
@@ -124,14 +124,18 @@ $(() => {
         const $orderForm = $('.tm-order-form');
         const $blockAnchors = $('.js-anchor');
         const $window = $(window);
-        let controlPointsArray = [];
-        $blockAnchors.each(function () {
-            const position = $(this).offset().top;
-            controlPointsArray.push(position)
-        });
+
+
+        //console.log(controlPointsArray)
 
         $window.on('scroll', function () {
             const scrollTop = $(window).scrollTop();
+
+            let controlPointsArray = [];
+            $blockAnchors.each(function () {
+                const position = $(this).offset().top;
+                controlPointsArray.push(position)
+            });
 
             if(scrollTop > 400) {
                 $fixedHeader.addClass('tm-header-visible');
@@ -142,7 +146,7 @@ $(() => {
 
             for(let i = 0; i < controlPointsArray.length; i++) {
 
-                if(scrollTop >= controlPointsArray[i] - 1000) {
+                if(scrollTop >= controlPointsArray[i] - 200) {
                     $blockTriggers.removeClass('uk-active');
                     $($blockTriggers[i]).addClass('uk-active');
                 }
@@ -172,8 +176,9 @@ $(() => {
                 scrollTop: scrollPosition
             }, 1000);
 
-            $blockTriggers.removeClass('uk-active');
-            $thisTrigger.addClass('uk-active');
+            //$blockTriggers.removeClass('uk-active');
+            //$thisTrigger.addClass('uk-active');
+
         })
 
     })();
