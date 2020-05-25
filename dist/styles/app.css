@@ -3481,7 +3481,7 @@ footer .tm-address::before {
 }
 .tm-header-opaque {
   opacity: 0!important;
-  z-index: 3000;
+  z-index: 0;
 }
 .tm-faq-order-trigger {
   position: relative;
