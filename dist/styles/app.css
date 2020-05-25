@@ -2290,7 +2290,7 @@ select.disabled {
   margin-right: 0;
 }
 .tm-zebra-container .tm-zebra-item {
-  padding: 15px 30px;
+  padding: 15px;
 }
 .tm-zebra-container .tm-zebra-item:nth-child(2n) {
   background-color: #e8e8e8;
