@@ -3214,6 +3214,12 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   margin-bottom: 25px;
   text-shadow: 0 0 5px black;
 }
+.tm-top-search .tm-top-search-caption h1,
+.tm-top-slider .tm-top-search-caption h1,
+.tm-top-search .tm-top-slider-caption h1,
+.tm-top-slider .tm-top-slider-caption h1 {
+  color: #ffffff;
+}
 .tm-top-search select,
 .tm-top-slider select {
   width: 150px;
