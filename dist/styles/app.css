@@ -1197,12 +1197,12 @@ select.disabled {
   height: 255px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  overflow: hidden;
 }
 .tm-sidemain .tm-content-panel .tm-panel-image-wrapper img {
   max-width: none;
-  min-width: 100%;
-  min-height: 100%;
+  max-height: 100%;
   width: auto;
   object-fit: cover;
 }
