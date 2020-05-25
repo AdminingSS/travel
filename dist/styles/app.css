@@ -1369,6 +1369,14 @@ select.disabled {
   font-size: 14px;
   color: #1868a0;
 }
+a.tm-tour-place {
+  display: block;
+  text-decoration: none;
+  color: #444444;
+}
+a.tm-tour-place:hover {
+  color: #1868a0;
+}
 .tm-tour-place::before {
   content: '\F3C5';
 }
