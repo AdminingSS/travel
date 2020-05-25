@@ -2951,11 +2951,11 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   margin-right: 15px;
 }
 .tm-modal-dates .tm-dates-image-wrapper img {
-  min-width: 100%;
-  min-height: 100%;
+  max-height: 100%;
   max-width: none;
 }
 .tm-modal-dates .tm-dates-content {
@@ -4121,5 +4121,12 @@ footer .tm-address::before {
   }
   .tm-faq-order-trigger {
     display: none;
+  }
+  .tm-modal-dates .tm-modal-body-top > *:first-child,
+  .tm-modal-dates .tm-dates-image-wrapper {
+    width: 80%;
+  }
+  .tm-modal-dates .tm-dates-image-wrapper {
+    margin: auto;
   }
 }

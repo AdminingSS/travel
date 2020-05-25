@@ -1443,7 +1443,7 @@ select {
             position: absolute;
             display: block;
             top: 50%;
-            transform:translateY(-50%);
+            transform: translateY(-50%);
             left: 0;
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
@@ -1807,7 +1807,7 @@ a.tm-tour-place {
     margin-right: 4px;
   }
 
-  svg  {
+  svg {
     color: @global-secondary-color;
     margin-right: 4px;
   }
@@ -1892,7 +1892,7 @@ a.tm-tour-place {
       margin-bottom: 10px;
     }
 
-    &.uk-grid-medium>.uk-grid-margin {
+    &.uk-grid-medium > .uk-grid-margin {
       margin-top: 10px;
     }
   }
@@ -2844,7 +2844,7 @@ a.tm-tour-place {
   margin-bottom: 30px;
   flex-wrap: wrap;
 
-  >div {
+  > div {
     margin-bottom: 8px;
 
     &:nth-child(-n+3) {
@@ -2890,7 +2890,7 @@ a.tm-tour-place {
   align-items: stretch;
   margin-bottom: 30px;
 
-  >div {
+  > div {
     margin-bottom: 15px;
   }
 }
@@ -2964,7 +2964,6 @@ a.tm-tour-place {
       }
     }
 
-
     li.slick-active button:before {
       width: 16px;
       height: 16px;
@@ -2995,9 +2994,8 @@ a.tm-tour-place {
   }
 }
 
-
 .uk-offcanvas-bar {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   font-size: 14px;
   color: @global-color;
@@ -3175,7 +3173,7 @@ body {
     right: 0;
     left: 0;
     z-index: 5450;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .tm-header-fixed .uk-navbar-nav > li > a {
@@ -3261,7 +3259,7 @@ body {
     min-width: 0;
     border: 1px solid #cccccc;
 
-    >div {
+    > div {
       padding: 0 15px;
       cursor: default;
 
@@ -3323,8 +3321,6 @@ body {
   }
 }
 
-
-
 //order form
 
 .tm-order-form {
@@ -3362,7 +3358,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  >div {
+  > div {
     width: 40px;
     //height: 22px;
 
@@ -3381,7 +3377,7 @@ body {
   top: 10px;
   left: calc(100% + 30px);
 
-  >* {
+  > * {
     margin-bottom: 8px;
   }
 
@@ -3593,7 +3589,7 @@ body {
   .uk-modal-body {
     padding: 15px 0 0;
 
-    >div {
+    > div {
       padding: 0 15px;
 
       &:last-child {
@@ -3616,11 +3612,12 @@ body {
     align-items: center;
     justify-content: center;
 
+    overflow: hidden;
+
     margin-right: 15px;
 
     img {
-      min-width: 100%;
-      min-height: 100%;
+      max-height: 100%;
       max-width: none;
     }
   }
@@ -3639,7 +3636,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 30px;
 
-    >div {
+    > div {
       margin-bottom: 8px;
     }
   }
@@ -3689,7 +3686,7 @@ body {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    
+
     &:nth-child(odd) {
       background-color: #dddddd;
     }
@@ -3756,7 +3753,7 @@ body {
     height: 100%;
   }
 
-  .uk-tab>*>a {
+  .uk-tab > * > a {
     padding: 10px 15px;
     color: @global-secondary-color;
     font-size: 19px;
@@ -3765,7 +3762,7 @@ body {
     text-align: left;
   }
 
-  .uk-tab>.uk-active>a, .uk-tab>*:hover>a {
+  .uk-tab > .uk-active > a, .uk-tab > *:hover > a {
     color: @global-inverse-color;
     border-color: @global-secondary-color;
     background-color: @global-secondary-color;

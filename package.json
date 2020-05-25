@@ -12,11 +12,10 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "select2": "^4.0.6-rc.1",
-    "slick-slider": "^1.8.2",
-    "smooth-scrollbar": "^8.5.2"
+    "slick-slider": "^1.8.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
