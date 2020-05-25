@@ -12,7 +12,7 @@ $(window).on("load", function() {
             setTop: 0,
             scrollInertia: 50,
             autoDraggerLength: false,
-            mouseWheel:{ scrollAmount: 30 },
+            mouseWheel:{ scrollAmount: 300 },
             advanced:{ updateOnContentResize: true }
         });
 
