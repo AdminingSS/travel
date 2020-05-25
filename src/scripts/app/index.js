@@ -130,6 +130,7 @@ $(() => {
 
         $window.on('scroll', function () {
             const scrollTop = $(window).scrollTop();
+            const $faqTrigger = $('.tm-faq-order-trigger');
 
             let controlPointsArray = [];
             $blockAnchors.each(function () {
@@ -152,9 +153,9 @@ $(() => {
                 }
             }
 
-            if(!$orderForm.length) return;
+            if(!$orderForm.length || !$faqTrigger.length) return;
 
-            const topPosition = $('.tm-faq-order-trigger').offset().top;
+            const topPosition = $faqTrigger.offset().top;
 
             if(scrollTop + 200 > topPosition && scrollTop < $orderForm.offset().top + $orderForm.height()) {
                 $fixedHeader.addClass('tm-header-opaque');
