@@ -1249,7 +1249,7 @@ select.disabled {
 .tm-sidemain .tm-content-panel .tm-panel-desc {
   height: 100%;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 4px 15px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1257,8 +1257,14 @@ select.disabled {
 .tm-sidemain .tm-content-panel .tm-panel-desc h5 {
   margin-bottom: 8px;
 }
+.tm-sidemain .tm-content-panel .tm-panel-desc h5 a {
+  text-decoration: none;
+  color: #444444;
+}
 .tm-sidemain .tm-content-panel .tm-panel-desc p {
   margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 .tm-sidemain .tm-content-panel .tm-panel-desc a .fa-question-circle {
   color: #444444;
@@ -1396,13 +1402,14 @@ a.tm-tour-place:hover {
   margin-right: 4px;
 }
 .tm-tour-type.button-style {
-  font-size: 12px;
-  padding: 4px 10px 7px 10px;
+  font-size: 10px;
+  padding: 0 4px;
+  line-height: 14px;
   border: solid 1px #e1e1e1;
   cursor: default;
-  text-transform: uppercase;
+  text-transform: none;
   display: inline-block;
-  margin-right: 8px;
+  font-weight: 600;
 }
 .tm-tour-type.button-style:hover,
 .tm-tour-type.button-style.uk-active {
