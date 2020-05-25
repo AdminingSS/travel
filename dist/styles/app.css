@@ -1553,6 +1553,10 @@ select.disabled {
 .tm-sidebar-absolute .tm-tour-features .tm-tour-feature {
   margin-bottom: 10px;
 }
+.tm-sidebar .tm-tour-features.uk-grid-medium > .uk-grid-margin,
+.tm-sidebar-absolute .tm-tour-features.uk-grid-medium > .uk-grid-margin {
+  margin-top: 10px;
+}
 .tm-sidebar .tm-button-order,
 .tm-sidebar-absolute .tm-button-order {
   width: 100%;
@@ -3515,6 +3519,14 @@ footer .tm-address::before {
 }
 .tm-faq-order-trigger .uk-button {
   border-radius: 0 3px 3px 0;
+}
+.tm-tour-feature-type {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tm-tour-feature-type > * {
+  margin-right: 15px;
 }
 @media (min-width: 960px) {
   .uk-section {
