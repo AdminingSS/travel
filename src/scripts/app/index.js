@@ -291,39 +291,39 @@ $(() => {
     })();
 
     //qty forms
-    (() => {
-        const $qtyForms = $('.tm-qty-form');
-
-        $qtyForms.each(function () {
-            const $thisForm = $(this);
-            const $btnPlus = $thisForm.find('.tm-button-plus');
-            const $btnMinus = $thisForm.find('.tm-button-minus');
-            const $formInput = $thisForm.find('input');
-            let currentCount = $formInput.val();
-
-            $formInput.on('change', function (e) {
-                if(!$formInput.val().match(/^\d+$/)) {
-                    $formInput.val(currentCount)
-                }
-                else {
-                    currentCount = $formInput.val();
-                }
-            });
-
-            $btnPlus.on('click', function () {
-                const newCount = currentCount + 1;
-                currentCount = newCount;
-                $formInput.val(currentCount);
-            });
-
-            $btnMinus.on('click', function () {
-                const newCount = currentCount - 1;
-                if(newCount < 0) return;
-                currentCount = newCount;
-                $formInput.val(currentCount);
-            })
-        })
-
-    })();
+    // (() => {
+    //     const $qtyForms = $('.tm-qty-form');
+    //
+    //     $qtyForms.each(function () {
+    //         const $thisForm = $(this);
+    //         const $btnPlus = $thisForm.find('.tm-button-plus');
+    //         const $btnMinus = $thisForm.find('.tm-button-minus');
+    //         const $formInput = $thisForm.find('input');
+    //         let currentCount = $formInput.val();
+    //
+    //         $formInput.on('change', function (e) {
+    //             if(!$formInput.val().match(/^\d+$/)) {
+    //                 $formInput.val(currentCount)
+    //             }
+    //             else {
+    //                 currentCount = $formInput.val();
+    //             }
+    //         });
+    //
+    //         $btnPlus.on('click', function () {
+    //             const newCount = currentCount + 1;
+    //             currentCount = newCount;
+    //             $formInput.val(currentCount);
+    //         });
+    //
+    //         $btnMinus.on('click', function () {
+    //             const newCount = currentCount - 1;
+    //             if(newCount < 0) return;
+    //             currentCount = newCount;
+    //             $formInput.val(currentCount);
+    //         })
+    //     })
+    //
+    // })();
 
 });

@@ -183,7 +183,7 @@ select.disabled {
 .tm-select .tm-select-pseudo-items.what {
   width: 600px;
   padding: 15px 0;
-  max-height: 320px;
+  max-height: none;
 }
 .tm-select .tm-select-pseudo-items .tm-drop-header {
   padding: 0 15px;
@@ -276,10 +276,7 @@ select.disabled {
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list {
   max-width: 100%;
   padding-left: 15px;
-  max-height: 230px;
-}
-.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list .mCSB_inside > .mCSB_container {
-  margin-right: 10px;
+  max-height: none;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li {
   position: relative;
@@ -1726,7 +1723,6 @@ a.tm-tour-place:hover {
   margin-left: 5px;
 }
 .tm-complex-container {
-  height: 120px;
   background-color: #f1f0f0;
   padding: 8px 0 0 15px;
   margin-bottom: 10px !important;
@@ -2958,9 +2954,6 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   max-height: 100%;
   max-width: none;
 }
-.tm-modal-dates .tm-dates-content {
-  max-height: 500px;
-}
 .tm-modal-dates .tm-dates-content .mCSB_inside > .mCSB_container {
   margin-right: 0;
 }
@@ -3778,7 +3771,7 @@ footer .tm-address::before {
   }
   .tm-select .tm-select-pseudo-items.what {
     width: 500px;
-    max-height: 320px;
+    max-height: none;
   }
   .tm-what-tour > div {
     max-width: 50%;
@@ -3882,7 +3875,7 @@ footer .tm-address::before {
   .tm-select .tm-select-pseudo-items.what {
     width: 100%;
     padding: 15px 0;
-    max-height: 545px;
+    max-height: none;
   }
   .tm-select .tm-select-pseudo-items .tm-what-tour {
     flex-wrap: wrap;
@@ -3938,9 +3931,6 @@ footer .tm-address::before {
   }
   .tm-modal-dates .tm-content-item .tm-dates-dates span {
     font-size: inherit;
-  }
-  .tm-modal-dates .tm-dates-content {
-    max-height: 200px;
   }
   .tm-lk-tabs {
     width: 100%;
