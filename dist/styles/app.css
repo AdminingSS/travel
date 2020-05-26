@@ -446,6 +446,7 @@ select.disabled {
 }
 .uk-button:hover {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 .uk-button-large {
   height: 51px;
@@ -2797,6 +2798,7 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  font-size: 14px;
 }
 .tm-peoples .tm-peoples-adult,
 .tm-peoples .tm-peoples-child {
@@ -3535,6 +3537,10 @@ footer .tm-address::before {
 }
 .tm-tour-feature-type > * {
   margin-right: 15px;
+}
+.tm-sidebar .tm-dates,
+.tm-sidebar-absolute .tm-dates {
+  font-size: 14px;
 }
 @media (min-width: 960px) {
   .uk-section {
