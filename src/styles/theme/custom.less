@@ -166,6 +166,7 @@
 
     h1 {
       color: @global-inverse-color;
+      font-size: 50px;
     }
   }
 
@@ -178,6 +179,11 @@
     font-size: 24px;
     color: @global-inverse-color;
     text-shadow: 0 0 5px black;
+
+    h2 {
+      font-size: 24px;
+      text-transform: none;
+    }
   }
 }
 
@@ -523,3 +529,42 @@ footer {
 .tm-sidebar .tm-dates, .tm-sidebar-absolute .tm-dates {
   font-size: 14px;
 }
+
+//vue slider
+.vue-slider-dot-handle {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid lighten(@global-secondary-color, 20%);
+  box-sizing: border-box;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.vue-slider-dot-handle:hover {
+  border-color: @global-secondary-color;
+}
+
+.vue-slider:hover .vue-slider-dot-handle {
+  border-color: lighten(@global-secondary-color, 20%);
+}
+
+.vue-slider:hover .vue-slider-dot-handle:hover {
+  border-color: @global-secondary-color;
+}
+
+.vue-slider-dot-tooltip-inner {
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 6px 8px;
+  color: #fff;
+  border-radius: 5px;
+  border-color: rgba(42,141,29,0.7);
+  background-color: rgba(42,141,29,0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+
+

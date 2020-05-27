@@ -1958,6 +1958,11 @@ a.tm-tour-place {
     &:disabled {
       color: @global-color;
     }
+
+    &::placeholder {
+      text-align: left;
+      color: #ced4da;
+    }
   }
 
   &::before, &::after {
@@ -2090,7 +2095,7 @@ a.tm-tour-place {
   //height: 120px;
   //overflow: auto;
   background-color: #f1f0f0;
-  padding: 8px 0 0 15px;
+  padding: 8px 10px 8px 15px;
   margin-bottom: 10px !important;
 
   .tm-sub-tier {
