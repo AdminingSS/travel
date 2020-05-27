@@ -1254,6 +1254,7 @@ select.disabled {
 }
 .tm-sidemain .tm-content-panel .tm-panel-desc h5 {
   margin-bottom: 8px;
+  line-height: 1;
 }
 .tm-sidemain .tm-content-panel .tm-panel-desc h5 a {
   text-decoration: none;
