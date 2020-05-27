@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
+    "@fancyapps/fancybox": "^3.5.7",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "jquery": "^3.5.1",
     "jscrollpane": "^2.2.2",
