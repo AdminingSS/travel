@@ -109,7 +109,8 @@ $(() => {
 
         $orderTriggers.on('click', function (e) {
             e.preventDefault();
-            const formTop = ($orderForm.offset().top) ? $orderForm.offset().top - 100 : $('.tm-order-form').offset().top - 100;
+            if(!$('.tm-order-form').length) return;
+            const formTop = ($orderForm.length) ? $orderForm.offset().top - 100 : $('.tm-order-form').offset().top - 100;
 
             $('html, body').animate({
                 scrollTop: formTop
