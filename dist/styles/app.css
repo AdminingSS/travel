@@ -2666,12 +2666,18 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-button-seen.tm-visible {
   bottom: 80px;
 }
+.tm-button-seen.tm-visible.tm-tour-fixed-button {
+  bottom: 125px;
+}
 .tm-button-totop {
   background-color: #1868a0;
   font-size: 16px;
 }
 .tm-button-totop.tm-visible {
   bottom: 45px;
+}
+.tm-button-totop.tm-visible.tm-tour-fixed-button {
+  bottom: 80px;
 }
 .tm-content-switch-mobile {
   display: none;
@@ -3582,6 +3588,13 @@ footer .tm-address::before {
   transform: scale(0.9);
   transition: transform 0.3s;
 }
+.vdp-datepicker__calendar {
+  max-width: 100%;
+}
+.tm-sidebar .tm-tour-features .tm-tour-feature {
+  height: auto;
+  margin-bottom: 0;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
@@ -3744,6 +3757,9 @@ footer .tm-address::before {
   }
   .tm-sidemain .tm-content-panel .tm-panel-details {
     border-left: transparent;
+  }
+  .vdp-datepicker__calendar {
+    max-width: 100%;
   }
 }
 @media (max-width: 959px) {
