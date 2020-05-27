@@ -1972,11 +1972,11 @@ a.tm-tour-place {
   }
 
   &.date-from::before {
-    content: 'от';
+    //content: 'от';
   }
 
   &.date-to::before {
-    content: 'до';
+    //content: 'до';
   }
 
   &::after {
@@ -2025,11 +2025,11 @@ a.tm-tour-place {
   }
 
   &.select-from::before {
-    content: 'от';
+    //content: 'от';
   }
 
   &.select-to::before {
-    content: 'до';
+    //content: 'до';
   }
 
   .controls {
@@ -2044,6 +2044,15 @@ a.tm-tour-place {
       }
     }
   }
+}
+
+.tm-input-before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+  color: #ced4da;
 }
 
 .tm-global-image-wrapper {

@@ -1636,12 +1636,6 @@ a.tm-tour-place:hover {
   left: 6px;
   color: #ced4da;
 }
-.tm-input-date-wrapper.date-from::before {
-  content: '\43E\442';
-}
-.tm-input-date-wrapper.date-to::before {
-  content: '\434\43E';
-}
 .tm-input-date-wrapper::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -1680,12 +1674,6 @@ a.tm-tour-place:hover {
   left: 6px;
   color: #ced4da;
 }
-.tm-input-selector-wrapper.select-from::before {
-  content: '\43E\442';
-}
-.tm-input-selector-wrapper.select-to::before {
-  content: '\434\43E';
-}
 .tm-input-selector-wrapper .controls {
   right: 8px;
 }
@@ -1697,6 +1685,14 @@ a.tm-tour-place:hover {
 .tm-input-selector-wrapper .controls .control-up img,
 .tm-input-selector-wrapper .controls .control-down img {
   vertical-align: top;
+}
+.tm-input-before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+  color: #ced4da;
 }
 .tm-global-image-wrapper {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
