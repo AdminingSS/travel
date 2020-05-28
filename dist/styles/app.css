@@ -1593,6 +1593,15 @@ a.tm-tour-place:hover {
   font-size: 34px;
   font-weight: 600;
 }
+.tm-sidebar .tm-sidebar-sup .price .price-overall,
+.tm-sidebar-absolute .tm-sidebar-sup .price .price-overall {
+  font-size: 14px;
+  font-weight: 300;
+}
+.tm-sidebar .tm-sidebar-sup .price .price-overall span,
+.tm-sidebar-absolute .tm-sidebar-sup .price .price-overall span {
+  font-weight: 600;
+}
 .tm-sidebar .tm-wide,
 .tm-sidebar-absolute .tm-wide {
   width: calc(100% + 30px);
@@ -2331,6 +2340,13 @@ a.tm-tour-place:hover {
   font-size: 26px;
   font-weight: 600;
 }
+.tm-header-fixed .price .price-overall {
+  font-size: 14px;
+  font-weight: 300;
+}
+.tm-header-fixed .price .price-overall span {
+  font-weight: 600;
+}
 .tm-header-fixed .tm-dropdown-top {
   position: relative;
 }
@@ -2592,6 +2608,13 @@ body:not(.uk-offcanvas-flip).uk-offcanvas-container-animation {
   font-size: 34px;
   font-weight: 600;
 }
+.tm-sidebar-toggle-tour .price .price-overall {
+  font-size: 14px;
+  font-weight: 300;
+}
+.tm-sidebar-toggle-tour .price .price-overall span {
+  font-weight: 600;
+}
 .tm-sidebar-toggle-tour .tm-dop-info,
 .tm-sidebar-toggle-tour .tm-dop-order {
   display: flex;
@@ -2789,9 +2812,18 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   font-weight: 600;
 }
 .tm-sidebar-absolute .price {
-  font-size: 36px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+.tm-sidebar-absolute .price .price-overall {
+  font-size: 26px;
+  font-weight: 300;
+}
+.tm-sidebar-absolute .price .price-overall span {
+  font-size: 36px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 .tm-sidebar-absolute .name {
   font-size: 26px;
@@ -3594,6 +3626,38 @@ footer .tm-address::before {
 .tm-sidebar .tm-tour-features .tm-tour-feature {
   height: auto;
   margin-bottom: 0;
+}
+.vdp-datepicker > div input {
+  margin: 0;
+  font: inherit;
+  overflow: visible;
+  -webkit-appearance: none;
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  transition: 0.2s ease-in-out;
+  transition-property: color, background-color, border;
+  vertical-align: middle;
+  display: inline-block;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444444;
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  padding: 0 25px 0 4px;
+  text-align: right;
+}
+.vdp-datepicker > div input:disabled {
+  background-color: #f8f8f8;
+  color: #444444;
+  border-color: #e5e5e5;
+}
+.vdp-datepicker > div input::placeholder {
+  text-align: left;
 }
 @media (min-width: 960px) {
   .uk-section {
