@@ -575,3 +575,40 @@ footer {
   height: auto;
   margin-bottom: 0;
 }
+
+.vdp-datepicker >div input {
+  margin: 0;
+  font: inherit;
+  overflow: visible;
+  -webkit-appearance: none;
+  max-width: 100%;
+  width: 100%;
+  //padding: 0 10px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  transition: .2s ease-in-out;
+  transition-property: color,background-color,border;
+  vertical-align: middle;
+  display: inline-block;
+  font-family: @global-font-family;
+  font-size: @global-font-size;
+  font-weight: 300;
+  color: @global-color;
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  border-radius: @global-border-radius;
+
+  padding: 0 25px 0 4px;
+  text-align: right;
+
+  &:disabled {
+    background-color: #f8f8f8;
+    color: @global-color;
+    border-color: #e5e5e5;
+  }
+
+  &::placeholder {
+    text-align: left;
+  }
+}
