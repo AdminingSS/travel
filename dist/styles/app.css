@@ -1518,6 +1518,10 @@ a.tm-tour-place:hover {
   width: 235px;
   border-radius: 3px;
 }
+.tm-sidebar .tm-tour-feature-type .tm-tour-type,
+.tm-sidebar-absolute .tm-tour-feature-type .tm-tour-type {
+  width: 100%;
+}
 .tm-sidebar .uk-accordion-title,
 .tm-sidebar-absolute .uk-accordion-title {
   border: none;
@@ -3099,7 +3103,6 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-lk-tabs {
   display: flex;
   flex-wrap: wrap;
-  width: 780px;
 }
 .tm-lk-tabs .uk-tab {
   margin-right: 30px;
@@ -3659,6 +3662,13 @@ footer .tm-address::before {
 .vdp-datepicker > div input::placeholder {
   text-align: left;
 }
+.uk-navbar-item a {
+  color: inherit;
+  text-decoration: none;
+}
+.uk-navbar-item a:hover {
+  color: inherit;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
@@ -3666,6 +3676,10 @@ footer .tm-address::before {
   }
   .tm-section-first {
     padding: 30px 0 50px;
+  }
+  .tm-button-seen,
+  .tm-button-totop {
+    display: none;
   }
 }
 @media (min-width: 640px) {
@@ -3939,7 +3953,6 @@ footer .tm-address::before {
   .tm-lk-tabs {
     display: flex;
     flex-wrap: wrap;
-    width: 560px;
   }
   .tm-sidebar-absolute .price {
     min-width: 180px;
