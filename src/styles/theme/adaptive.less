@@ -98,10 +98,12 @@
   .tm-controlled-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 
     .tm-content-panel {
-      max-width: 30%;
+      //max-width: 30%;
+      max-width: 255px;
       flex-wrap: wrap;
       height: auto;
 
@@ -120,6 +122,12 @@
 
       .tm-panel-details {
         width: 100%;
+      }
+
+      .tm-panel-desc {
+        .tm-tour-type:last-child {
+          margin-bottom: 8px;
+        }
       }
     }
   }
@@ -221,9 +229,21 @@
   .vdp-datepicker__calendar {
     max-width: 100%;
   }
+
+  .tm-section-footer {
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width: 959px) {
+
+  .tm-sidebar-absolute .tm-adaptive-apartments .tm-apartments .tm-apts {
+    width: 100%;
+  }
+
+  .tm-adaptive-sidehead {
+    align-items: start;
+  }
 
   .uk-container {
     padding-left: 30px;
@@ -323,6 +343,7 @@
     .tm-content-panel {
       max-width: 48%;
       width: auto;
+
     }
   }
 
@@ -382,7 +403,26 @@
 
   .tm-sidebar-absolute .price {
     min-width: 180px;
-    font-size: 30px;
+    font-size: 14px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .tm-top-search-panel {
+    justify-content: space-between;
+  }
+
+  .tm-top-search-panel >* {
+    margin-right: 0;
+  }
+
+  .tm-top-search-panel >*:last-child {
+    width: 100%;
+
+    .uk-button {
+      width: 100%;
+    }
   }
 }
 
@@ -624,6 +664,16 @@
 
   .tm-order-personal .uk-button {
     margin-bottom: 8px;
+  }
+
+  .tm-sidemain .tm-content-panel .tm-panel-image-wrapper {
+    width: 100%;
+  }
+
+  .tm-sidemain .tm-content-panel .tm-panel-desc {
+    >*:first-child {
+      margin-bottom: 8px;
+    }
   }
 }
 
