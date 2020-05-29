@@ -1229,6 +1229,7 @@ select.disabled {
 .tm-sidemain .tm-content-panel .tm-panel-image-wrapper img {
   max-width: none;
   max-height: 100%;
+  min-height: 100%;
   width: auto;
   object-fit: cover;
 }
@@ -3741,6 +3742,29 @@ footer .tm-address::before {
 }
 .tm-filter-complexities .uk-accordion-content label {
   width: 50%;
+}
+.tm-program-item-image {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  margin: 0 15px 30px 0;
+}
+.tm-program-item-image::after {
+  content: '';
+  clear: both;
+}
+.tm-program-item-image img {
+  max-width: none;
+  max-height: 100%;
+  min-height: 100%;
+  width: auto;
+}
+.tm-adittional-items {
+  clear: both;
 }
 @media (min-width: 960px) {
   .uk-section {
