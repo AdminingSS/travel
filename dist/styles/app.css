@@ -2965,6 +2965,9 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-modal-seen .tm-tour-item button {
   margin-bottom: 8px;
 }
+.tm-modal-seen .tm-tour-item .tm-dates {
+  margin-bottom: 8px;
+}
 .tm-modal-seen .tm-tour-item-image-wrapper {
   width: 100px;
   height: 100px;
