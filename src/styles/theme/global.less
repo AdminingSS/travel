@@ -263,6 +263,7 @@ select {
 
           svg {
             margin-right: 15px;
+            color: @global-secondary-color;
           }
 
           &:nth-child(1)::before {
@@ -300,6 +301,11 @@ select {
 
           &.uk-active, &:hover {
             background-color: @global-primary-background;
+            color: @global-inverse-color;
+
+            svg {
+              color: @global-inverse-color;
+            }
 
             a {
               color: @global-inverse-color;

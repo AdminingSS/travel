@@ -303,6 +303,7 @@ select.disabled {
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li svg {
   margin-right: 15px;
+  color: #1868a0;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:nth-child(1)::before {
   content: '\F70C';
@@ -332,6 +333,11 @@ select.disabled {
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li.uk-active,
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:hover {
   background-color: #2a8d1d;
+  color: #ffffff;
+}
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li.uk-active svg,
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:hover svg {
+  color: #ffffff;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li.uk-active a,
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:hover a {
