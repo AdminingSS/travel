@@ -1480,6 +1480,9 @@ a.tm-tour-place:hover {
   border-top: 10px solid #fff;
   content: '';
 }
+.tm-tour-difficulty {
+  white-space: nowrap;
+}
 .tm-tour-difficulty span {
   display: inline-block;
   margin-right: 4px;
@@ -3732,6 +3735,12 @@ footer .tm-address::before {
 }
 .tm-header-top-nav .uk-navbar-nav > li > a.tm-icon-dropdown svg {
   margin-right: 8px;
+}
+.tm-filter-complexities .uk-accordion-content > div:first-child {
+  flex-wrap: wrap;
+}
+.tm-filter-complexities .uk-accordion-content label {
+  width: 50%;
 }
 @media (min-width: 960px) {
   .uk-section {
