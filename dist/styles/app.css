@@ -3221,6 +3221,10 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-header-top-nav .uk-navbar-nav > li > a.tm-icon-dropdown.uk-open::before {
   transform: rotate(180deg);
 }
+.tm-header-top-nav .uk-navbar-nav > li > .uk-navbar-dropdown {
+  width: auto;
+  padding: 15px;
+}
 .tm-header-bottom-nav .uk-navbar-item,
 .tm-header-bottom-nav .uk-navbar-nav > li > a,
 .tm-header-bottom-nav .uk-navbar-toggle {
@@ -3725,6 +3729,9 @@ footer .tm-address::before {
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
+}
+.tm-header-top-nav .uk-navbar-nav > li > a.tm-icon-dropdown svg {
+  margin-right: 8px;
 }
 @media (min-width: 960px) {
   .uk-section {
