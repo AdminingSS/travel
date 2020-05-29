@@ -155,7 +155,8 @@ select.disabled {
 .tm-select {
   position: relative;
 }
-.tm-select .tm-select-pseudo {
+.tm-select .tm-select-pseudo,
+.tm-select > div:first-child input {
   box-sizing: border-box;
   width: 150px;
   height: 48px;
@@ -166,8 +167,16 @@ select.disabled {
   color: #444444;
   border-radius: 3px;
 }
-.tm-select .tm-select-pseudo.inactive {
+.tm-select .tm-select-pseudo.inactive,
+.tm-select > div:first-child input.inactive {
   color: #bcbfc2;
+}
+.tm-select .tm-select-pseudo::placeholder,
+.tm-select > div:first-child input::placeholder {
+  color: #444444;
+}
+.tm-select .vdp-datepicker__calendar {
+  color: #444444;
 }
 .tm-select .tm-select-pseudo-items {
   margin-top: 0;

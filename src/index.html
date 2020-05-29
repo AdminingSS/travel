@@ -342,19 +342,82 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="tm-select">
-                                    <input class="uk-hidden" name="when">
-                                    <div class="tm-select-pseudo">Когда?</div>
-                                    <div class="tm-select-pseudo-items" data-uk-dropdown="mode: click; delay-hide: 50">
-                                        <div class="tm-drop-header">
-                                            <div class="tm-where-caption">
-                                                Выберите дату
-                                            </div>
-                                        </div>
-                                        <div>
-                                        </div>
+                                <div class="vdp-datepicker tm-select">
+                                    <div class="">
+                                        <!---->
+                                        <input type="text" placeholder="Когда?" readonly="readonly" autocomplete="off">
+                                        <!---->
                                     </div>
+                                    <div class="vdp-datepicker__calendar" style="display: none;">
+                                        <header><span class="prev disabled">&lt;</span> <span class="day__month_btn up">Май 2020</span>
+                                            <span class="next">&gt;</span></header>
+                                        <div class=""><span class="cell day-header">Пн</span><span
+                                                class="cell day-header">Вт</span><span class="cell day-header">Ср</span><span
+                                                class="cell day-header">Чт</span><span class="cell day-header">Пт</span><span
+                                                class="cell day-header">Сб</span><span class="cell day-header">Вс</span>
+                                            <span class="cell day blank"></span><span
+                                                    class="cell day blank"></span><span
+                                                    class="cell day blank"></span><span
+                                                    class="cell day blank"></span><span
+                                                    class="cell day disabled">1</span><span
+                                                    class="cell day disabled weekend sat">2</span><span
+                                                    class="cell day disabled weekend sun">3</span><span
+                                                    class="cell day disabled">4</span><span
+                                                    class="cell day disabled">5</span><span
+                                                    class="cell day disabled">6</span><span
+                                                    class="cell day disabled">7</span><span
+                                                    class="cell day disabled">8</span><span
+                                                    class="cell day disabled weekend sat">9</span><span
+                                                    class="cell day disabled weekend sun">10</span><span
+                                                    class="cell day disabled">11</span><span class="cell day disabled">12</span><span
+                                                    class="cell day disabled">13</span><span class="cell day disabled">14</span><span
+                                                    class="cell day disabled">15</span><span
+                                                    class="cell day disabled weekend sat">16</span><span
+                                                    class="cell day disabled weekend sun">17</span><span
+                                                    class="cell day disabled">18</span><span class="cell day disabled">19</span><span
+                                                    class="cell day disabled">20</span><span class="cell day disabled">21</span><span
+                                                    class="cell day disabled">22</span><span
+                                                    class="cell day disabled weekend sat">23</span><span
+                                                    class="cell day disabled weekend sun">24</span><span
+                                                    class="cell day disabled">25</span><span class="cell day disabled">26</span><span
+                                                    class="cell day disabled">27</span><span class="cell day disabled">28</span><span
+                                                    class="cell day today">29</span><span class="cell day weekend sat">30</span><span
+                                                    class="cell day weekend sun">31</span></div>
+                                    </div>
+                                    <div class="vdp-datepicker__calendar" style="display: none;">
+                                        <header><span class="prev disabled">&lt;</span> <span
+                                                class="month__year_btn up">2020</span> <span class="next">&gt;</span>
+                                        </header>
+                                        <span class="cell month disabled">Январь</span><span
+                                            class="cell month disabled">Февраль</span><span class="cell month disabled">Март</span><span
+                                            class="cell month disabled">Апрель</span><span class="cell month">Май</span><span
+                                            class="cell month">Июнь</span><span class="cell month">Июль</span><span
+                                            class="cell month">Август</span><span
+                                            class="cell month">Сентябрь</span><span
+                                            class="cell month">Октябрь</span><span class="cell month">Ноябрь</span><span
+                                            class="cell month">Декабрь</span></div>
+                                    <div class="vdp-datepicker__calendar" style="display: none;">
+                                        <header><span class="prev disabled">&lt;</span> <span>2020 - 2029</span> <span
+                                                class="next">&gt;</span></header>
+                                        <span class="cell year">2020</span><span class="cell year">2021</span><span
+                                            class="cell year">2022</span><span class="cell year">2023</span><span
+                                            class="cell year">2024</span><span class="cell year">2025</span><span
+                                            class="cell year">2026</span><span class="cell year">2027</span><span
+                                            class="cell year">2028</span><span class="cell year">2029</span></div>
                                 </div>
+                                <!--<div class="tm-select">-->
+                                    <!--<input class="uk-hidden" name="when">-->
+                                    <!--<div class="tm-select-pseudo">Когда?</div>-->
+                                    <!--<div class="tm-select-pseudo-items" data-uk-dropdown="mode: click; delay-hide: 50">-->
+                                        <!--<div class="tm-drop-header">-->
+                                            <!--<div class="tm-where-caption">-->
+                                                <!--Выберите дату-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
                             </div>
                             <div>
                                 <div class="tm-select">
@@ -651,7 +714,8 @@
                                                 </div>
                                                 <div>
                                                     <div>Ночёвка:</div>
-                                                    <div class="tm-tour-night"><i class="fas fa-campground"></i>Палатка</div>
+                                                    <div class="tm-tour-night"><i class="fas fa-campground"></i>Палатка
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2324,7 +2388,8 @@
                         <div>
                             <div class="tm-dates-details">
                                 <div class="uk-width-1-2@m uk-child-width-auto uk-child-width-1-2@m tm-dates-duration">
-                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span class="nights">3 <span class="uk-visible@m">ночи</span></span>
+                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span
+                                        class="nights">3 <span class="uk-visible@m">ночи</span></span>
                                 </div>
                                 <div class="uk-width-1-2@m">
                                     372 000 руб.
@@ -2352,7 +2417,8 @@
                         <div>
                             <div class="tm-dates-details">
                                 <div class="uk-width-1-2@m uk-child-width-auto uk-child-width-1-2@m tm-dates-duration">
-                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span class="nights">3 <span class="uk-visible@m">ночи</span></span>
+                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span
+                                        class="nights">3 <span class="uk-visible@m">ночи</span></span>
                                 </div>
                                 <div class="uk-width-1-2@m">
                                     372 000 руб.
@@ -2380,7 +2446,8 @@
                         <div>
                             <div class="tm-dates-details">
                                 <div class="uk-width-1-2@m uk-child-width-auto uk-child-width-1-2@m tm-dates-duration">
-                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span class="nights">3 <span class="uk-visible@m">ночи</span></span>
+                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span
+                                        class="nights">3 <span class="uk-visible@m">ночи</span></span>
                                 </div>
                                 <div class="uk-width-1-2@m">
                                     372 000 руб.
@@ -2408,7 +2475,8 @@
                         <div>
                             <div class="tm-dates-details">
                                 <div class="uk-width-1-2@m uk-child-width-auto uk-child-width-1-2@m tm-dates-duration">
-                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span class="nights">3 <span class="uk-visible@m">ночи</span></span>
+                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span
+                                        class="nights">3 <span class="uk-visible@m">ночи</span></span>
                                 </div>
                                 <div class="uk-width-1-2@m">
                                     372 000 руб.
@@ -2436,7 +2504,8 @@
                         <div>
                             <div class="tm-dates-details">
                                 <div class="uk-width-1-2@m uk-child-width-auto uk-child-width-1-2@m tm-dates-duration">
-                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span class="nights">3 <span class="uk-visible@m">ночи</span></span>
+                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span
+                                        class="nights">3 <span class="uk-visible@m">ночи</span></span>
                                 </div>
                                 <div class="uk-width-1-2@m">
                                     372 000 руб.
@@ -2449,34 +2518,6 @@
                                 class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
                     </div>
                 </div>
-                <div class="tm-content-item">
-                <div class="tm-adaptive-micromobile uk-width-expand uk-child-width-1-2 uk-flex uk-flex-middle">
-                    <div>
-                        <div class="tm-dates-dates">
-                            <div class="uk-width-1-2@m">
-                                с <span>30</span> сентября
-                            </div>
-                            <div class="uk-width-1-2@m">
-                                по <span>10</span> октября
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="tm-dates-details">
-                            <div class="uk-width-1-2@m uk-child-width-auto uk-child-width-1-2@m tm-dates-duration">
-                                <span class="days">4 <span class="uk-visible@m">дня</span></span> <span class="nights">3 <span class="uk-visible@m">ночи</span></span>
-                            </div>
-                            <div class="uk-width-1-2@m">
-                                372 000 руб.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-width-auto">
-                    <button class="uk-button tm-button-primary uk-button-small">выбрать <i
-                            class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
-                </div>
-            </div>
                 <div class="tm-content-item">
                     <div class="tm-adaptive-micromobile uk-width-expand uk-child-width-1-2 uk-flex uk-flex-middle">
                         <div>
@@ -2492,7 +2533,37 @@
                         <div>
                             <div class="tm-dates-details">
                                 <div class="uk-width-1-2@m uk-child-width-auto uk-child-width-1-2@m tm-dates-duration">
-                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span class="nights">3 <span class="uk-visible@m">ночи</span></span>
+                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span
+                                        class="nights">3 <span class="uk-visible@m">ночи</span></span>
+                                </div>
+                                <div class="uk-width-1-2@m">
+                                    372 000 руб.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-auto">
+                        <button class="uk-button tm-button-primary uk-button-small">выбрать <i
+                                class="fas fa-long-arrow-alt-right uk-margin-left"></i></button>
+                    </div>
+                </div>
+                <div class="tm-content-item">
+                    <div class="tm-adaptive-micromobile uk-width-expand uk-child-width-1-2 uk-flex uk-flex-middle">
+                        <div>
+                            <div class="tm-dates-dates">
+                                <div class="uk-width-1-2@m">
+                                    с <span>30</span> сентября
+                                </div>
+                                <div class="uk-width-1-2@m">
+                                    по <span>10</span> октября
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tm-dates-details">
+                                <div class="uk-width-1-2@m uk-child-width-auto uk-child-width-1-2@m tm-dates-duration">
+                                    <span class="days">4 <span class="uk-visible@m">дня</span></span> <span
+                                        class="nights">3 <span class="uk-visible@m">ночи</span></span>
                                 </div>
                                 <div class="uk-width-1-2@m">
                                     372 000 руб.
@@ -2582,40 +2653,39 @@
 <!--<button class="tm-button-children uk-button">Добавить ребёнка <b>+</b></button>-->
 
 
-
 <!--<div class="tm-content-switch-mobile uk-hidden">-->
-    <!--<button type="button">1</button>-->
-    <!--<div data-uk-dropdown="mode: click;">-->
-        <!--<div>1</div>-->
-        <!--<div>2</div>-->
-        <!--<div>3</div>-->
-        <!--<div>4</div>-->
-        <!--<div>5</div>-->
-        <!--<div>6</div>-->
-        <!--<div>7</div>-->
-        <!--<div>8</div>-->
-        <!--<div>9</div>-->
-        <!--<div>10</div>-->
-        <!--<div>11</div>-->
-        <!--<div>12</div>-->
-        <!--<div>13</div>-->
-        <!--<div>14</div>-->
-        <!--<div>15</div>-->
-        <!--<div>16</div>-->
-        <!--<div>17</div>-->
-        <!--<div>18</div>-->
-        <!--<div>19</div>-->
-        <!--<div>20</div>-->
-        <!--<div>21</div>-->
-        <!--<div>22</div>-->
-        <!--<div>23</div>-->
-        <!--<div>24</div>-->
-        <!--<div>25</div>-->
-        <!--<div>26</div>-->
-        <!--<div>27</div>-->
-        <!--<div>28</div>-->
-        <!--<div>29</div>-->
-        <!--<div>30</div>-->
-        <!--<div>31</div>-->
-    <!--</div>-->
+<!--<button type="button">1</button>-->
+<!--<div data-uk-dropdown="mode: click;">-->
+<!--<div>1</div>-->
+<!--<div>2</div>-->
+<!--<div>3</div>-->
+<!--<div>4</div>-->
+<!--<div>5</div>-->
+<!--<div>6</div>-->
+<!--<div>7</div>-->
+<!--<div>8</div>-->
+<!--<div>9</div>-->
+<!--<div>10</div>-->
+<!--<div>11</div>-->
+<!--<div>12</div>-->
+<!--<div>13</div>-->
+<!--<div>14</div>-->
+<!--<div>15</div>-->
+<!--<div>16</div>-->
+<!--<div>17</div>-->
+<!--<div>18</div>-->
+<!--<div>19</div>-->
+<!--<div>20</div>-->
+<!--<div>21</div>-->
+<!--<div>22</div>-->
+<!--<div>23</div>-->
+<!--<div>24</div>-->
+<!--<div>25</div>-->
+<!--<div>26</div>-->
+<!--<div>27</div>-->
+<!--<div>28</div>-->
+<!--<div>29</div>-->
+<!--<div>30</div>-->
+<!--<div>31</div>-->
+<!--</div>-->
 <!--</div>-->

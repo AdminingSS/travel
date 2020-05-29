@@ -89,7 +89,7 @@ select {
 .tm-select {
   position: relative;
 
-  .tm-select-pseudo {
+  .tm-select-pseudo, >div:first-child input {
     box-sizing: border-box;
     width: 150px;
     height: 48px;
@@ -103,6 +103,14 @@ select {
     &.inactive {
       color: #bcbfc2;
     }
+
+    &::placeholder {
+      color: @global-color;
+    }
+  }
+
+  .vdp-datepicker__calendar {
+    color: @global-color;
   }
 
   .tm-select-pseudo-items {
