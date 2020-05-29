@@ -289,7 +289,7 @@ select.disabled {
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li {
   position: relative;
-  padding: 8px 8px 8px 48px;
+  padding: 8px;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li::before {
   position: absolute;
@@ -300,6 +300,9 @@ select.disabled {
   top: 5px;
   left: 8px;
   color: #1868a0;
+}
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li svg {
+  margin-right: 15px;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:nth-child(1)::before {
   content: '\F70C';
