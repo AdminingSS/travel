@@ -177,6 +177,7 @@ select.disabled {
 }
 .tm-select .vdp-datepicker__calendar {
   color: #444444;
+  max-width: none;
 }
 .tm-select .tm-select-pseudo-items {
   margin-top: 0;
