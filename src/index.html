@@ -289,9 +289,9 @@
                         <div class="tm-top-search-caption">Найди своё путешествие</div>
                         <div class="tm-top-search-panel">
                             <div>
-                                <div class="tm-select">
+                                <div class="tm-select tm-region">
                                     <input class="uk-hidden" name="where">
-                                    <div class="tm-select-pseudo">Куда?</div>
+                                    <div class="tm-select-pseudo">Любой</div>
                                     <div class="tm-select-pseudo-items" data-uk-dropdown="mode: click; delay-hide: 50">
                                         <div class="tm-drop-header">
                                             <div class="tm-where-caption">
@@ -342,10 +342,10 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="vdp-datepicker tm-select">
+                                <div class="vdp-datepicker tm-select tm-from">
                                     <div class="">
                                         <!---->
-                                        <input type="text" placeholder="Когда?" readonly="readonly" autocomplete="off">
+                                        <input type="text" placeholder="Не выбрано" readonly="readonly" autocomplete="off">
                                         <!---->
                                     </div>
                                     <div class="vdp-datepicker__calendar" style="display: none;">
@@ -405,24 +405,76 @@
                                             class="cell year">2026</span><span class="cell year">2027</span><span
                                             class="cell year">2028</span><span class="cell year">2029</span></div>
                                 </div>
-                                <!--<div class="tm-select">-->
-                                    <!--<input class="uk-hidden" name="when">-->
-                                    <!--<div class="tm-select-pseudo">Когда?</div>-->
-                                    <!--<div class="tm-select-pseudo-items" data-uk-dropdown="mode: click; delay-hide: 50">-->
-                                        <!--<div class="tm-drop-header">-->
-                                            <!--<div class="tm-where-caption">-->
-                                                <!--Выберите дату-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
                             </div>
                             <div>
-                                <div class="tm-select">
+                                <div class="vdp-datepicker tm-select tm-to">
+                                    <div class="">
+                                        <!---->
+                                        <input type="text" placeholder="Не выбрано" readonly="readonly" autocomplete="off">
+                                        <!---->
+                                    </div>
+                                    <div class="vdp-datepicker__calendar" style="display: none;">
+                                        <header><span class="prev disabled">&lt;</span> <span class="day__month_btn up">Май 2020</span>
+                                            <span class="next">&gt;</span></header>
+                                        <div class=""><span class="cell day-header">Пн</span><span
+                                                class="cell day-header">Вт</span><span class="cell day-header">Ср</span><span
+                                                class="cell day-header">Чт</span><span class="cell day-header">Пт</span><span
+                                                class="cell day-header">Сб</span><span class="cell day-header">Вс</span>
+                                            <span class="cell day blank"></span><span
+                                                    class="cell day blank"></span><span
+                                                    class="cell day blank"></span><span
+                                                    class="cell day blank"></span><span
+                                                    class="cell day disabled">1</span><span
+                                                    class="cell day disabled weekend sat">2</span><span
+                                                    class="cell day disabled weekend sun">3</span><span
+                                                    class="cell day disabled">4</span><span
+                                                    class="cell day disabled">5</span><span
+                                                    class="cell day disabled">6</span><span
+                                                    class="cell day disabled">7</span><span
+                                                    class="cell day disabled">8</span><span
+                                                    class="cell day disabled weekend sat">9</span><span
+                                                    class="cell day disabled weekend sun">10</span><span
+                                                    class="cell day disabled">11</span><span class="cell day disabled">12</span><span
+                                                    class="cell day disabled">13</span><span class="cell day disabled">14</span><span
+                                                    class="cell day disabled">15</span><span
+                                                    class="cell day disabled weekend sat">16</span><span
+                                                    class="cell day disabled weekend sun">17</span><span
+                                                    class="cell day disabled">18</span><span class="cell day disabled">19</span><span
+                                                    class="cell day disabled">20</span><span class="cell day disabled">21</span><span
+                                                    class="cell day disabled">22</span><span
+                                                    class="cell day disabled weekend sat">23</span><span
+                                                    class="cell day disabled weekend sun">24</span><span
+                                                    class="cell day disabled">25</span><span class="cell day disabled">26</span><span
+                                                    class="cell day disabled">27</span><span class="cell day disabled">28</span><span
+                                                    class="cell day today">29</span><span class="cell day weekend sat">30</span><span
+                                                    class="cell day weekend sun">31</span></div>
+                                    </div>
+                                    <div class="vdp-datepicker__calendar" style="display: none;">
+                                        <header><span class="prev disabled">&lt;</span> <span
+                                                class="month__year_btn up">2020</span> <span class="next">&gt;</span>
+                                        </header>
+                                        <span class="cell month disabled">Январь</span><span
+                                            class="cell month disabled">Февраль</span><span class="cell month disabled">Март</span><span
+                                            class="cell month disabled">Апрель</span><span class="cell month">Май</span><span
+                                            class="cell month">Июнь</span><span class="cell month">Июль</span><span
+                                            class="cell month">Август</span><span
+                                            class="cell month">Сентябрь</span><span
+                                            class="cell month">Октябрь</span><span class="cell month">Ноябрь</span><span
+                                            class="cell month">Декабрь</span></div>
+                                    <div class="vdp-datepicker__calendar" style="display: none;">
+                                        <header><span class="prev disabled">&lt;</span> <span>2020 - 2029</span> <span
+                                                class="next">&gt;</span></header>
+                                        <span class="cell year">2020</span><span class="cell year">2021</span><span
+                                            class="cell year">2022</span><span class="cell year">2023</span><span
+                                            class="cell year">2024</span><span class="cell year">2025</span><span
+                                            class="cell year">2026</span><span class="cell year">2027</span><span
+                                            class="cell year">2028</span><span class="cell year">2029</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tm-select tm-type">
                                     <input class="uk-hidden" name="what">
-                                    <div class="tm-select-pseudo">Что?</div>
+                                    <div class="tm-select-pseudo">Любой</div>
                                     <div class="tm-select-pseudo-items what"
                                          data-uk-dropdown="mode: click; delay-hide: 50; pos: bottom-right">
                                         <div class="tm-drop-header">

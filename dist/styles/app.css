@@ -155,17 +155,39 @@ select.disabled {
 .tm-select {
   position: relative;
 }
+.tm-select::before {
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 10px;
+  font-size: 12px;
+  color: #444444;
+  z-index: 100;
+}
+.tm-select.tm-region::before {
+  content: '\420\415\413\418\41E\41D';
+}
+.tm-select.tm-from::before {
+  content: '\41D\410\427\418\41D\410\415\422\421\42F   \41F\41E\421\41B\415';
+}
+.tm-select.tm-to::before {
+  content: '\417\410\41A\410\41D\427\418\412\410\415\422\421\42F   \414\41E';
+}
+.tm-select.tm-type::before {
+  content: '\412\418\414   \41E\422\414\42B\425\410';
+}
 .tm-select .tm-select-pseudo,
 .tm-select > div:first-child input {
   box-sizing: border-box;
   width: 150px;
   height: 48px;
-  line-height: 48px;
+  line-height: 33px;
   text-align: left;
   padding: 0 10px;
   background-color: #fff;
   color: #444444;
   border-radius: 3px;
+  padding-top: 15px;
 }
 .tm-select .tm-select-pseudo.inactive,
 .tm-select > div:first-child input.inactive {
@@ -2397,7 +2419,7 @@ a.tm-tour-place:hover {
 .tm-top-search-panel > div {
   margin-bottom: 8px;
 }
-.tm-top-search-panel > div:nth-child(-n+3) {
+.tm-top-search-panel > div:nth-child(-n+4) {
   margin-right: 15px;
 }
 .tm-top-search-panel .uk-button:not(.uk-button-small) {
@@ -4056,7 +4078,8 @@ footer .tm-address::before {
     width: 100%;
     margin-right: 0 !important;
   }
-  .tm-top-search-panel .tm-select .tm-select-pseudo {
+  .tm-top-search-panel .tm-select .tm-select-pseudo,
+  .tm-top-search-panel .tm-select > div:first-child input {
     margin-right: 0;
     width: 100%;
   }

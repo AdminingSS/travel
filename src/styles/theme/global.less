@@ -89,16 +89,44 @@ select {
 .tm-select {
   position: relative;
 
+  &::before {
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 10px;
+    font-size: 12px;
+    color: @global-color;
+    z-index: 100;
+  }
+
+  &.tm-region::before {
+    content: 'РЕГИОН';
+  }
+
+  &.tm-from::before {
+    content: 'НАЧИНАЕТСЯ ПОСЛЕ';
+  }
+
+  &.tm-to::before {
+    content: 'ЗАКАНЧИВАЕТСЯ ДО';
+  }
+
+  &.tm-type::before {
+    content: 'ВИД ОТДЫХА';
+  }
+
   .tm-select-pseudo, >div:first-child input {
     box-sizing: border-box;
     width: 150px;
     height: 48px;
-    line-height: 48px;
+    //line-height: 48px;
+    line-height: 33px;
     text-align: left;
     padding: 0 10px;
     background-color: #fff;
     color: @global-color;
     border-radius: @global-border-radius;
+    padding-top: 15px;
 
     &.inactive {
       color: #bcbfc2;
@@ -2904,7 +2932,7 @@ a.tm-tour-place {
   > div {
     margin-bottom: 8px;
 
-    &:nth-child(-n+3) {
+    &:nth-child(-n+4) {
       margin-right: 15px;
     }
   }
