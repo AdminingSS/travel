@@ -167,7 +167,7 @@ select.disabled {
 .tm-select .tm-select-pseudo,
 .tm-select > div:first-child input {
   box-sizing: border-box;
-  width: 150px;
+  width: 160px;
   height: 48px;
   line-height: 48px;
   text-align: left;
