@@ -3623,6 +3623,14 @@ footer .tm-address::before {
   transform: scale(0.9);
   transition: transform 0.3s;
 }
+.vue-slider-process {
+  background-color: #3c9ee2 !important;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+.vue-slider:hover .vue-slider-process {
+  background-color: #1868a0 !important;
+}
 .vdp-datepicker__calendar {
   max-width: 100%!important;
 }
@@ -3668,6 +3676,21 @@ footer .tm-address::before {
 }
 .uk-navbar-item a:hover {
   color: inherit;
+}
+.tm-order-form .uk-button:disabled {
+  background-color: #aaaaaa;
+}
+.price-hidden {
+  position: relative;
+}
+.price-hidden .price {
+  opacity: 0;
+}
+.price-hidden .uk-spinner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 @media (min-width: 960px) {
   .uk-section {

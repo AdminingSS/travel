@@ -567,6 +567,16 @@ footer {
   transition: transform 0.3s;
 }
 
+ .vue-slider-process {
+   background-color: lighten(@global-secondary-color, 20%)!important;
+   border-radius: 15px;
+   transition: background-color 0.3s;
+ }
+
+.vue-slider:hover .vue-slider-process {
+  background-color: @global-secondary-color!important;
+}
+
 .vdp-datepicker__calendar {
   max-width: 100%!important;
 }
@@ -619,5 +629,26 @@ footer {
 
   &:hover {
     color: inherit;
+  }
+}
+
+.tm-order-form {
+  .uk-button:disabled {
+    background-color: #aaaaaa;
+  }
+}
+
+.price-hidden {
+  position: relative;
+
+  .price {
+    opacity: 0;
+  }
+
+  .uk-spinner {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
   }
 }

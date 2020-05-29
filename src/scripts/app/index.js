@@ -328,3 +328,8 @@ $(() => {
     // })();
 
 });
+
+function shortenString(string, length = 60) {
+    const newstring = string.slice(0,length);
+    return newstring + '...';
+}
