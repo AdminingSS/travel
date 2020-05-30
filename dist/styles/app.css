@@ -590,6 +590,7 @@ select.disabled {
 }
 .uk-breadcrumb a {
   color: #2a8d1d;
+  text-transform: capitalize;
 }
 .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
   margin: 0 8px;
