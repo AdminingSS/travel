@@ -106,11 +106,16 @@ $(() => {
     (() => {
         const $orderForm = $('.tm-faq-order-trigger');
         const $orderTriggers = $('.js-order-trigger');
+        const $sidebarItem = $('.tm-sidebar');
+        const $body = $('body');
 
         $orderTriggers.on('click', function (e) {
             e.preventDefault();
             if(!$('.tm-order-form').length) return;
             const formTop = ($orderForm.length) ? $orderForm.offset().top - 100 : $('.tm-order-form').offset().top - 100;
+
+            $sidebarItem.removeClass('uk-active');
+            $body.removeClass('body-grayed');
 
             $('html, body').animate({
                 scrollTop: formTop
