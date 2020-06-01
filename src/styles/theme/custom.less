@@ -673,20 +673,29 @@ footer {
   width: 50%;
 }
 
+.tm-program-image-block {
+  display: flex;
+  //flex-wrap: wrap;
+
+  p {
+    margin-top: 0;
+  }
+}
+
 .tm-program-item-image {
   display: flex;
-  float: left;
+  //float: left;
   //display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   margin: 0 15px 30px 0;
 
   &::after {
     content: '';
-    clear: both;
+    //clear: both;
   }
 
   img {
@@ -699,5 +708,5 @@ footer {
 }
 
 .tm-adittional-items {
-  clear: both;
+  //clear: both;
 }

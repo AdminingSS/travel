@@ -3745,28 +3745,29 @@ footer .tm-address::before {
 .tm-filter-complexities .uk-accordion-content label {
   width: 50%;
 }
+.tm-program-image-block {
+  display: flex;
+}
+.tm-program-image-block p {
+  margin-top: 0;
+}
 .tm-program-item-image {
   display: flex;
-  float: left;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   margin: 0 15px 30px 0;
 }
 .tm-program-item-image::after {
   content: '';
-  clear: both;
 }
 .tm-program-item-image img {
   max-width: none;
   max-height: 100%;
   min-height: 100%;
   width: auto;
-}
-.tm-adittional-items {
-  clear: both;
 }
 @media (min-width: 960px) {
   .uk-section {
