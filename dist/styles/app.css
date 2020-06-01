@@ -336,6 +336,9 @@ select.disabled {
   padding: 8px;
   cursor: pointer;
 }
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li label {
+  cursor: pointer;
+}
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li::before {
   position: absolute;
   display: none;
