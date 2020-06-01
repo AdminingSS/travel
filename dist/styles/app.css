@@ -2934,6 +2934,7 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   font-size: 36px;
   font-weight: 600;
   white-space: nowrap;
+  display: block;
 }
 .tm-sidebar-absolute .name {
   font-size: 26px;
