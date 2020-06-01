@@ -3658,6 +3658,7 @@ footer .tm-address::before {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
 }
 .tm-button-link > div {
   width: 100%;
