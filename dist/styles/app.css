@@ -3139,6 +3139,37 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   display: flex;
   flex-wrap: wrap;
 }
+.tm-dates-duration {
+  display: flex;
+}
+.tm-dates-duration .days,
+.tm-dates-duration .nights {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+.tm-dates-duration .days::before,
+.tm-dates-duration .nights::before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #1868a0;
+}
+.tm-dates-duration .days {
+  margin-right: 20px;
+}
+.tm-dates-duration .days::before {
+  content: '\F185';
+}
+.tm-dates-duration .nights::before {
+  font-size: 18px;
+  content: '\F186';
+}
 .tm-lk-tabs {
   display: flex;
   flex-wrap: wrap;

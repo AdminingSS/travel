@@ -3867,6 +3867,40 @@ body {
   }
 }
 
+.tm-dates-duration {
+  display: flex;
+
+  .days, .nights {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 20px;
+      color: @global-secondary-color;
+    }
+  }
+  .days {
+    margin-right: 20px;
+  }
+
+  .days::before {
+    content: '\f185';
+  }
+
+  .nights::before {
+    font-size: 18px;
+    content: '\f186';
+  }
+}
+
 .tm-lk-tabs {
   display: flex;
   flex-wrap: wrap;
