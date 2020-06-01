@@ -152,10 +152,42 @@ select.disabled {
 *:focus {
   outline: none !important;
 }
+.vdp-datepicker > div input {
+  margin: 0;
+  font: inherit;
+  overflow: visible;
+  -webkit-appearance: none;
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  transition: 0.2s ease-in-out;
+  transition-property: color, background-color, border;
+  vertical-align: middle;
+  display: inline-block;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444444;
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  padding: 0 25px 0 4px;
+  text-align: right;
+}
+.vdp-datepicker > div input:disabled {
+  background-color: #f8f8f8;
+  color: #444444;
+  border-color: #e5e5e5;
+}
+.vdp-datepicker > div input::placeholder {
+  text-align: left;
+}
 .tm-select {
   position: relative;
 }
-.tm-select::before {
+.tm-select .tm-select-before {
   position: absolute;
   display: block;
   top: 5px;
@@ -163,25 +195,27 @@ select.disabled {
   font-size: 12px;
   color: #444444;
   z-index: 100;
+  text-transform: uppercase;
 }
 .tm-select .tm-select-pseudo,
-.tm-select > div:first-child input {
+.tm-select > div input {
   box-sizing: border-box;
   width: 160px;
   height: 48px;
-  line-height: 48px;
+  line-height: 33px;
   text-align: left;
   padding: 0 10px;
   background-color: #fff;
   color: #444444;
   border-radius: 3px;
+  padding-top: 15px;
 }
 .tm-select .tm-select-pseudo.inactive,
-.tm-select > div:first-child input.inactive {
+.tm-select > div input.inactive {
   color: #bcbfc2;
 }
 .tm-select .tm-select-pseudo::placeholder,
-.tm-select > div:first-child input::placeholder {
+.tm-select > div input::placeholder {
   color: #444444;
 }
 .tm-select .vdp-datepicker__calendar {
@@ -3712,38 +3746,6 @@ footer .tm-address::before {
 .tm-sidebar .tm-tour-features .tm-tour-feature {
   height: auto;
   margin-bottom: 0;
-}
-.vdp-datepicker > div input {
-  margin: 0;
-  font: inherit;
-  overflow: visible;
-  -webkit-appearance: none;
-  max-width: 100%;
-  width: 100%;
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  transition: 0.2s ease-in-out;
-  transition-property: color, background-color, border;
-  vertical-align: middle;
-  display: inline-block;
-  font-family: "Exo 2", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #444444;
-  box-sizing: border-box;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 3px;
-  padding: 0 25px 0 4px;
-  text-align: right;
-}
-.vdp-datepicker > div input:disabled {
-  background-color: #f8f8f8;
-  color: #444444;
-  border-color: #e5e5e5;
-}
-.vdp-datepicker > div input::placeholder {
-  text-align: left;
 }
 .uk-navbar-item a {
   color: inherit;
