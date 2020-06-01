@@ -3659,6 +3659,9 @@ footer .tm-address::before {
   text-decoration: none;
 }
 .tm-button-link > div {
+  width: 100%;
+}
+.tm-button-link > div > span {
   display: flex;
   flex-direction: column;
 }
