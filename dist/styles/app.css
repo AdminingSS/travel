@@ -2462,6 +2462,9 @@ a.tm-tour-place:hover {
   text-decoration: none;
   font-size: 12px;
 }
+.tm-header-fixed .tm-dropdown-top a span {
+  margin-right: 8px;
+}
 .tm-header-fixed .uk-navbar-item,
 .tm-header-fixed .uk-navbar-nav > li > a,
 .tm-header-fixed .uk-navbar-toggle {
@@ -3647,8 +3650,6 @@ footer .tm-address::before {
   margin-bottom: 8px;
 }
 .tm-button-link {
-  display: flex;
-  flex-direction: column;
   border: 1px dashed #1868a0;
   padding: 5px 8px;
   font-size: 12px;
@@ -3656,6 +3657,10 @@ footer .tm-address::before {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+}
+.tm-button-link > div {
+  display: flex;
+  flex-direction: column;
 }
 .tm-header-opaque {
   opacity: 0!important;

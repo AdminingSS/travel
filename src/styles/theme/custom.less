@@ -463,8 +463,6 @@ footer {
 }
 
 .tm-button-link {
-  display: flex;
-  flex-direction: column;
   border: 1px dashed @global-secondary-background;
   padding: 5px 8px;
   font-size: 12px;
@@ -472,6 +470,11 @@ footer {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .tm-header-opaque {
