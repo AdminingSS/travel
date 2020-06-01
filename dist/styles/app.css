@@ -198,7 +198,7 @@ select.disabled {
   text-transform: uppercase;
 }
 .tm-select .tm-select-pseudo,
-.tm-select > div input {
+.tm-select .vdp-datepicker > div input {
   box-sizing: border-box;
   width: 160px;
   height: 48px;
@@ -211,11 +211,11 @@ select.disabled {
   padding-top: 15px;
 }
 .tm-select .tm-select-pseudo.inactive,
-.tm-select > div input.inactive {
+.tm-select .vdp-datepicker > div input.inactive {
   color: #bcbfc2;
 }
 .tm-select .tm-select-pseudo::placeholder,
-.tm-select > div input::placeholder {
+.tm-select .vdp-datepicker > div input::placeholder {
   color: #444444;
 }
 .tm-select .vdp-datepicker__calendar {
