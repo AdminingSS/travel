@@ -1555,7 +1555,7 @@ select {
       border-left: 1px solid #cccccc;
 
       > div:first-child {
-        padding: 15px 15px 10px;
+        padding: 4px 15px 8px;
       }
 
       .tm-tour-cost {
@@ -1565,7 +1565,7 @@ select {
       }
 
       .tm-tour-dates {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         span {
           white-space: nowrap;
         }
@@ -1580,7 +1580,8 @@ select {
         padding: 0 10px 0 25px;
         border: solid 1px #e1e1e1;
         cursor: pointer;
-        margin-bottom: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
         border-radius: @global-border-radius;
         color: @global-color;
         text-decoration: none;
@@ -1623,6 +1624,41 @@ select {
           svg {
             transform: translateX(20px);
           }
+        }
+      }
+
+      .tm-dates-duration {
+        display: flex;
+        //margin-bottom: 10px;
+
+        .days, .nights {
+          position: relative;
+          padding-left: 20px;
+          //margin-bottom: 8px;
+
+          &::before {
+            position: absolute;
+            display: block;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 16px;
+            color: @global-secondary-color;
+          }
+        }
+        .days {
+          margin-right: 20px;
+        }
+
+        .days::before {
+          content: '\f185';
+        }
+
+        .nights::before {
+          font-size: 14px;
+          content: '\f186';
         }
       }
     }
@@ -3864,40 +3900,6 @@ body {
       display: flex;
       flex-wrap: wrap;
     }
-  }
-}
-
-.tm-dates-duration {
-  display: flex;
-
-  .days, .nights {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 8px;
-
-    &::before {
-      position: absolute;
-      display: block;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      font-size: 20px;
-      color: @global-secondary-color;
-    }
-  }
-  .days {
-    margin-right: 20px;
-  }
-
-  .days::before {
-    content: '\f185';
-  }
-
-  .nights::before {
-    font-size: 18px;
-    content: '\f186';
   }
 }
 

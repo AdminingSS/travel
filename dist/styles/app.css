@@ -1307,7 +1307,7 @@ select.disabled {
   border-left: 1px solid #cccccc;
 }
 .tm-sidemain .tm-content-panel .tm-panel-details > div:first-child {
-  padding: 15px 15px 10px;
+  padding: 4px 15px 8px;
 }
 .tm-sidemain .tm-content-panel .tm-panel-details .tm-tour-cost {
   font-size: 22px;
@@ -1315,7 +1315,7 @@ select.disabled {
   margin-bottom: 8px;
 }
 .tm-sidemain .tm-content-panel .tm-panel-details .tm-tour-dates {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .tm-sidemain .tm-content-panel .tm-panel-details .tm-tour-dates span {
   white-space: nowrap;
@@ -1329,7 +1329,8 @@ select.disabled {
   padding: 0 10px 0 25px;
   border: solid 1px #e1e1e1;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   border-radius: 3px;
   color: #444444;
   text-decoration: none;
@@ -1366,6 +1367,36 @@ select.disabled {
 }
 .tm-sidemain .tm-content-panel .tm-panel-details .uk-button:hover svg {
   transform: translateX(20px);
+}
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration {
+  display: flex;
+}
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration .days,
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration .nights {
+  position: relative;
+  padding-left: 20px;
+}
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration .days::before,
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration .nights::before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  color: #1868a0;
+}
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration .days {
+  margin-right: 20px;
+}
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration .days::before {
+  content: '\F185';
+}
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration .nights::before {
+  font-size: 14px;
+  content: '\F186';
 }
 .tm-sidemain .tm-content-panel.tm-new {
   box-shadow: 0 20px 40px 0 rgba(42, 141, 29, 0.2);
@@ -3138,37 +3169,6 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-modal-dates .tm-content-item .tm-dates-duration {
   display: flex;
   flex-wrap: wrap;
-}
-.tm-dates-duration {
-  display: flex;
-}
-.tm-dates-duration .days,
-.tm-dates-duration .nights {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 8px;
-}
-.tm-dates-duration .days::before,
-.tm-dates-duration .nights::before {
-  position: absolute;
-  display: block;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 20px;
-  color: #1868a0;
-}
-.tm-dates-duration .days {
-  margin-right: 20px;
-}
-.tm-dates-duration .days::before {
-  content: '\F185';
-}
-.tm-dates-duration .nights::before {
-  font-size: 18px;
-  content: '\F186';
 }
 .tm-lk-tabs {
   display: flex;
