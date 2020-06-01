@@ -66,7 +66,7 @@ $(() => {
         const $dropdownContentTrigger = $('.tm-tours-types-list li');
 
         $dropdownContentTrigger.on('click', function (e) {
-            e.preventDefault();
+            //e.preventDefault();
 
             const thisTrigger = $(this);
 
