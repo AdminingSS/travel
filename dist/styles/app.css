@@ -334,6 +334,7 @@ select.disabled {
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li {
   position: relative;
   padding: 8px;
+  cursor: pointer;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li::before {
   position: absolute;
@@ -373,6 +374,7 @@ select.disabled {
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li a {
   font-size: 14px;
   color: #444444;
+  cursor: pointer;
 }
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li.uk-active,
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li:hover {
