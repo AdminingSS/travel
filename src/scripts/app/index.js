@@ -159,9 +159,9 @@ $(() => {
                 }
             }
 
-            if(!$orderForm.length || !$faqTrigger.length) return;
+            if(!$orderForm.length) return;
 
-            const topPosition = $faqTrigger.offset().top;
+            const topPosition = ($faqTrigger.length) ? $faqTrigger.offset().top : $orderForm.offset().top;
 
             if(scrollTop + 200 > topPosition && scrollTop < $orderForm.offset().top + $orderForm.height()) {
                 $fixedHeader.addClass('tm-header-opaque');
