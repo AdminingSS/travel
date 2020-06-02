@@ -515,6 +515,9 @@ select.disabled {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
+.uk-button:disabled {
+  background-color: #aaaaaa;
+}
 .uk-button-large {
   height: 51px;
   line-height: 51px;
@@ -796,6 +799,7 @@ select.disabled {
   color: #004085;
   background-color: #bcdeff;
   margin-bottom: 30px;
+  margin-top: 15px;
   border-radius: 3px;
 }
 .tm-message.warning {
@@ -4079,8 +4083,14 @@ footer .tm-address::before {
   .tm-top-slider .tm-top-slider-caption {
     font-size: 35px;
   }
-  .tm-top-slider-caption h1 {
+  .tm-top-slider .tm-top-slider-caption h1 {
     font-size: 35px;
+  }
+  .tm-top-slider .tm-top-slider-caption h2 {
+    font-size: 26px;
+  }
+  .tm-top-slider .tm-top-slider-desc h2 {
+    font-size: 22px;
   }
   .tm-select .tm-select-pseudo-items.what {
     width: 500px;
@@ -4329,6 +4339,10 @@ footer .tm-address::before {
   .tm-sidemain .tm-content-panel .tm-panel-desc > *:first-child {
     margin-bottom: 8px;
   }
+  .tm-program-image-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (max-width: 424px) {
   .uk-logo {
@@ -4347,8 +4361,14 @@ footer .tm-address::before {
   .tm-top-slider .tm-top-slider-caption {
     font-size: 26px;
   }
-  .tm-top-slider-caption h1 {
+  .tm-top-slider .tm-top-slider-caption h1 {
     font-size: 26px;
+  }
+  .tm-top-slider .tm-top-slider-caption h2 {
+    font-size: 22px;
+  }
+  .tm-top-slider .tm-top-slider-desc h2 {
+    font-size: 18px;
   }
   .tm-breadcrumb-legend {
     white-space: nowrap;
