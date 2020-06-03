@@ -138,7 +138,7 @@ $(() => {
 
         $window.on('scroll', function () {
             const scrollTop = $(window).scrollTop();
-            const $faqTrigger = $('.tm-faq-order-trigger');
+            //const $faqTrigger = $('.tm-faq-order-trigger');
 
             let controlPointsArray = [];
             $blockAnchors.each(function () {
@@ -162,6 +162,7 @@ $(() => {
             }
 
             if(!$orderForm.length) return;
+            const $faqTrigger = $('.tm-faq-order-trigger');
 
             const topPosition = ($faqTrigger.length) ? $faqTrigger.offset().top : $orderForm.offset().top;
 
