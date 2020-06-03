@@ -113,7 +113,7 @@ $(() => {
             e.preventDefault();
             if(!$('.tm-order-form').length) return;
             const $orderForm = $('.tm-faq-order-trigger');
-            const formTop = ($orderForm.length) ? $orderForm.offset().top - 10 : $('.tm-order-form').offset().top - 100;
+            const formTop = ($faqTrigger.length && !$faqTrigger.is(":hidden")) ? $orderForm.offset().top - 10 : $('.tm-order-form').offset().top - 100;
 
             $sidebarItem.removeClass('uk-active');
             $body.removeClass('body-grayed');
@@ -164,7 +164,7 @@ $(() => {
             if(!$orderForm.length) return;
             const $faqTrigger = $('.tm-faq-order-trigger');
 
-            const topPosition = ($faqTrigger.length) ? $faqTrigger.offset().top : $orderForm.offset().top;
+            const topPosition = ($faqTrigger.length && !$faqTrigger.is(":hidden")) ? $faqTrigger.offset().top : $orderForm.offset().top;
 
             if(scrollTop + 200 > topPosition && scrollTop < $orderForm.offset().top + $orderForm.height()) {
                 $fixedHeader.addClass('tm-header-opaque');
