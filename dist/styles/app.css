@@ -4548,7 +4548,7 @@ footer .tm-address::before {
   .tm-order-personal .uk-button {
     min-width: 0;
   }
-  .tm-faq-order-trigger {
+  .tm-faq-order-trigger .uk-button {
     display: none;
   }
   .tm-modal-dates .tm-modal-body-top > *:first-child,
