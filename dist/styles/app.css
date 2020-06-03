@@ -4416,6 +4416,10 @@ footer .tm-address::before {
     margin-right: 0;
     margin-bottom: 4px;
   }
+  .tm-select .tm-select-pseudo,
+  .tm-select .vdp-datepicker > div input {
+    width: 100%;
+  }
 }
 @media (max-width: 424px) {
   .uk-logo {
