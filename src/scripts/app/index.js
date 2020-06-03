@@ -104,7 +104,7 @@ $(() => {
 
     //to order form scroll
     (() => {
-        const $orderForm = $('.tm-faq-order-trigger');
+        //const $orderForm = $('.tm-faq-order-trigger');
         const $orderTriggers = $('.js-order-trigger');
         const $sidebarItem = $('.tm-sidebar');
         const $body = $('body');
@@ -112,6 +112,7 @@ $(() => {
         $orderTriggers.on('click', function (e) {
             e.preventDefault();
             if(!$('.tm-order-form').length) return;
+            const $orderForm = $('.tm-faq-order-trigger');
             const formTop = ($orderForm.length) ? $orderForm.offset().top - 10 : $('.tm-order-form').offset().top - 100;
 
             $sidebarItem.removeClass('uk-active');
