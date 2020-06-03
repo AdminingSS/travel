@@ -3836,6 +3836,9 @@ footer .tm-address::before {
 .uk-breadcrumb > * > * {
   font-size: 16px;
 }
+.tm-mobile-form-sidebar {
+  display: none;
+}
 .tm-mobile-form-sidebar .price {
   font-size: 14px;
   font-weight: 600;
@@ -3996,6 +3999,9 @@ footer .tm-address::before {
   }
   .tm-footer-tour {
     padding-bottom: 80px;
+  }
+  .tm-mobile-form-sidebar {
+    display: block;
   }
   .tm-sidebar-absolute {
     top: auto;
