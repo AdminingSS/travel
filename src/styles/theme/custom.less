@@ -688,10 +688,56 @@ footer {
 
 
 .tm-mobile-form-sidebar {
+
+  .price {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    .price-overall {
+      font-size: 26px;
+      font-weight: 300;
+
+      span {
+        font-size: 36px;
+        font-weight: 600;
+        white-space: nowrap;
+        display: block;
+        margin-left: 10px;
+      }
+    }
+  }
+
   .uk-container {
     width: 100%;
     max-width: none;
-    margin: 0 0 10px;
+    margin: 0;
+
+    .tm-peoples {
+      margin-bottom: 10px;
+    }
+
+    .tm-peoples .tm-peoples-adult, .tm-peoples .tm-peoples-child {
+      width: auto;
+    }
+
+    .tm-peoples .tm-peoples-adult {
+      margin-right: 15px;
+    }
+
+    .tm-apartments {
+      margin-bottom: 10px;
+    }
+
+    .tm-apartments .tm-apts {
+      width: auto;
+      margin-right: 15px;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
