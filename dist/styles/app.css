@@ -3839,6 +3839,10 @@ footer .tm-address::before {
 .tm-mobile-form-sidebar {
   display: none;
 }
+.tm-mobile-form-sidebar .tm-button-link {
+  width: 210px;
+  margin-bottom: 8px;
+}
 .tm-mobile-form-sidebar .price {
   font-size: 14px;
   font-weight: 600;
