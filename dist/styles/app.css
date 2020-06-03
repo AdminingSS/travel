@@ -3836,7 +3836,7 @@ footer .tm-address::before {
 .uk-breadcrumb > * > * {
   font-size: 16px;
 }
-.tm-sidebar-absolute .uk-container {
+.tm-mobile-form-sidebar .uk-container {
   width: 100%;
   max-width: none;
   margin: 0 0 10px;
@@ -3962,12 +3962,11 @@ footer .tm-address::before {
     padding-bottom: 80px;
   }
   .tm-sidebar-absolute {
-    position: relative;
     top: auto;
     left: auto;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     margin-bottom: 30px;
   }
