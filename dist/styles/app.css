@@ -3825,8 +3825,9 @@ footer .tm-address::before {
   font-size: 16px;
 }
 .tm-sidebar-absolute .uk-container {
+  width: 100%;
   max-width: none;
-  margin: 0;
+  margin: 0 0 10px;
 }
 .tm-sidebar {
   margin-top: -200px;
@@ -3963,32 +3964,36 @@ footer .tm-address::before {
   }
   .tm-sidebar-absolute .tm-adaptive-sidehead {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
   }
-  .tm-sidebar-absolute .tm-adaptive-tourists {
+  .tm-sidebar-absolute .tm-adaptive-sidehead .price {
+    text-align: right;
+  }
+  .tm-sidebar-absolute .tm-adaptive-sidehead .price .price-overall {
     display: flex;
-    align-items: center;
-    width: 100%;
+    align-items: flex-end;
+  }
+  .tm-sidebar-absolute .tm-adaptive-sidehead .price .price-overall span {
+    margin-left: 15px;
+  }
+  .tm-sidebar-absolute .tm-adaptive-tourists {
+    width: 50%;
+    margin-bottom: 10px;
   }
   .tm-sidebar-absolute .tm-adaptive-tourists > *:first-child {
     margin-right: 15px;
   }
   .tm-sidebar-absolute .tm-adaptive-tourists .tm-peoples {
     margin-bottom: 0;
-    display: flex;
-    align-items: start;
+    display: block;
   }
   .tm-sidebar-absolute .tm-adaptive-tourists .tm-peoples .tm-peoples-adult,
   .tm-sidebar-absolute .tm-adaptive-tourists .tm-peoples .tm-peoples-child {
     width: auto;
-    margin-right: 15px;
   }
   .tm-sidebar-absolute .tm-adaptive-apartments {
-    display: flex;
-    align-items: start;
-    width: 100%;
+    width: 50%;
   }
   .tm-sidebar-absolute .tm-adaptive-apartments > *:first-child {
     margin-right: 15px;
@@ -3996,12 +4001,10 @@ footer .tm-address::before {
   }
   .tm-sidebar-absolute .tm-adaptive-apartments .tm-apartments {
     margin-bottom: 0;
-    display: flex;
-    align-items: start;
+    display: block;
   }
   .tm-sidebar-absolute .tm-adaptive-apartments .tm-apartments .tm-apts {
     width: auto;
-    margin-right: 15px;
     margin-bottom: 0;
   }
   .tm-sidebar-absolute .tm-adaptive-other {
@@ -4021,6 +4024,15 @@ footer .tm-address::before {
   }
 }
 @media (max-width: 959px) {
+  .tm-sidebar-absolute .price .price-overall {
+    display: block;
+  }
+  .tm-sidebar-absolute .tm-adaptive-tourists {
+    width: 100%;
+  }
+  .tm-sidebar-absolute .tm-adaptive-apartments {
+    width: 100%;
+  }
   .tm-sidebar-absolute .tm-adaptive-apartments .tm-apartments .tm-apts {
     width: 100%;
   }
@@ -4313,8 +4325,14 @@ footer .tm-address::before {
   .tm-sidebar-absolute .tm-adaptive-sidehead {
     flex-wrap: wrap;
   }
+  .tm-sidebar-absolute .tm-adaptive-sidehead .name {
+    width: 100%;
+  }
   .tm-sidebar-absolute .tm-adaptive-sidehead .price {
     min-width: 0;
+  }
+  .tm-sidebar-absolute .tm-adaptive-sidehead .price .price-overall {
+    display: flex;
   }
   .tm-sidebar-absolute .tm-adaptive-tourists {
     display: block;
@@ -4470,6 +4488,15 @@ footer .tm-address::before {
   }
   .tm-sidebar-absolute .name {
     font-size: 22px;
+  }
+  .tm-sidebar-absolute .tm-adaptive-sidehead .price {
+    text-align: left;
+  }
+  .tm-sidebar-absolute .tm-adaptive-sidehead .price .price-overall {
+    display: block;
+  }
+  .tm-sidebar-absolute .tm-adaptive-sidehead .price .price-overall span {
+    margin-left: 0;
   }
   .tm-order-personal .uk-button {
     min-width: 0;

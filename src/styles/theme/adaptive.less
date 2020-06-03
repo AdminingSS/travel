@@ -163,16 +163,30 @@
 
     .tm-adaptive-sidehead {
       display: flex;
-      align-items: center;
+      //align-items: center;
       justify-content: space-between;
 
       width: 100%;
+
+      .price {
+        text-align: right;
+
+        .price-overall {
+          display: flex;
+          align-items: flex-end;
+
+          span {
+            margin-left: 15px;
+          }
+        }
+      }
     }
 
     .tm-adaptive-tourists {
-      display: flex;
-      align-items: center;
-      width: 100%;
+      //display: flex;
+      //align-items: center;
+      width: 50%;
+      margin-bottom: 10px;
 
       >*:first-child {
         margin-right: 15px;
@@ -180,20 +194,21 @@
 
       .tm-peoples {
         margin-bottom: 0;
-        display: flex;
-        align-items: start;
+        display: block;
+        //display: flex;
+        //align-items: start;
 
         .tm-peoples-adult, .tm-peoples-child {
           width: auto;
-          margin-right: 15px;
+          //margin-right: 15px;
         }
       }
     }
 
     .tm-adaptive-apartments {
-      display: flex;
-      align-items: start;
-      width: 100%;
+      //display: flex;
+      //align-items: start;
+      width: 50%;
 
       >*:first-child {
         margin-right: 15px;
@@ -202,12 +217,13 @@
 
       .tm-apartments {
         margin-bottom: 0;
-        display: flex;
-        align-items: start;
+        display: block;
+        //display: flex;
+        //align-items: start;
 
         .tm-apts {
           width: auto;
-          margin-right: 15px;
+          //margin-right: 15px;
           margin-bottom: 0;
         }
       }
@@ -236,6 +252,18 @@
 }
 
 @media (max-width: 959px) {
+
+  .tm-sidebar-absolute .price .price-overall {
+    display: block;
+  }
+
+  .tm-sidebar-absolute .tm-adaptive-tourists {
+    width: 100%;
+  }
+
+  .tm-sidebar-absolute .tm-adaptive-apartments {
+    width: 100%;
+  }
 
   .tm-sidebar-absolute .tm-adaptive-apartments .tm-apartments .tm-apts {
     width: 100%;
@@ -638,8 +666,16 @@
   .tm-sidebar-absolute .tm-adaptive-sidehead {
     flex-wrap: wrap;
 
+    .name {
+      width: 100%;
+    }
+
     .price {
       min-width: 0;
+
+      .price-overall {
+        display: flex;
+      }
     }
   }
 
@@ -855,6 +891,20 @@
 
   .tm-sidebar-absolute .name {
     font-size: 22px;
+  }
+
+  .tm-sidebar-absolute .tm-adaptive-sidehead {
+    .price {
+      text-align: left;
+
+      .price-overall {
+        display: block;
+
+        span {
+          margin-left: 0;
+        }
+      }
+    }
   }
 
   .tm-order-personal .uk-button {
