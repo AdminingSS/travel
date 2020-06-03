@@ -3824,6 +3824,10 @@ footer .tm-address::before {
 .uk-breadcrumb > * > * {
   font-size: 16px;
 }
+.tm-sidebar-absolute .uk-container {
+  max-width: none;
+  margin: 0;
+}
 .tm-sidebar {
   margin-top: -200px;
 }
