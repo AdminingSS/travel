@@ -113,7 +113,7 @@ $(() => {
             e.preventDefault();
             if(!$('.tm-order-form').length) return;
             const $orderForm = $('.tm-faq-order-trigger');
-            const formTop = ($faqTrigger.length && !$faqTrigger.is(":hidden")) ? $orderForm.offset().top - 10 : $('.tm-order-form').offset().top - 100;
+            const formTop = ($orderForm.length && !$orderForm.is(":hidden")) ? $orderForm.offset().top - 10 : $('.tm-order-form').offset().top - 100;
 
             $sidebarItem.removeClass('uk-active');
             $body.removeClass('body-grayed');
