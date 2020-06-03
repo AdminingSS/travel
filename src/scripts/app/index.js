@@ -112,7 +112,7 @@ $(() => {
         $orderTriggers.on('click', function (e) {
             e.preventDefault();
             if(!$('.tm-order-form').length) return;
-            const formTop = ($orderForm.length) ? $orderForm.offset().top - 100 : $('.tm-order-form').offset().top - 100;
+            const formTop = ($orderForm.length) ? $orderForm.offset().top - 10 : $('.tm-order-form').offset().top - 100;
 
             $sidebarItem.removeClass('uk-active');
             $body.removeClass('body-grayed');
