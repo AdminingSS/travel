@@ -3836,10 +3836,47 @@ footer .tm-address::before {
 .uk-breadcrumb > * > * {
   font-size: 16px;
 }
+.tm-mobile-form-sidebar .price {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.tm-mobile-form-sidebar .price .price-overall {
+  font-size: 26px;
+  font-weight: 300;
+}
+.tm-mobile-form-sidebar .price .price-overall span {
+  font-size: 36px;
+  font-weight: 600;
+  white-space: nowrap;
+  display: block;
+  margin-left: 10px;
+}
 .tm-mobile-form-sidebar .uk-container {
   width: 100%;
   max-width: none;
-  margin: 0 0 10px;
+  margin: 0;
+}
+.tm-mobile-form-sidebar .uk-container .tm-peoples {
+  margin-bottom: 10px;
+}
+.tm-mobile-form-sidebar .uk-container .tm-peoples .tm-peoples-adult,
+.tm-mobile-form-sidebar .uk-container .tm-peoples .tm-peoples-child {
+  width: auto;
+}
+.tm-mobile-form-sidebar .uk-container .tm-peoples .tm-peoples-adult {
+  margin-right: 15px;
+}
+.tm-mobile-form-sidebar .uk-container .tm-apartments {
+  margin-bottom: 10px;
+}
+.tm-mobile-form-sidebar .uk-container .tm-apartments .tm-apts {
+  width: auto;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+.tm-mobile-form-sidebar .uk-container .tm-apartments .tm-apts:last-child {
+  margin-right: 0;
 }
 .tm-sidebar.tm-sidebar-over {
   margin-top: -200px;
@@ -4171,6 +4208,14 @@ footer .tm-address::before {
     font-size: 14px;
     text-align: right;
   }
+  .tm-mobile-form-sidebar .tm-apartments .tm-apts {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+  .tm-mobile-form-sidebar .tm-apartments .tm-apts:last-child {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 767px) {
   .tm-top-search-panel {
@@ -4376,6 +4421,14 @@ footer .tm-address::before {
   .tm-program-image-block {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .tm-mobile-form-sidebar .tm-peoples .tm-peoples-adult,
+  .tm-mobile-form-sidebar .tm-peoples .tm-peoples-child {
+    width: 100%;
+  }
+  .tm-mobile-form-sidebar .tm-peoples .tm-peoples-adult {
+    margin-right: 0;
+    margin-bottom: 4px;
   }
 }
 @media (max-width: 424px) {
