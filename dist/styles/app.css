@@ -3861,6 +3861,12 @@ footer .tm-address::before {
   white-space: nowrap;
   display: block;
 }
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration .days::before {
+  left: 2px;
+}
+.tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration {
+  margin-bottom: 5px;
+}
 .tm-sidebar.tm-sidebar-over {
   margin-top: -200px;
 }
