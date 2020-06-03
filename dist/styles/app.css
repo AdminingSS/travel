@@ -3720,6 +3720,9 @@ footer .tm-address::before {
 .tm-faq-order-trigger .uk-button {
   border-radius: 0 3px 3px 0;
 }
+.tm-faq-order-trigger:hover {
+  color: #2a8d1d;
+}
 .tm-tour-feature-type {
   display: flex;
   align-items: center;
