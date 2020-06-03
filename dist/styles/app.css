@@ -3829,7 +3829,7 @@ footer .tm-address::before {
   max-width: none;
   margin: 0 0 10px;
 }
-.tm-sidebar {
+.tm-sidebar.tm-sidebar-over {
   margin-top: -200px;
 }
 .tm-sidebar .tm-sidebar-sup {
