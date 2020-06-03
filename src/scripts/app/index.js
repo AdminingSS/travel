@@ -126,6 +126,7 @@ $(() => {
     //fixed header
     (() => {
         const $fixedHeader = $('.tm-header-fixed');
+        const $fixedFooter = $('.tm-sidebar-toggle-tour');
         const $blockTriggers = $fixedHeader.find('.uk-navbar-nav li');
         const $orderForm = $('.tm-order-form');
         const $blockAnchors = $('.js-anchor');
@@ -165,9 +166,11 @@ $(() => {
 
             if(scrollTop + 200 > topPosition && scrollTop < $orderForm.offset().top + $orderForm.height()) {
                 $fixedHeader.addClass('tm-header-opaque');
+                $fixedFooter.addClass('tm-header-opaque');
             }
             else {
                 $fixedHeader.removeClass('tm-header-opaque');
+                $fixedFooter.removeClass('tm-header-opaque');
             }
 
         });
