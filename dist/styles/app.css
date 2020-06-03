@@ -3850,7 +3850,6 @@ footer .tm-address::before {
   font-weight: 600;
   white-space: nowrap;
   display: block;
-  margin-left: 10px;
 }
 .tm-mobile-form-sidebar .uk-container {
   width: 100%;
