@@ -259,12 +259,14 @@ $(() => {
         const $sidebarClose = $('.sidebar-close-outer');
         const $body = $('body');
 
-        $sidebarToggle.on('click', function () {
+        $sidebarToggle.on('click', function (e) {
+            e.preventDefault();
             $sidebarItem.addClass('uk-active');
             $body.addClass('body-grayed');
         });
 
-        $sidebarClose.on('click', function () {
+        $sidebarClose.on('click', function (e) {
+            e.preventDefault();
             $sidebarItem.removeClass('uk-active');
             $body.removeClass('body-grayed');
         });

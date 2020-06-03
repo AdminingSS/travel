@@ -2804,7 +2804,7 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   bottom: 80px;
 }
 .tm-button-seen.tm-visible.tm-tour-fixed-button {
-  bottom: 125px;
+  bottom: 150px;
 }
 .tm-button-totop {
   background-color: #1868a0;
@@ -2814,7 +2814,7 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   bottom: 45px;
 }
 .tm-button-totop.tm-visible.tm-tour-fixed-button {
-  bottom: 80px;
+  bottom: 110px;
 }
 .tm-content-switch-mobile {
   display: none;
@@ -3821,6 +3821,9 @@ footer .tm-address::before {
   min-height: 100%;
   width: auto;
 }
+.uk-breadcrumb > * > * {
+  font-size: 16px;
+}
 .tm-sidebar {
   margin-top: -200px;
 }
@@ -3828,6 +3831,7 @@ footer .tm-address::before {
   position: relative;
   box-shadow: none;
   padding: 15px 15px 20px;
+  bottom: auto;
 }
 @media (max-width: 1199px) {
   .tm-sidebar {
