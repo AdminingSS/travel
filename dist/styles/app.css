@@ -3861,32 +3861,6 @@ footer .tm-address::before {
   white-space: nowrap;
   display: block;
 }
-.tm-mobile-form-sidebar .uk-container {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-}
-.tm-mobile-form-sidebar .uk-container .tm-peoples {
-  margin-bottom: 10px;
-}
-.tm-mobile-form-sidebar .uk-container .tm-peoples .tm-peoples-adult,
-.tm-mobile-form-sidebar .uk-container .tm-peoples .tm-peoples-child {
-  width: auto;
-}
-.tm-mobile-form-sidebar .uk-container .tm-peoples .tm-peoples-adult {
-  margin-right: 15px;
-}
-.tm-mobile-form-sidebar .uk-container .tm-apartments {
-  margin-bottom: 10px;
-}
-.tm-mobile-form-sidebar .uk-container .tm-apartments .tm-apts {
-  width: auto;
-  margin-right: 15px;
-  margin-bottom: 0;
-}
-.tm-mobile-form-sidebar .uk-container .tm-apartments .tm-apts:last-child {
-  margin-right: 0;
-}
 .tm-sidebar.tm-sidebar-over {
   margin-top: -200px;
 }
