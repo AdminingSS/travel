@@ -2890,6 +2890,10 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 }
 .tm-order-form h2 {
   font-weight: 600;
+  margin-bottom: 10px;
+}
+.tm-order-personal {
+  font-size: 14px;
 }
 .tm-order-personal h4 {
   margin-bottom: 8px;
@@ -2897,8 +2901,11 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-order-personal .uk-button {
   min-width: 300px;
 }
+.tm-order-personal .uk-margin-medium-bottom {
+  margin-bottom: 10px!important;
+}
 .tm-payment-icons {
-  width: 160px;
+  width: auto;
   height: 22px;
   display: flex;
   justify-content: space-between;
@@ -2906,9 +2913,13 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 }
 .tm-payment-icons > div {
   width: 40px;
+  margin-right: 8px;
 }
 .tm-payment-icons > div img {
   max-height: 22px;
+}
+.tm-payment-icons > div:last-child {
+  margin-right: 0;
 }
 .tm-toggler-proximity {
   display: block;
@@ -3966,9 +3977,6 @@ footer .tm-address::before {
     display: flex;
     justify-content: space-between;
     width: 100%;
-  }
-  .tm-sidebar-absolute .tm-adaptive-sidehead .price {
-    text-align: right;
   }
   .tm-sidebar-absolute .tm-adaptive-sidehead .price .price-overall {
     display: flex;

@@ -3526,6 +3526,7 @@ body {
 
   h2 {
     font-weight: 600;
+    margin-bottom: 10px;
   }
 }
 
@@ -3536,6 +3537,8 @@ body {
 //}
 
 .tm-order-personal {
+  font-size: 14px;
+
   h4 {
     margin-bottom: 8px;
   }
@@ -3543,10 +3546,14 @@ body {
   .uk-button {
     min-width: 300px;
   }
+
+  .uk-margin-medium-bottom {
+    margin-bottom: 10px!important;
+  }
 }
 
 .tm-payment-icons {
-  width: 160px;
+  width: auto;
   height: 22px;
   display: flex;
   justify-content: space-between;
@@ -3554,10 +3561,15 @@ body {
 
   > div {
     width: 40px;
+    margin-right: 8px;
     //height: 22px;
 
     img {
       max-height: 22px;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
