@@ -2010,6 +2010,7 @@ a.tm-tour-place:hover {
 .tm-tour-program-item > h4 {
   position: relative;
   padding-left: 30px;
+  margin-bottom: 10px;
 }
 .tm-tour-program-item > h4::before {
   position: absolute;
@@ -3866,6 +3867,10 @@ footer .tm-address::before {
 }
 .tm-sidemain .tm-content-panel .tm-panel-details .tm-dates-duration {
   margin-bottom: 5px;
+}
+.tm-program-types {
+  padding-left: 30px;
+  margin-bottom: 15px;
 }
 .tm-sidebar.tm-sidebar-over {
   margin-top: -200px;
