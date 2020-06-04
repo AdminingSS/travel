@@ -757,6 +757,20 @@
   .tm-select .tm-select-pseudo, .tm-select .vdp-datepicker > div input {
     width: 100%;
   }
+
+  .tm-tour-type {
+    &.button-style {
+      &:hover {
+        background-color: transparent;
+        color: @global-color;
+
+        svg {
+          color: @global-secondary-color;
+        }
+      }
+    }
+  }
+
 }
 
 @media(max-width: 424px) {

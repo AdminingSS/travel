@@ -4426,6 +4426,13 @@ footer .tm-address::before {
   .tm-select .vdp-datepicker > div input {
     width: 100%;
   }
+  .tm-tour-type.button-style:hover {
+    background-color: transparent;
+    color: #444444;
+  }
+  .tm-tour-type.button-style:hover svg {
+    color: #1868a0;
+  }
 }
 @media (max-width: 424px) {
   .uk-logo {
