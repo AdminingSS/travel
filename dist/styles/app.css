@@ -221,6 +221,7 @@ select.disabled {
 .tm-select .vdp-datepicker__calendar {
   color: #444444;
   max-width: none!important;
+  z-index: 4010;
 }
 .tm-select .tm-select-pseudo-items {
   margin-top: 0;
@@ -4065,6 +4066,9 @@ footer .tm-address::before {
   }
   .tm-section-footer {
     padding-bottom: 120px;
+  }
+  .tm-sidebar.tm-sidebar-over {
+    margin-top: 0;
   }
 }
 @media (max-width: 959px) {
