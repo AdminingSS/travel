@@ -4233,6 +4233,13 @@ footer .tm-address::before {
   .tm-top-search-panel > *:last-child .uk-button {
     width: 100%;
   }
+  .uk-tab-left,
+  .uk-tab-right {
+    flex-direction: row;
+  }
+  .uk-tab-left::before {
+    display: none;
+  }
 }
 @media (max-width: 639px) {
   .uk-container {
@@ -4443,6 +4450,10 @@ footer .tm-address::before {
   }
   .tm-tour-type.button-style:hover svg {
     color: #1868a0;
+  }
+  .uk-tab-left,
+  .uk-tab-right {
+    flex-direction: column;
   }
 }
 @media (max-width: 424px) {

@@ -481,6 +481,14 @@
       width: 100%;
     }
   }
+
+  .uk-tab-left, .uk-tab-right {
+    flex-direction: row;
+  }
+
+  .uk-tab-left::before {
+    display: none;
+  }
 }
 
 @media (max-width: 639px) {
@@ -773,6 +781,10 @@
         }
       }
     }
+  }
+
+  .uk-tab-left, .uk-tab-right {
+    flex-direction: column;
   }
 
 }
