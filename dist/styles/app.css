@@ -4356,7 +4356,7 @@ footer .tm-address::before {
   .tm-lk-tabs .uk-tab::before {
     display: none;
   }
-  .tm-lk-tabs .uk-switcher {
+  .tm-lk-tabs .tm-switcher {
     padding-left: 15px;
   }
   .tm-order-form {
