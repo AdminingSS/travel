@@ -3889,6 +3889,31 @@ footer .tm-address::before {
     margin-top: 0;
   }
 }
+.tm-select.tm-region .tm-select-pseudo-items.what,
+.tm-select.tm-type .tm-select-pseudo-items.what {
+  width: 600px;
+}
+.tm-select.tm-region .tm-select-pseudo-items .tm-what-tour > div:first-child,
+.tm-select.tm-type .tm-select-pseudo-items .tm-what-tour > div:first-child {
+  min-width: 30%;
+}
+.tm-select.tm-region .tm-select-pseudo-items .js-custom-scrollbar,
+.tm-select.tm-type .tm-select-pseudo-items .js-custom-scrollbar,
+.tm-select.tm-region .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list,
+.tm-select.tm-type .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tm-select.tm-region .tm-select-pseudo-items .tm-search label,
+.tm-select.tm-type .tm-select-pseudo-items .tm-search label,
+.tm-select.tm-region .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li,
+.tm-select.tm-type .tm-select-pseudo-items .tm-what-tour .tm-tours-types-list li {
+  width: 50%;
+  box-sizing: border-box;
+}
+.tm-select.tm-region .tm-select-pseudo-items {
+  width: 450px;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
@@ -4455,6 +4480,9 @@ footer .tm-address::before {
   .uk-tab-right {
     flex-direction: column;
   }
+  .tm-select.tm-region .tm-select-pseudo-items {
+    width: 380px;
+  }
 }
 @media (max-width: 424px) {
   .uk-logo {
@@ -4596,5 +4624,11 @@ footer .tm-address::before {
   }
   .tm-modal-dates .tm-dates-image-wrapper {
     margin: auto;
+  }
+  .tm-select.tm-region .tm-select-pseudo-items .js-custom-scrollbar {
+    display: block;
+  }
+  .tm-select.tm-region .tm-select-pseudo-items .tm-search label {
+    width: 100%;
   }
 }
