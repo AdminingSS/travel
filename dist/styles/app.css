@@ -2473,6 +2473,11 @@ a.tm-tour-place:hover {
 .tm-header-fixed .tm-dropdown-top a span {
   margin-right: 8px;
 }
+.tm-header-fixed .tm-dropdown-top .tm-dropdown-simple {
+  max-width: 300px;
+  left: auto!important;
+  right: 0!important;
+}
 .tm-header-fixed .uk-navbar-item,
 .tm-header-fixed .uk-navbar-nav > li > a,
 .tm-header-fixed .uk-navbar-toggle {
