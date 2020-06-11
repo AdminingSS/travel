@@ -227,7 +227,6 @@ select.disabled {
   margin-top: 0;
   padding: 15px 0 8px;
   width: 300px;
-  max-height: 230px;
   overflow: auto;
 }
 .tm-select .tm-select-pseudo-items.qty {
