@@ -715,11 +715,11 @@ select.disabled {
   white-space: nowrap;
 }
 .tm-badge.tm-badge-small {
-  position: absolute;
-  bottom: 0;
   font-size: 16px;
   padding: 6px 11px;
   line-height: 1;
+  transform: translateY(-5px);
+  display: inline-block;
 }
 .tm-panel-column {
   text-align: center;
@@ -4394,6 +4394,10 @@ footer .tm-address::before {
   }
   .tm-lk-tabs .tm-switcher {
     padding-left: 15px;
+    overflow: auto;
+  }
+  .tm-lk-tabs .tm-switcher .uk-table td {
+    min-width: 90px;
   }
   .tm-order-form {
     padding: 15px;

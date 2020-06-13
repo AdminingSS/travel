@@ -819,12 +819,15 @@ select {
   white-space: nowrap;
 
   &.tm-badge-small {
-    position: absolute;
-    bottom: 0;
+    //position: absolute;
+    //bottom: 0;
     //transform: translateY(50%);
     font-size: @global-font-size;
     padding: 6px 11px;
     line-height: 1;
+
+    transform: translateY(-5px);
+    display: inline-block;
   }
 }
 
