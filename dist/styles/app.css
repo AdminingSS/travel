@@ -1658,6 +1658,7 @@ a.tm-tour-place:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: transparent;
 }
 .tm-sidebar .uk-accordion-content,
 .tm-sidebar-absolute .uk-accordion-content {
