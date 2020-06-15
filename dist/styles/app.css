@@ -4639,4 +4639,15 @@ footer .tm-address::before {
   .tm-select.tm-region .tm-select-pseudo-items .tm-search label {
     width: 100%;
   }
+  .tm-section-footer .uk-logo {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .tm-section-footer .uk-logo span {
+    white-space: nowrap;
+  }
+  footer .tm-mail {
+    font-size: 16px;
+  }
 }
