@@ -1408,7 +1408,7 @@ select.disabled {
   transition: all 0.5s;
 }
 .tm-sidemain .tm-content-panel .tm-panel-details .uk-button:hover {
-  background-color: #444;
+  background-color: #2a8d1d;
 }
 .tm-sidemain .tm-content-panel .tm-panel-details .uk-button:hover svg {
   transform: translateX(20px);
