@@ -3946,6 +3946,12 @@ footer .tm-address::before {
 em {
   color: #444444;
 }
+.trunktext {
+  text-decoration: dotted underline;
+}
+.tm-tour-additional-item p:last-child {
+  margin-bottom: 10px;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
