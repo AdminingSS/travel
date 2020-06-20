@@ -3952,9 +3952,6 @@ em {
 .tm-tour-additional-item p:last-child {
   margin-bottom: 10px;
 }
-span.yellow {
-  background-color: yellow;
-}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
