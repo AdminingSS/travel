@@ -724,6 +724,7 @@ select.disabled {
 }
 .tm-panel-column {
   text-align: center;
+  color: #444444;
 }
 .tm-panel-column .tm-icon-image-wrapper-solid {
   width: 90px;
@@ -748,6 +749,9 @@ select.disabled {
 }
 .tm-panel-column p {
   margin: 0 0 15px;
+}
+.tm-column-panels {
+  margin: 40px 0;
 }
 .tm-column-panels .tm-badge,
 .tm-column-panels .tm-icon-image-wrapper-solid,
