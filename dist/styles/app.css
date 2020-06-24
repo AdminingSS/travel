@@ -568,7 +568,7 @@ select.disabled {
   padding: 15px;
   text-align: left;
 }
-.uk-card .uk-card-title {
+.uk-card .uk-card-title a {
   font-family: "Exo 2", sans-serif;
   font-size: 16px;
   font-weight: 300;
