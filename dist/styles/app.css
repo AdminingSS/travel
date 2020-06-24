@@ -3986,6 +3986,9 @@ em {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .tm-section-first {
+    padding: 0 0 50px;
+  }
   .tm-button-seen,
   .tm-button-totop {
     display: none;
