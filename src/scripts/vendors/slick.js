@@ -7,7 +7,7 @@ $(() => {
     (()=>{
         const $slickSlider = $('.tm-slider-gallery, .tm-sections-slider, .tm-accomodation-slider');
         const $sliderMobileLinks = $('.js-slider-mobile-links');
-        const $sliderMobileNews = $('.js-mobile-slider-news');
+        //const $sliderMobileNews = $('.js-mobile-slider-news');
         const $body = $('body');
         const $window = $(window);
         const $linksSliderControls = $('.tm-links-slider-controls a');
@@ -47,10 +47,10 @@ $(() => {
             }
 
             if (!sliderNewsCreated && $body.width() <= 622) {
-                $sliderMobileNews.slick(options);
+                //$sliderMobileNews.slick(options);
                 sliderNewsCreated = true;
             } else if (sliderNewsCreated && $body.width() > 622) {
-                $sliderMobileNews.slick('unslick');
+                //$sliderMobileNews.slick('unslick');
                 sliderNewsCreated = false;
             }
         }
