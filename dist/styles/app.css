@@ -3463,7 +3463,10 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 }
 .tm-section-first {
   position: relative;
-  padding: 30px 0 50px;
+  padding: 0 0 50px;
+}
+.tm-section-first h3 {
+  margin-top: 30px;
 }
 .tm-hr-triangles {
   position: relative;
@@ -3979,9 +3982,6 @@ em {
   .uk-section {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  .tm-section-first {
-    padding: 30px 0 50px;
   }
   .tm-button-seen,
   .tm-button-totop {
