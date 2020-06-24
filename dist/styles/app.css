@@ -3956,6 +3956,14 @@ em {
 .tm-tour-additional-item p:last-child {
   margin-bottom: 10px;
 }
+.tm-blockquote {
+  display: flex;
+}
+.tm-blockquote img {
+  height: 130px;
+  margin: 5px;
+  width: 130px;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
