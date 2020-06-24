@@ -1844,6 +1844,7 @@ a.tm-tour-place:hover {
   min-width: 100%;
   min-height: 100%;
   max-width: none;
+  object-fit: cover;
 }
 .tm-results-count {
   width: 9px;
