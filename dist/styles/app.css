@@ -751,7 +751,7 @@ select.disabled {
   margin: 0 0 15px;
 }
 .tm-column-panels {
-  margin: 40px 0;
+  margin: 40px 0 0;
 }
 .tm-column-panels .tm-badge,
 .tm-column-panels .tm-icon-image-wrapper-solid,
@@ -3460,6 +3460,9 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   right: 0;
   left: 0;
   z-index: -1;
+}
+h3 {
+  margin-top: 30px;
 }
 .tm-section-first {
   position: relative;
