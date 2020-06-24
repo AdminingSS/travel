@@ -577,6 +577,7 @@ select.disabled {
   font-size: 16px;
   font-weight: 300;
   color: #444444;
+  text-decoration: none;
 }
 .uk-card p {
   margin: 0 0 20px;
@@ -754,7 +755,7 @@ select.disabled {
   margin: 0 0 15px;
 }
 .tm-column-panels {
-  margin: 40px 0 0;
+  margin: 40px 0 20px;
 }
 .tm-column-panels .tm-badge,
 .tm-column-panels .tm-icon-image-wrapper-solid,
