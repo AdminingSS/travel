@@ -3973,6 +3973,9 @@ em {
 .tm-blockquote {
   display: flex;
 }
+.tm-blockquote p {
+  margin-top: 0!important;
+}
 .tm-blockquote img {
   height: 130px;
   margin: 5px;
@@ -4727,6 +4730,6 @@ em {
     font-size: 16px;
   }
   .tm-blockquote img {
-    width: 100%;
+    margin-right: auto;
   }
 }
