@@ -1225,6 +1225,7 @@ select.disabled {
 .tm-sidemain {
   width: 825px;
   margin-right: 25px;
+  padding-top: 30px;
 }
 .tm-sidemain .tm-content-options {
   display: flex;
