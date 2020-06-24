@@ -4305,6 +4305,18 @@ em {
   .tm-mobile-form-sidebar .tm-apartments .tm-apts:last-child {
     margin-bottom: 0;
   }
+  .tm-blockquote {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tm-blockquote p {
+    width: 100%;
+  }
+  .tm-blockquote img {
+    height: auto;
+    width: 25%;
+    margin-left: auto;
+  }
 }
 @media (max-width: 767px) {
   .tm-top-search-panel {
@@ -4325,6 +4337,9 @@ em {
   }
   .uk-tab-left::before {
     display: none;
+  }
+  .tm-blockquote img {
+    width: 50%;
   }
 }
 @media (max-width: 639px) {
@@ -4710,5 +4725,8 @@ em {
   }
   footer .tm-mail {
     font-size: 16px;
+  }
+  .tm-blockquote img {
+    width: 100%;
   }
 }

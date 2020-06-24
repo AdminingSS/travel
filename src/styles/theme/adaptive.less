@@ -463,6 +463,22 @@
       }
     }
   }
+
+  .tm-blockquote {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      width: 100%;
+    }
+
+    img {
+      height: auto;
+      //margin: 5px;
+      width: 25%;
+      margin-left: auto;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -488,6 +504,13 @@
 
   .uk-tab-left::before {
     display: none;
+  }
+
+  .tm-blockquote {
+
+    img {
+      width: 50%;
+    }
   }
 }
 
@@ -1026,5 +1049,12 @@
 
   footer .tm-mail {
     font-size: 16px;
+  }
+
+  .tm-blockquote {
+
+    img {
+      width: 100%;
+    }
   }
 }
