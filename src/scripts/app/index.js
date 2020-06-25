@@ -306,18 +306,18 @@ $(() => {
         })
     })();
 
-    (() => {
-        const $faqTriggers = $('.js-faq-triggers li a');
-        const $faqContentItems = $('.js-faq-content-items > div');
-
-        $faqTriggers.on('click', function (e) {
-            e.preventDefault();
-            const itemNumber = $faqTriggers.index(this);
-
-            $faqContentItems.removeClass('uk-active');
-            $faqContentItems.eq(itemNumber).addClass('uk-active');
-        })
-    })();
+    // (() => {
+    //     const $faqTriggers = $('.js-faq-triggers li a');
+    //     const $faqContentItems = $('.js-faq-content-items > div');
+    //
+    //     $faqTriggers.on('click', function (e) {
+    //         e.preventDefault();
+    //         const itemNumber = $faqTriggers.index(this);
+    //
+    //         $faqContentItems.removeClass('uk-active');
+    //         $faqContentItems.eq(itemNumber).addClass('uk-active');
+    //     })
+    // })();
 
     //qty forms
     // (() => {

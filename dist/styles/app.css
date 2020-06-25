@@ -3997,7 +3997,7 @@ em {
 }
 .js-faq-triggers li a {
   color: #1868a0;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
 }
 .tm-modal-faq .uk-accordion-title {
@@ -4005,11 +4005,13 @@ em {
   background: transparent;
   color: #444444;
   font-weight: 600;
+  font-size: 18px;
   height: 30px;
   line-height: 28px;
 }
 .tm-modal-faq .uk-accordion-content {
   border: none;
+  padding: 5px 15px;
 }
 @media (min-width: 960px) {
   .uk-section {
