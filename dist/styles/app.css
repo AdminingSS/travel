@@ -4009,6 +4009,7 @@ em {
   font-weight: 600;
 }
 .tm-modal-faq .uk-accordion-title {
+  position: relative;
   border: none;
   background: transparent;
   color: #444444;
