@@ -3994,6 +3994,7 @@ em {
 .js-faq-content-items > div h3 {
   margin-top: 0;
   margin-bottom: 30px;
+  font-size: 22px;
 }
 .js-faq-triggers {
   list-style: none;
