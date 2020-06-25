@@ -1834,17 +1834,12 @@ a.tm-tour-place:hover {
 }
 .tm-global-image-wrapper {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   border-radius: 3px;
-  overflow: hidden;
 }
 .tm-global-image-wrapper img {
-  min-width: 100%;
-  min-height: 100%;
-  max-width: none;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 .tm-results-count {
   width: 9px;
