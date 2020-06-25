@@ -896,6 +896,11 @@ em {
   &.uk-active {
     display: block;
   }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .js-faq-triggers {
@@ -906,6 +911,10 @@ em {
     color: @global-secondary-color;
     font-size: 16px;
     text-decoration: none;
+
+    &.uk-active {
+      font-weight: 600;
+    }
   }
 
 }
@@ -919,6 +928,27 @@ em {
     font-size: 18px;
     height: 30px;
     line-height: 28px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 2px;
+      width: 7px;
+      height: 7px;
+      border-bottom: 1px solid currentColor;
+      border-right: 1px solid currentColor;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+  .uk-open .uk-accordion-title:after {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
   }
 
   .uk-accordion-content {
