@@ -314,8 +314,6 @@ $(() => {
             e.preventDefault();
             const itemNumber = $faqTriggers.index(this);
 
-            console.log(itemNumber);
-
             $faqContentItems.removeClass('uk-active');
             $faqContentItems.eq(itemNumber).addClass('uk-active');
         })

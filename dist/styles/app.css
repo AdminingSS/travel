@@ -3991,6 +3991,26 @@ em {
 .js-faq-content-items > div.uk-active {
   display: block;
 }
+.js-faq-triggers {
+  list-style: none;
+  padding: 0;
+}
+.js-faq-triggers li a {
+  color: #1868a0;
+  font-size: 18px;
+  text-decoration: none;
+}
+.tm-modal-faq .uk-accordion-title {
+  border: none;
+  background: transparent;
+  color: #444444;
+  font-weight: 600;
+  height: 30px;
+  line-height: 28px;
+}
+.tm-modal-faq .uk-accordion-content {
+  border: none;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
