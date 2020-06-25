@@ -306,6 +306,21 @@ $(() => {
         })
     })();
 
+    (() => {
+        const $faqTriggers = $('.js-faq-triggers li a');
+        const $faqContentItems = $('.js-faq-content-items > div');
+
+        $faqTriggers.on('click', function (e) {
+            e.preventDefault();
+            const itemNumber = $faqTriggers.index(this);
+
+            console.log(itemNumber);
+
+            $faqContentItems.removeClass('uk-active');
+            $faqContentItems.eq(itemNumber).addClass('uk-active');
+        })
+    })();
+
     //qty forms
     // (() => {
     //     const $qtyForms = $('.tm-qty-form');

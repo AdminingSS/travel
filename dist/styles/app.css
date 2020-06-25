@@ -3985,6 +3985,12 @@ em {
   margin: 5px;
   width: 130px;
 }
+.js-faq-content-items > div {
+  display: none;
+}
+.js-faq-content-items > div.uk-active {
+  display: block;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
