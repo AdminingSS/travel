@@ -1289,6 +1289,22 @@ select.disabled {
   width: auto;
   object-fit: cover;
 }
+.tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-badges {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 0 0 8px 15px;
+  transition: all 0.5s;
+}
+.tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-badges > div {
+  position: relative;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  background-color: #2a8d1d;
+  border-radius: 3px;
+}
 .tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-icons {
   position: absolute;
   bottom: -100px;
