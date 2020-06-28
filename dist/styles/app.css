@@ -4043,6 +4043,10 @@ em {
   border: none;
   padding: 5px 15px;
 }
+.tm-filter-dates .vdp-datepicker__clear-button {
+  right: auto;
+  left: 10px;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;

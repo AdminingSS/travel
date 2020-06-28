@@ -355,6 +355,19 @@ $(() => {
     //
     // })();
 
+    // UIkit.modal($('#modalFaq')).hide();
+    //
+    // if(!$('.tm-order-form').length) return;
+    // const $orderForm = $('.tm-faq-order-trigger');
+    // const formTop = ($orderForm.length && !$orderForm.is(":hidden")) ? $orderForm.offset().top - 10 : $('.tm-order-form').offset().top - 100;
+    //
+    // $('.tm-sidebar').removeClass('uk-active');
+    // $('body').removeClass('body-grayed');
+    //
+    // $('html, body').animate({
+    //     scrollTop: formTop
+    // }, 1000);
+
 });
 
 function shortenString(string, length = 60) {
