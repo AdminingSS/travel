@@ -4063,6 +4063,11 @@ em {
   right: auto;
   left: 10px;
 }
+.tm-select.tm-type .tm-select-pseudo {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
