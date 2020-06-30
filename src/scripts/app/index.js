@@ -296,15 +296,15 @@ $(() => {
     })();
 
     //proximity toggler
-    (() => {
-        const $proxyToggler = $('.tm-toggler-proximity');
-
-        $proxyToggler.on('click', function (e) {
-            e.preventDefault();
-            $(this).next().toggleClass('uk-hidden');
-            ($(this).html() === 'Заполнить информацию позже') ? $(this).html('Заполнить информацию') : $(this).html('Заполнить информацию позже');
-        })
-    })();
+    // (() => {
+    //     const $proxyToggler = $('.tm-toggler-proximity');
+    //
+    //     $proxyToggler.on('click', function (e) {
+    //         e.preventDefault();
+    //         $(this).next().toggleClass('uk-hidden');
+    //         ($(this).html() === 'Заполнить информацию позже') ? $(this).html('Заполнить информацию') : $(this).html('Заполнить информацию позже');
+    //     })
+    // })();
 
     // (() => {
     //     const $faqTriggers = $('.js-faq-triggers li a');
