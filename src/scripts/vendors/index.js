@@ -3,6 +3,4 @@ import '@babel/polyfill';
 import './uikit';
 import './fontawesome';
 import './slick';
-import './fancybox'
-//import './customscrollbar';
-//import './newscrollbar';
+import './fancybox';

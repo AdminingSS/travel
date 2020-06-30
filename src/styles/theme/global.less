@@ -14,8 +14,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   position: relative;
-  //display: flex;
-  //align-items: center;
   font-family: @global-font-family;
   font-weight: 300;
   color: @global-color;
@@ -93,7 +91,6 @@ select {
   -webkit-appearance: none;
   max-width: 100%;
   width: 100%;
-  //padding: 0 10px;
   background: #fff;
   border: 1px solid #e5e5e5;
   transition: .2s ease-in-out;
@@ -137,27 +134,10 @@ select {
     text-transform: uppercase;
   }
 
-  &.tm-region::before {
-    //content: 'РЕГИОН';
-  }
-
-  &.tm-from::before {
-    //content: 'НАЧИНАЕТСЯ ПОСЛЕ';
-  }
-
-  &.tm-to::before {
-    //content: 'ЗАКАНЧИВАЕТСЯ ДО';
-  }
-
-  &.tm-type::before {
-    //content: 'ВИД ОТДЫХА';
-  }
-
   .tm-select-pseudo, .vdp-datepicker >div input {
     box-sizing: border-box;
     width: 160px;
     height: 48px;
-    //line-height: 48px;
     line-height: 33px;
     text-align: left;
     padding: 0 10px;
@@ -185,7 +165,6 @@ select {
     margin-top: 0;
     padding: 15px 0 8px;
     width: 300px;
-    //max-height: 250px;
     overflow: auto;
 
     &.qty {
@@ -289,7 +268,6 @@ select {
           font-size: 30px;
           left: 0;
           top: 10px;
-          //transform: translateY(50%);
         }
       }
 
@@ -309,10 +287,6 @@ select {
         max-width: 100%;
         padding-left: 15px;
         max-height: none;
-
-        //.mCSB_inside > .mCSB_container {
-        //  margin-right: 10px;
-        //}
 
         li {
           position: relative;
@@ -392,71 +366,6 @@ select {
         }
       }
     }
-
-    //.tm-peoples {
-    //  .tm-peoples-adult, .tm-peoples-child {
-    //    display: flex;
-    //    align-items: center;
-    //
-    //    padding: 5px 15px;
-    //    > * {
-    //      line-height: 30px;
-    //    }
-    //
-    //    .tm-people {
-    //      width: 115px;
-    //      text-align: left;
-    //      box-sizing: border-box;
-    //    }
-    //
-    //    .tm-qty-form {
-    //      display: flex;
-    //      width: 90px;
-    //      height: 30px;
-    //      margin-right: 10px;
-    //      box-sizing: border-box;
-    //
-    //      .uk-input {
-    //        width: 30px;
-    //        height: 30px;
-    //        line-height: 30px;
-    //      }
-    //
-    //      .tm-button-plus, .tm-button-minus {
-    //        width: 30px;
-    //        height: 30px;
-    //        font-size: 18px;
-    //        padding: 0 6px;
-    //        border: none;
-    //        background-color: @global-primary-background;
-    //        color: @global-inverse-color;
-    //        cursor: pointer;
-    //      }
-    //
-    //      .tm-button-plus {
-    //        border-radius: 0 @global-border-radius @global-border-radius 0;
-    //      }
-    //
-    //      .tm-button-minus {
-    //        border-radius: @global-border-radius 0 0 @global-border-radius;
-    //      }
-    //    }
-    //  }
-    //
-    //  .tm-peoples-child {
-    //    background-color: #dee2e6;
-    //  }
-    //}
-
-    //.tm-button-children {
-    //  height: 30px;
-    //  line-height: 30px;
-    //  background-color: @global-primary-background;
-    //  width: 100%;
-    //  text-align: left;
-    //  border-radius: 0;
-    //  padding: 0 15px;
-    //}
   }
 }
 
@@ -684,7 +593,6 @@ select {
 }
 
 .tm-section-solid, .tm-section-footer {
-  //min-height: 450px;
   min-height: 380px;
   color: @global-inverse-color;
   display: flex;
@@ -784,10 +692,6 @@ select {
 .uk-select:not([multiple]):not([size]) {
   -webkit-appearance: menulist;
   background-image: none;
-  //-webkit-appearance: none;
-  //-moz-appearance: none;
-  //appearance: none;
-  //background-image: url("../../images/caret-down-solid.svg");
   height: 30px;
 }
 
@@ -824,9 +728,6 @@ select {
   white-space: nowrap;
 
   &.tm-badge-small {
-    //position: absolute;
-    //bottom: 0;
-    //transform: translateY(50%);
     font-size: @global-font-size;
     padding: 6px 11px;
     line-height: 1;
@@ -901,36 +802,6 @@ select {
   }
 }
 
-//.tm-panel-primary {
-//  .tm-badge, .tm-icon-image-wrapper-solid, .uk-button {
-//    background-color: @global-primary-background;
-//  }
-//
-//  .tm-icon-image-wrapper {
-//    color: @global-primary-color;
-//  }
-//}
-
-//.tm-panel-secondary {
-//  .tm-badge, .tm-icon-image-wrapper-solid, .uk-button {
-//    background-color: @global-secondary-background;
-//  }
-//
-//  .tm-icon-image-wrapper {
-//    color: @global-secondary-color;
-//  }
-//}
-
-//.tm-panel-tertiary {
-//  .tm-badge, .tm-icon-image-wrapper-solid, .uk-button {
-//    background-color: @global-tertiary-background;
-//  }
-//
-//  .tm-icon-image-wrapper {
-//    color: @global-tertiary-color;
-//  }
-//}
-
 .tm-promobox {
   padding: 60px 30px;
   background-color: #f2f2f2;
@@ -981,7 +852,6 @@ select {
 
   .tm-navigator-item {
     position: relative;
-    //width: 100%;
     cursor: pointer;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.5s;
@@ -1078,7 +948,6 @@ select {
 
   .tm-gallery-item {
     position: relative;
-    //width: 100%;
     cursor: pointer;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.5s;
@@ -1152,11 +1021,8 @@ select {
     }
 
     a {
-      //display: block;
       color: inherit;
       text-decoration: none;
-      //padding-left: 10px;
-      //border-bottom: 1px solid transparent;
 
       &:hover {
         color: @global-primary-color;
@@ -1354,7 +1220,6 @@ select {
 
   .tm-slider-image-wrapper {
     position: relative;
-    //width: 100%;
     cursor: pointer;
     border-radius: @global-border-radius;
     overflow: hidden;
@@ -1399,7 +1264,6 @@ select {
   padding: 25px 25px 25px 0;
   background: @global-background;
   color: @global-color;
-  //box-shadow: 0 5px 12px rgba(0,0,0,.15);
 
   .uk-navbar-dropdown-nav > li {
     padding: 0 15px 0 25px;
@@ -1704,7 +1568,6 @@ select {
         }
 
         &:hover {
-          //background-color: #444;
           background-color: @global-primary-background;
 
           svg {
@@ -1715,12 +1578,10 @@ select {
 
       .tm-dates-duration {
         display: flex;
-        //margin-bottom: 10px;
 
         .days, .nights {
           position: relative;
           padding-left: 20px;
-          //margin-bottom: 8px;
 
           &::before {
             position: absolute;
@@ -1777,7 +1638,7 @@ select {
 
 .tm-tour-place, .tm-tour-season {
   position: relative;
-  font-size: 16px; //was 14 (test)
+  font-size: 16px;
   padding-left: 25px;
   margin-bottom: 5px;
 
@@ -1815,7 +1676,6 @@ a.tm-tour-place {
 .tm-tour-type {
   position: relative;
   font-size: 14px;
-  //padding-left: 25px;
   border-radius: @global-border-radius;
 
   img {
@@ -1827,18 +1687,6 @@ a.tm-tour-place {
     margin-right: 4px;
   }
 
-  //&::before {
-  //  position: absolute;
-  //  display: block;
-  //  left: 4px;
-  //  top: 50%;
-  //  transform: translateY(-50%);
-  //  font-family: "Font Awesome 5 Free";
-  //  font-weight: 900;
-  //  font-size: 14px;
-  //  color: @global-secondary-color;
-  //}
-
   &.button-style {
     font-size: 10px;
     padding: 0 4px;
@@ -1849,11 +1697,6 @@ a.tm-tour-place {
     display: inline-block;
     font-weight: 600;
 
-    //&::before {
-    //  font-size: 12px;
-    //  color: @global-color;
-    //}
-
     &:hover, &.uk-active {
       background-color: @global-secondary-background;
       color: @global-inverse-color;
@@ -1862,16 +1705,8 @@ a.tm-tour-place {
         color: @global-inverse-color;
         margin-right: 4px;
       }
-
-      //&::before {
-      //  color: @global-inverse-color;
-      //}
     }
   }
-
-  //&.tm-tour-walk::before {
-  //  content: '\f6ec';
-  //}
 }
 
 .tm-popover {
@@ -1997,15 +1832,10 @@ a.tm-tour-place {
     font-size: 14px;
     color: @global-secondary-color;
   }
-
-  &.tm-tour-camp::before {
-    //content: '\f6bb';
-  }
 }
 
 .tm-sidebar, .tm-sidebar-absolute {
   position: relative;
-  //padding: 0 15px;
   background-color: #f7f7f7;
   padding: 15px;
   width: 235px;
@@ -2061,7 +1891,6 @@ a.tm-tour-place {
   }
 
   .uk-open > .uk-accordion-title::before {
-    //transform: rotate(180deg);
     content: '\f077';
   }
 
@@ -2163,14 +1992,6 @@ a.tm-tour-place {
     color: #ced4da;
   }
 
-  &.date-from::before {
-    //content: 'от';
-  }
-
-  &.date-to::before {
-    //content: 'до';
-  }
-
   &::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -2216,14 +2037,6 @@ a.tm-tour-place {
     color: #ced4da;
   }
 
-  &.select-from::before {
-    //content: 'от';
-  }
-
-  &.select-to::before {
-    //content: 'до';
-  }
-
   .controls {
     right: 8px;
 
@@ -2251,20 +2064,12 @@ a.tm-tour-place {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 
   display: block;
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
   border-radius: @global-border-radius;
-  //overflow: hidden;
 
   img {
     width: 100%;
     height: auto;
-    //min-width: 100%;
-    //min-height: 0;
-    //max-width: none;
   }
-
 }
 
 .tm-results-count {
@@ -2281,8 +2086,6 @@ a.tm-tour-place {
 }
 
 .tm-complex-container {
-  //height: 120px;
-  //overflow: auto;
   background-color: #f1f0f0;
   padding: 8px 10px 8px 15px;
   margin-bottom: 10px !important;
@@ -3007,7 +2810,6 @@ a.tm-tour-place {
 
 .tm-header-fixed {
   position: fixed;
-  //display: none;
   top: -150px;
   opacity: 0;
   left: 0;
@@ -3056,7 +2858,6 @@ a.tm-tour-place {
   }
 
   &.tm-header-visible {
-    //display: block;
     top: 0;
     opacity: 1;
   }
@@ -3157,9 +2958,6 @@ a.tm-tour-place {
   }
 
   .slick-dots {
-    //bottom: auto;
-    //top: 50%;
-    //transform: translateY(-50%);
     bottom: -20px;
     top: auto;
 
@@ -3269,19 +3067,9 @@ a.tm-tour-place {
     bottom: auto;
     left: auto;
     right: auto;
-    //display: flex;
     align-items: center;
     background-color: #fff;
     padding: 8px 15px;
-
-    &.uk-active {
-      //display: flex;
-    }
-
-    &.hover {
-      //display: flex;
-      //z-index: 2000;
-    }
   }
 
   .uk-offcanvas-close {
@@ -3581,12 +3369,6 @@ body {
   }
 }
 
-//.tm-order-personal {
-//  display: flex;
-//  flex-wrap: wrap;
-//  max-width: 100%;
-//}
-
 .tm-order-personal {
   font-size: 14px;
 
@@ -3613,7 +3395,6 @@ body {
   > div {
     width: 40px;
     margin-right: 8px;
-    //height: 22px;
 
     img {
       max-height: 22px;
@@ -3683,12 +3464,8 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    //margin-right: 8px;
 
     padding: 0;
-    > * {
-      //line-height: 30px;
-    }
 
     .tm-people {
       width: auto;
@@ -3702,8 +3479,6 @@ body {
 .tm-qty-form {
   display: flex;
   align-items: center;
-  //width: 130px;
-  //height: 40px;
   margin-right: 10px;
   box-sizing: border-box;
 
@@ -3727,7 +3502,6 @@ body {
     color: @global-primary-color;
     cursor: pointer;
     font-weight: 600;
-    //border: 1px solid @global-primary-color;
   }
 
   .tm-button-plus {
@@ -3754,12 +3528,6 @@ body {
     line-height: 14px;
     justify-content: space-between;
     width: 100%;
-    //margin-right: 15px;
-
-    //padding: 5px 15px;
-    > * {
-      //line-height: 30px;
-    }
 
     .tm-apt-name {
       width: auto;
@@ -3900,7 +3668,6 @@ body {
   }
 
   .tm-dates-content {
-    //max-height: 500px;
 
     .mCSB_inside > .mCSB_container {
       margin-right: 0;
@@ -4023,7 +3790,6 @@ body {
 .tm-lk-tabs {
   display: flex;
   flex-wrap: wrap;
-  //width: 780px;
 
   .uk-tab {
     margin-right: 30px;

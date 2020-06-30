@@ -7,7 +7,6 @@ $(() => {
     (()=>{
         const $slickSlider = $('.tm-slider-gallery, .tm-sections-slider, .tm-accomodation-slider');
         const $sliderMobileLinks = $('.js-slider-mobile-links');
-        //const $sliderMobileNews = $('.js-mobile-slider-news');
         const $body = $('body');
         const $window = $(window);
         const $linksSliderControls = $('.tm-links-slider-controls a');

@@ -66,7 +66,6 @@ $(() => {
         const $dropdownContentTrigger = $('.tm-tours-types-list li');
 
         $dropdownContentTrigger.on('click', function (e) {
-            //e.preventDefault();
 
             const thisTrigger = $(this);
 
@@ -104,7 +103,6 @@ $(() => {
 
     //to order form scroll
     (() => {
-        //const $orderForm = $('.tm-faq-order-trigger');
         const $orderTriggers = $('.js-order-trigger');
         const $sidebarItem = $('.tm-sidebar');
         const $body = $('body');
@@ -133,9 +131,6 @@ $(() => {
         const $orderForm = $('.tm-order-form');
         const $blockAnchors = $('.js-anchor');
         const $window = $(window);
-
-
-        //console.log(controlPointsArray)
 
         $window.on('scroll', function () {
             const scrollTop = $(window).scrollTop();
@@ -190,10 +185,6 @@ $(() => {
             $("HTML, BODY").animate({
                 scrollTop: scrollPosition
             }, 1000);
-
-            //$blockTriggers.removeClass('uk-active');
-            //$thisTrigger.addClass('uk-active');
-
         })
 
     })();
@@ -233,7 +224,6 @@ $(() => {
         $toTop.on('click', function (e) {
             e.preventDefault();
 
-            console.log(1)
             $("html, body").animate({
                 scrollTop: 0
             }, 1000);
@@ -294,79 +284,6 @@ $(() => {
             $accordBox.toggleClass('uk-open');
         })
     })();
-
-    //proximity toggler
-    // (() => {
-    //     const $proxyToggler = $('.tm-toggler-proximity');
-    //
-    //     $proxyToggler.on('click', function (e) {
-    //         e.preventDefault();
-    //         $(this).next().toggleClass('uk-hidden');
-    //         ($(this).html() === 'Заполнить информацию позже') ? $(this).html('Заполнить информацию') : $(this).html('Заполнить информацию позже');
-    //     })
-    // })();
-
-    // (() => {
-    //     const $faqTriggers = $('.js-faq-triggers li a');
-    //     const $faqContentItems = $('.js-faq-content-items > div');
-    //
-    //     $faqTriggers.on('click', function (e) {
-    //         e.preventDefault();
-    //         const itemNumber = $faqTriggers.index(this);
-    //
-    //         $faqContentItems.removeClass('uk-active');
-    //         $faqContentItems.eq(itemNumber).addClass('uk-active');
-    //     })
-    // })();
-
-    //qty forms
-    // (() => {
-    //     const $qtyForms = $('.tm-qty-form');
-    //
-    //     $qtyForms.each(function () {
-    //         const $thisForm = $(this);
-    //         const $btnPlus = $thisForm.find('.tm-button-plus');
-    //         const $btnMinus = $thisForm.find('.tm-button-minus');
-    //         const $formInput = $thisForm.find('input');
-    //         let currentCount = $formInput.val();
-    //
-    //         $formInput.on('change', function (e) {
-    //             if(!$formInput.val().match(/^\d+$/)) {
-    //                 $formInput.val(currentCount)
-    //             }
-    //             else {
-    //                 currentCount = $formInput.val();
-    //             }
-    //         });
-    //
-    //         $btnPlus.on('click', function () {
-    //             const newCount = currentCount + 1;
-    //             currentCount = newCount;
-    //             $formInput.val(currentCount);
-    //         });
-    //
-    //         $btnMinus.on('click', function () {
-    //             const newCount = currentCount - 1;
-    //             if(newCount < 0) return;
-    //             currentCount = newCount;
-    //             $formInput.val(currentCount);
-    //         })
-    //     })
-    //
-    // })();
-
-    // UIkit.modal($('#modalFaq')).hide();
-    //
-    // if(!$('.tm-order-form').length) return;
-    // const $orderForm = $('.tm-faq-order-trigger');
-    // const formTop = ($orderForm.length && !$orderForm.is(":hidden")) ? $orderForm.offset().top - 10 : $('.tm-order-form').offset().top - 100;
-    //
-    // $('.tm-sidebar').removeClass('uk-active');
-    // $('body').removeClass('body-grayed');
-    //
-    // $('html, body').animate({
-    //     scrollTop: formTop
-    // }, 1000);
 
 });
 
