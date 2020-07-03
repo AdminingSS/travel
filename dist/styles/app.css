@@ -4093,6 +4093,7 @@ em {
 }
 .tm-section-solid.tm-section-autoheight {
   min-height: 0!important;
+  padding: 30px 0;
 }
 ul.styled {
   list-style: symbols('-');
