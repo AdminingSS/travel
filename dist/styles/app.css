@@ -4071,6 +4071,9 @@ em {
   white-space: nowrap;
   overflow: hidden;
 }
+.adash {
+  text-decoration: dashed underline;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
