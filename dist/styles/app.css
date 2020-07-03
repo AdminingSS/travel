@@ -4090,6 +4090,7 @@ em {
 .tm-section-solid h2 .highlight,
 .tm-section-solid h3 .highlight {
   background-color: yellow;
+  color: #444444;
 }
 .tm-section-autoheight {
   min-height: 0!important;
