@@ -4091,9 +4091,9 @@ em {
 .tm-section-solid h3 .highlight {
   background-color: yellow;
 }
-.tm-section-solid.tm-section-autoheight {
+.tm-section-autoheight {
   min-height: 0!important;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 ul.styled {
   list-style: symbols('-');
