@@ -941,7 +941,7 @@ em {
 
 .tm-section-solid {
   .tm-panel-column {
-    color: @global-inverse-color;
+    //color: @global-inverse-color;
   }
 
   .uk-card {
@@ -955,9 +955,13 @@ em {
       background-color: yellow;
     }
   }
+
+  &.tm-section-autoheight {
+    min-height: 0!important;
+  }
 }
 
 ul.styled {
-  list-style: none;
+  list-style: symbols('-');
   text-align: left;
 }

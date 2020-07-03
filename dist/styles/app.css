@@ -4080,9 +4080,6 @@ em {
 .tm-tour-additional-item label {
   margin-bottom: 8px;
 }
-.tm-section-solid .tm-panel-column {
-  color: #ffffff;
-}
 .tm-section-solid .uk-card {
   padding: 15px;
 }
@@ -4094,8 +4091,11 @@ em {
 .tm-section-solid h3 .highlight {
   background-color: yellow;
 }
+.tm-section-solid.tm-section-autoheight {
+  min-height: 0!important;
+}
 ul.styled {
-  list-style: none;
+  list-style: symbols('-');
   text-align: left;
 }
 @media (min-width: 960px) {
