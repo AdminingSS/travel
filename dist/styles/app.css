@@ -2940,6 +2940,9 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-order-personal .uk-margin-medium-bottom {
   margin-bottom: 10px!important;
 }
+.tm-order-personal .promoblock .uk-button {
+  min-width: 0;
+}
 .tm-payment-icons {
   width: auto;
   height: 22px;
@@ -4073,6 +4076,9 @@ em {
 }
 .adash {
   text-decoration: dashed underline;
+}
+.tm-tour-additional-item label {
+  margin-bottom: 8px;
 }
 @media (min-width: 960px) {
   .uk-section {
