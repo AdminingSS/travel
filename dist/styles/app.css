@@ -4094,7 +4094,7 @@ em {
 }
 .tm-section-autoheight {
   min-height: 0!important;
-  padding: 50px 0;
+  padding: 50px 0!important;
 }
 ul.styled {
   list-style: symbols('-');
