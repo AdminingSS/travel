@@ -967,3 +967,63 @@ ul.styled {
   list-style: symbols('-');
   text-align: left;
 }
+
+.tm-content-panel.tm-special {
+  border: 2px solid @global-primary-background;
+}
+
+.tm-tour-cost {
+  position: relative;
+  display: inline-block;
+}
+
+.tm-price-new {
+  color: @global-primary-color;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.tm-price-old {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: small;
+  color: @global-tertiary-color;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.tm-discount {
+  position: absolute;
+  font-size: small;
+  top: 50%;
+  transform:translate(100%, -50%);
+  right: -5px;
+  color: @global-secondary-color;
+
+}
+
+.tm-header-fixed .price.tm-special {
+  >div, .price-overall {
+    color: @global-primary-color;
+  }
+}
+
+.tm-header-fixed .price >div, .price-overall {
+  position: relative;
+
+  .tm-price-old {
+    position: absolute;
+    bottom: auto;
+    top: 50%;
+    left: -60%;
+    transform: translateY(-50%);
+    font-size: small;
+    color: @global-tertiary-color;
+    font-weight: 300;
+    text-decoration: line-through;
+  }
+}

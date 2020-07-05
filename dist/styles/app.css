@@ -4100,6 +4100,58 @@ ul.styled {
   list-style: symbols('-');
   text-align: left;
 }
+.tm-content-panel.tm-special {
+  border: 2px solid #2a8d1d;
+}
+.tm-tour-cost {
+  position: relative;
+  display: inline-block;
+}
+.tm-price-new {
+  color: #2a8d1d;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.tm-price-old {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: small;
+  color: #a86223;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+.tm-discount {
+  position: absolute;
+  font-size: small;
+  top: 50%;
+  transform: translate(100%, -50%);
+  right: -5px;
+  color: #1868a0;
+}
+.tm-header-fixed .price.tm-special > div,
+.tm-header-fixed .price.tm-special .price-overall {
+  color: #2a8d1d;
+}
+.tm-header-fixed .price > div,
+.price-overall {
+  position: relative;
+}
+.tm-header-fixed .price > div .tm-price-old,
+.price-overall .tm-price-old {
+  position: absolute;
+  bottom: auto;
+  top: 50%;
+  left: -60%;
+  transform: translateY(-50%);
+  font-size: small;
+  color: #a86223;
+  font-weight: 300;
+  text-decoration: line-through;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
