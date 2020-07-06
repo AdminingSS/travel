@@ -4152,6 +4152,10 @@ ul.styled {
   font-weight: 300;
   text-decoration: line-through;
 }
+.tm-header-fixed .price > div .tm-price-new,
+.price-overall .tm-price-new {
+  margin-bottom: 0;
+}
 .tm-sidebar-toggle-tour .price > div .tm-price-old,
 .tm-mobile-form-sidebar .price > div .tm-price-old,
 .tm-sidebar .tm-sidebar-sup .price > div .tm-price-old,
@@ -4163,7 +4167,9 @@ ul.styled {
 .tm-mobile-form-sidebar .price .price-overall .tm-price-old {
   font-size: smaller;
   font-weight: 300;
-  margin-top: 5px;
+  margin-top: 10px;
+  display: block;
+  transform: translate(0, 0);
 }
 @media (min-width: 960px) {
   .uk-section {
