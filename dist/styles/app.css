@@ -4177,7 +4177,6 @@ ul.styled {
   margin-top: -5px;
 }
 .tm-dates-details .tm-price-old {
-  display: block;
   transform: none;
   position: static;
 }
