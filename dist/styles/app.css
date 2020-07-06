@@ -4203,6 +4203,15 @@ ul.styled {
 .tm-sidebar-absolute .price-overall .tm-price-discount {
   display: block;
 }
+.tm-mobile-form-sidebar .price .price-overall .tm-price-new,
+.tm-sidebar-absolute .price-overall .tm-price-new {
+  display: inline-block;
+  position: relative;
+}
+.tm-mobile-form-sidebar .price .price-overall .tm-price-discount,
+.tm-sidebar-absolute .price-overall .tm-price-discount {
+  font-size: smaller!important;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
