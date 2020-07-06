@@ -4163,13 +4163,16 @@ ul.styled {
 .tm-sidebar-absolute .price > div .tm-price-old {
   position: static;
 }
+.tm-sidebar-absolute .price .tm-price-old,
+.tm-mobile-form-sidebar .price .tm-price-old {
+  display: block;
+  transform: translate(0, 0);
+}
 .tm-sidebar-absolute .price .price-overall .tm-price-old,
 .tm-mobile-form-sidebar .price .price-overall .tm-price-old {
   font-size: smaller;
   font-weight: 300;
   margin-top: 10px;
-  display: block;
-  transform: translate(0, 0);
 }
 @media (min-width: 960px) {
   .uk-section {
