@@ -4159,6 +4159,11 @@ ul.styled {
 .tm-sidebar-absolute .price > div .tm-price-old {
   position: static;
 }
+.tm-sidebar-absolute .price .price-overall .tm-price-old,
+.tm-mobile-form-sidebar .price .price-overall .tm-price-old {
+  font-size: smaller;
+  font-weight: 300;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
