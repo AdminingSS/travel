@@ -4174,6 +4174,11 @@ ul.styled {
   font-weight: 300;
   margin-top: 10px;
 }
+.tm-dates-details .tm-price-old {
+  display: block;
+  transform: none;
+  position: static;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
