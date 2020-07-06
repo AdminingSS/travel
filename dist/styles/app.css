@@ -4204,13 +4204,13 @@ ul.styled {
   display: block;
 }
 .tm-mobile-form-sidebar .price .price-overall .tm-price-new,
-.tm-sidebar-absolute .price-overall .tm-price-new {
+.tm-sidebar-absolute .price .price-overall .tm-price-new {
   display: inline-block;
   position: relative;
 }
 .tm-mobile-form-sidebar .price .price-overall .tm-price-discount,
-.tm-sidebar-absolute .price-overall .tm-price-discount {
-  font-size: smaller!important;
+.tm-sidebar-absolute .price .price-overall .tm-price-discount {
+  font-size: 16px!important;
 }
 @media (min-width: 960px) {
   .uk-section {
