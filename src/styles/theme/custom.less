@@ -978,6 +978,7 @@ ul.styled {
 }
 
 .tm-price-new {
+  position: relative;
   color: @global-primary-color;
   font-weight: 600;
   display: inline-block;
@@ -1064,16 +1065,19 @@ ul.styled {
   font-weight: 300;
 }
 
-.tm-sidebar-absolute .price .tm-price-new, .tm-mobile-form-sidebar .price .tm-price-new {
-  position: relative;
-  display: inline-block;
-}
-
 .tm-price-discount {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 0;
   font-size: 16px;
-  color: blue;
+  color: @global-secondary-color;
   transform: translate(105%, 5px);
+}
+
+.tm-header-fixed .tm-price-discount, .tm-sidebar-toggle-tour .price .price-overall .tm-price-discount, .tm-mobile-form-sidebar .tm-price-discount {
+  display: none;
+}
+
+.tm-mobile-form-sidebar .price-overall .tm-price-discount {
+  display: block;
 }
