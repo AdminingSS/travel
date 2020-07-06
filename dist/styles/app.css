@@ -4167,6 +4167,7 @@ ul.styled {
 .tm-mobile-form-sidebar .price .tm-price-old {
   display: block;
   transform: translate(0, 0);
+  margin-top: -8px;
 }
 .tm-sidebar-absolute .price .price-overall .tm-price-old,
 .tm-mobile-form-sidebar .price .price-overall .tm-price-old {
