@@ -4152,7 +4152,8 @@ ul.styled {
   font-weight: 300;
   text-decoration: line-through;
 }
-.tm-sidebar-toggle-tour .price > div .tm-price-old {
+.tm-sidebar-toggle-tour .price > div .tm-price-old,
+.tm-mobile-form-sidebar .price > div .tm-price-old {
   position: static;
 }
 @media (min-width: 960px) {
