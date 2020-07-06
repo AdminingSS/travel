@@ -4163,6 +4163,7 @@ ul.styled {
 .tm-mobile-form-sidebar .price .price-overall .tm-price-old {
   font-size: smaller;
   font-weight: 300;
+  margin-top: 5px;
 }
 @media (min-width: 960px) {
   .uk-section {
