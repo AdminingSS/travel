@@ -4183,6 +4183,19 @@ ul.styled {
 .tm-sidebar .tm-sidebar-sup .price .price-overall .tm-price-old {
   font-weight: 300;
 }
+.tm-sidebar-absolute .price .tm-price-new,
+.tm-mobile-form-sidebar .price .tm-price-new {
+  position: relative;
+  display: inline-block;
+}
+.tm-price-discount {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  font-size: 16px;
+  color: blue;
+  transform: translate(105%, 5px);
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
