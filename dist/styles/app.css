@@ -4153,7 +4153,10 @@ ul.styled {
   text-decoration: line-through;
 }
 .tm-sidebar-toggle-tour .price > div .tm-price-old,
-.tm-mobile-form-sidebar .price > div .tm-price-old {
+.tm-mobile-form-sidebar .price > div .tm-price-old,
+.tm-sidebar .tm-sidebar-sup .price > div .tm-price-old,
+.tm-sidebar-absolute .tm-sidebar-sup .price > div .tm-price-old,
+.tm-sidebar-absolute .price > div .tm-price-old {
   position: static;
 }
 @media (min-width: 960px) {
