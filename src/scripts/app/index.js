@@ -284,6 +284,27 @@ $(() => {
             $accordBox.toggleClass('uk-open');
         })
     })();
+    
+    (() => {
+        const $bottomBar = $('.tm-sidebar-toggle-tour');
+        let scrollPos = 0;
+
+        $bottomBar.addClass('rolled-out');
+
+        $bottomBar.on('click', function () {
+            $bottomBar.removeClass('rolled-out');
+        });
+
+        $(window).on('scroll', function(event) {
+            const scTop = $(this).scrollTop();
+            if (scTop > scrollPos){
+                $bottomBar.addClass('rolled-out');
+            } else {
+                $bottomBar.removeClass('rolled-out');
+            }
+            scrollPos = scTop;
+        });
+    })();
 
 });
 

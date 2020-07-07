@@ -4215,6 +4215,12 @@ ul.styled {
 .tm-sidebar-toggle-tour .price > div .tm-price-old {
   font-weight: 300;
 }
+.tm-sidebar-toggle-tour.rolled-out .price-overall {
+  display: none;
+}
+.tm-sidebar-toggle-tour.rolled-out > div > div:nth-child(2) {
+  display: none;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
