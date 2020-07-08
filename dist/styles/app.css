@@ -2672,6 +2672,7 @@ a.tm-tour-place:hover {
 .uk-offcanvas-bar .uk-nav li a {
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 26px;
 }
 .uk-offcanvas-bar .uk-navbar-dropdown {
   position: relative;
