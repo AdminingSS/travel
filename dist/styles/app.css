@@ -4225,6 +4225,9 @@ ul.styled {
 .js-order-trigger br {
   display: none;
 }
+.tm-order-personal h5 a {
+  font-size: 16px;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
