@@ -4228,7 +4228,7 @@ ul.styled {
 .tm-order-personal h5 a {
   font-size: 16px;
 }
-.tm-modal-faq {
+.tm-modal-faq .uk-modal-dialog {
   height: 90vh;
   overflow-y: auto;
 }
