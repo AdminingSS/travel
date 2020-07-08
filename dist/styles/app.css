@@ -4221,6 +4221,9 @@ ul.styled {
 .tm-sidebar-toggle-tour.rolled-out > div > div:nth-child(2) {
   display: none;
 }
+.js-order-trigger br {
+  display: none;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
@@ -4983,6 +4986,9 @@ ul.styled {
   }
   .tm-sidebar-toggle-tour .price > div .tm-price-new .tm-price-discount {
     font-size: 10px;
+  }
+  .tm-dop-order br {
+    display: block;
   }
 }
 @media (max-width: 359px) {
