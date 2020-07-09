@@ -254,7 +254,7 @@ $(() => {
     (() => {
         const $sidebarToggle = $('.tm-sidebar-toggle, .tm-dop-info');
         const $sidebarItem = $('.tm-sidebar');
-        const $sidebarClose = $('.sidebar-close-outer');
+        const $sidebarClose = $('.tm-sidebar, .tm-sidebar .sidebar-close-outer');
         const $body = $('body');
 
         $sidebarToggle.on('click', function (e) {
@@ -265,6 +265,7 @@ $(() => {
 
         $sidebarClose.on('click', function (e) {
             e.preventDefault();
+            if (e.target !== this) return;
             $sidebarItem.removeClass('uk-active');
             $body.removeClass('body-grayed');
         });
