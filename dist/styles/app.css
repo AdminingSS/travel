@@ -4241,6 +4241,20 @@ ul.styled {
   right: 0;
   width: 100%;
 }
+@keyframes background-color-change {
+  0% {
+    background-color: #2a8d1d;
+  }
+  50% {
+    background-color: #1868a0;
+  }
+  100% {
+    background-color: #2a8d1d;
+  }
+}
+.animated-background {
+  animation: background-color-change 5s ease-in-out infinite;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
@@ -4838,6 +4852,7 @@ ul.styled {
   }
   .tm-sidebar .tm-complex-container label {
     margin-bottom: 8px;
+    font-size: 18px;
   }
 }
 @media (max-width: 424px) {

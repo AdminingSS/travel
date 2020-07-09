@@ -1132,3 +1132,21 @@ ul.styled {
   right: 0;
   width: 100%;
 }
+
+@keyframes background-color-change {
+  0% {
+    background-color: @global-primary-background;
+  }
+
+  50% {
+    background-color: @global-secondary-background;
+  }
+
+  100% {
+    background-color: @global-primary-background;
+  }
+}
+
+.animated-background {
+  animation: background-color-change 5s ease-in-out infinite;
+}
