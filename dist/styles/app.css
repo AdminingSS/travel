@@ -4236,7 +4236,8 @@ ul.styled {
   display: none;
   position: fixed;
   z-index: 6000;
-  top: 0;
+  top: auto;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
