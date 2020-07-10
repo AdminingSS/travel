@@ -257,23 +257,27 @@ $(() => {
         const $sidebarClose = $('.sidebar-close-outer');
         const $sidebarCloseBody = $('body');
         const $body = $('body');
+        const $applyButton = $('.tm-button-apply-filters');
 
         $sidebarToggle.on('click', function (e) {
             e.preventDefault();
             $sidebarItem.addClass('uk-active');
             $body.addClass('body-grayed');
+            $applyButton.addClass('tm-visible');
         });
 
         $sidebarClose.on('click', function (e) {
             e.preventDefault();
             $sidebarItem.removeClass('uk-active');
             $body.removeClass('body-grayed');
+            $applyButton.removeClass('tm-visible');
         });
 
         $sidebarCloseBody.on('click', function (e) {
             if (e.target !== this) return;
             $sidebarItem.removeClass('uk-active');
             $body.removeClass('body-grayed');
+            $applyButton.removeClass('tm-visible');
         });
     })();
 
