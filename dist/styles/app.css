@@ -1653,7 +1653,7 @@ a.tm-tour-place:hover {
   position: relative;
   background-color: #f7f7f7;
   padding: 15px;
-  width: 235px;
+  width: 240px;
   border-radius: 3px;
 }
 .tm-sidebar .tm-tour-feature-type .tm-tour-type,
@@ -4853,6 +4853,9 @@ ul.styled {
   .tm-sidebar .tm-complex-container label {
     margin-bottom: 8px;
     font-size: 18px;
+  }
+  .tm-button-apply-filters.tm-visible {
+    display: block;
   }
 }
 @media (max-width: 424px) {
