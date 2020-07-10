@@ -3140,7 +3140,7 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
 .tm-modal-dates .uk-modal-dialog {
   width: 2400px;
   max-width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 .tm-modal-dates .uk-modal-body {
   padding: 15px 0 0;
