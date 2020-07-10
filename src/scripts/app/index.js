@@ -264,7 +264,7 @@ $(() => {
         });
 
         $sidebarClose.on('click', function (e) {
-            e.preventDefault();
+            //e.preventDefault();
             if (e.target !== this) return;
             $sidebarItem.removeClass('uk-active');
             $body.removeClass('body-grayed');
