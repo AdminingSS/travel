@@ -254,7 +254,7 @@ $(() => {
     (() => {
         const $sidebarToggle = $('.tm-sidebar-toggle, .tm-dop-info');
         const $sidebarItem = $('.tm-sidebar');
-        const $sidebarClose = $('.tm-sidebar, .tm-sidebar .sidebar-close-outer');
+        const $sidebarClose = $('body, .sidebar-close-outer');
         const $body = $('body');
 
         $sidebarToggle.on('click', function (e) {
