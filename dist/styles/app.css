@@ -4254,8 +4254,25 @@ ul.styled {
     background-color: #2a8d1d;
   }
 }
+@keyframes background-color-change-aggressive {
+  0% {
+    background-color: #2a8d1d;
+  }
+  33% {
+    background-color: #1868a0;
+  }
+  66% {
+    background-color: #a86223;
+  }
+  100% {
+    background-color: #2a8d1d;
+  }
+}
 .animated-background {
   animation: background-color-change 5s ease-in-out infinite;
+}
+.animated-background-aggressive {
+  animation: background-color-change-aggressive 5s ease-in-out infinite;
 }
 @media (min-width: 960px) {
   .uk-section {

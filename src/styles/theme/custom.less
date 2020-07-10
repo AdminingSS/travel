@@ -1148,6 +1148,28 @@ ul.styled {
   }
 }
 
+@keyframes background-color-change-aggressive {
+  0% {
+    background-color: @global-primary-background;
+  }
+
+  33% {
+    background-color: @global-secondary-background;
+  }
+
+  66% {
+    background-color: @global-tertiary-background;
+  }
+
+  100% {
+    background-color: @global-primary-background;
+  }
+}
+
 .animated-background {
   animation: background-color-change 5s ease-in-out infinite;
+}
+
+.animated-background-aggressive {
+  animation: background-color-change-aggressive 5s ease-in-out infinite;
 }
