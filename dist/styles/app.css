@@ -3138,7 +3138,8 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   object-fit: cover;
 }
 .tm-modal-dates .uk-modal-dialog {
-  width: auto;
+  width: 2400px;
+  max-width: 100%;
 }
 .tm-modal-dates .uk-modal-body {
   padding: 15px 0 0;
