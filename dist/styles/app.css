@@ -4127,6 +4127,7 @@ ul.styled {
   color: #a86223;
   font-weight: 300;
   text-decoration: line-through;
+  white-space: nowrap;
 }
 .tm-discount {
   position: absolute;
