@@ -3210,7 +3210,7 @@ body .tm-header-fixed .uk-navbar-nav > li > a {
   border-radius: 0 3px 3px 0;
 }
 .tm-modal-dates .tm-content-switch.dates-items button {
-  width: 24px;
+  width: 50px;
   height: 24px;
   line-height: 22px;
   text-align: center;
@@ -4280,6 +4280,14 @@ ul.styled {
   background: rgba(0, 0, 0, 0.4);
   padding: 0 8px 8px;
   border-radius: 3px;
+}
+.tm-select .tm-select-pseudo-items .tm-what-tour label {
+  line-height: 1;
+  display: block;
+  margin-bottom: 8px;
+}
+.tm-select .tm-select-pseudo-items .tm-what-tour .tm-button-primary {
+  margin-bottom: 8px;
 }
 @media (min-width: 960px) {
   .uk-section {
