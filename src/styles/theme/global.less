@@ -773,8 +773,12 @@ select {
 .tm-column-panels {
   margin: 40px 0 20px;
 
-  .tm-badge, .tm-icon-image-wrapper-solid, .uk-button {
+  .tm-badge, .uk-button {
     background-color: @global-secondary-background;
+  }
+
+  .tm-icon-image-wrapper-solid {
+    background-color: @global-tertiary-background;
   }
 
   .tm-icon-image-wrapper {
@@ -782,8 +786,12 @@ select {
   }
 
   > *:nth-child(3n+2) {
-    .tm-badge, .tm-icon-image-wrapper-solid, .uk-button {
+    .tm-badge, .uk-button {
       background-color: @global-tertiary-background;
+    }
+
+    .tm-icon-image-wrapper-solid {
+      background-color: @global-secondary-background;
     }
 
     .tm-icon-image-wrapper {
