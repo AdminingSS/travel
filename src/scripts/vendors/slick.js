@@ -67,6 +67,65 @@ $(() => {
             $($linksSliderControls[currentSlide]).addClass('uk-active');
         });
 
-    })()
+    })();
+
+    /* direction slider */
+    (() => {
+        const $slider = $('.direction__slider');
+        const $sliderNav = $('.direction__slider-nav');
+
+        $slider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            asNavFor: '.direction__slider-nav',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        dots: true,
+                        infinite: true,
+                    }
+                }
+            ]
+        });
+        $sliderNav.slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            arrows: false,
+            infinite: false,
+            asNavFor: '.direction__slider',
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: true,
+                        centerPadding: '130px',
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 460,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: true,
+                        centerPadding: '60px',
+                        infinite: true,
+                    }
+                }
+            ]
+        });
+    })();
 
 });

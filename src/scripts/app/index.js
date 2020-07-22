@@ -1,5 +1,143 @@
 $(() => {
 
+    /* direction slider-box height  */
+    (() => {
+        const $window = $(window);
+        const $slider = $('.direction__slider');
+        const $slides = $('.direction__slide-box');
+        let slideHeight = 0;
+
+        setHeight();
+
+        $window.on('resize', function () {
+            $slider.one('setPosition', setHeight);
+            setHeight();
+        });
+
+        function setHeight() {
+            slideHeight = 0;
+
+            $slides.each(function () {
+                const $slide = $(this);
+
+                $slide.height('auto');
+                slideHeight = Math.max(slideHeight, $slide.height());
+            });
+
+            $slides.each(function () {
+                $(this).height(slideHeight);
+            });
+        }
+    })();
+
+    /* direction header show */
+    (() => {
+        const $window = $(window);
+        const $header = $('.direction__header');
+        const $slider = $('.direction__slider-nav');
+        const $slides = $('.direction__nav-box');
+        let height = 0;
+
+        setHeight();
+
+        setTimeout(showHeader, 3000);
+
+        $window.on('resize', function () {
+            setHeight();
+            $header.height(height);
+            $slider.one('setPosition', function () {
+                setHeight();
+                $header.height(height);
+            });
+        });
+
+        function showHeader() {
+            setHeight();
+            $header.animate({
+                height: height,
+            }, 500);
+        }
+
+        function setHeight() {
+            height = 0;
+
+            $slides.each(function () {
+                height = Math.max(height, this.offsetHeight);
+            });
+        }
+    })();
+
+    /* direction content show */
+    (() => {
+        const $window = $(window);
+        const $header = $('.direction__header');
+        const $content = $('.direction__content');
+        const $slider = $('.direction__slider');
+        const activeClass = 'direction__header_active';
+        const $slides = $('.direction__slide');
+        const $slideses = $('.direction__slide-box');
+        const $close = $('.direction__close');
+        let height = 0;
+
+        setHeight();
+
+        $window.on('resize', function () {
+            $slider.one('setPosition', setHeight);
+            setHeight();
+        });
+
+        $header.on('click', showContainer);
+
+        $close.on('click', hideContainer);
+
+        function showContainer() {
+            if ($header.hasClass(activeClass)) return;
+
+            $header.addClass(activeClass);
+            setHeightes();
+            setHeight();
+            $content.animate({
+                height: height,
+            }, 500);
+        }
+
+        function hideContainer() {
+            if (!$header.hasClass(activeClass)) return;
+
+            $header.removeClass(activeClass);
+            $content.animate({
+                height: 0,
+            }, 500);
+        }
+
+        function setHeight() {
+            height = 0;
+
+            $slides.each(function () {
+                height = Math.max(height, this.offsetHeight);
+            });
+
+            if (!$header.hasClass(activeClass)) return;
+
+            $content.height(height);
+        }
+
+        function setHeightes() {
+            let slideHeight = 0;
+
+            $slideses.each(function () {
+                const $slide = $(this);
+
+                $slide.height('auto');
+                slideHeight = Math.max(slideHeight, $slide.height());
+            });
+
+            $slideses.each(function () {
+                $(this).height(slideHeight);
+            });
+        }
+    })();
+
     //complex navbar operation
     (()=>{
         const $dropdownContentTrigger = $('.tm-header-bottom-nav .uk-navbar-dropdown-nav.js-complex-nav li a');

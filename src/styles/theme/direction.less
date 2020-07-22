@@ -1,0 +1,275 @@
+//@import "slick";
+//@import "base";
+//@import "main-pageheader";
+
+.direction {
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: @global-secondary-color;
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+    margin-top: 10px;
+    text-transform: none;
+  }
+
+  &__header {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #e6f1ff, #f5faff);
+    box-shadow: 0 2px 13px 0 rgba(132, 140, 191, 0.72);
+
+    &_active {
+      overflow: visible;
+
+      .slick-current {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: calc(100% - 30px);
+          left: 50%;
+          z-index: -1;
+          transform: translateX(-50%) rotate(45deg);
+          width: 40px;
+          height: 40px;
+          background-color: #f5faff;
+          box-shadow: 0 2px 13px 0 rgba(132, 140, 191, 0.72);
+        }
+      }
+    }
+  }
+
+  &__content {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__bg-wrap {
+    background: url("../../images/trade-in.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &__slider-nav {
+    font-size: 12px;
+
+    img {
+      margin: 0 auto;
+    }
+
+    .slick-list {
+      padding-bottom: 30px !important;
+      margin-bottom: -30px !important;
+    }
+  }
+
+  &__slider {
+
+    .slick-dots li {
+
+      button::before {
+        color: #fff;
+      }
+
+      &.slick-active button::before {
+        color: #5388fe;
+      }
+    }
+  }
+
+  &__slide {
+    padding: 30px 0;
+  }
+
+  &__nav-box {
+    padding: 30px 0 20px;
+    background-image: linear-gradient(to bottom, #e6f1ff, #f5faff);
+  }
+
+  &__slide-box {
+    position: relative;
+    padding: 20px 10px 50px;
+    line-height: 1.2;
+    background-image: linear-gradient(to bottom, #fbfdff, #f6faff);
+    border-radius: 10px;
+    box-shadow: 0 2px 13px 0 rgba(132, 140, 191, 0.72);
+  }
+
+  &__slide-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #000;
+  }
+
+  &__image {
+    display: none;
+  }
+
+  &__about {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  &__icon {
+    width: auto;
+    margin-right: 15px;
+    font-size: 20px;
+    color: @global-tertiary-color;
+  }
+
+  &__info {
+    margin-bottom: 15px;
+    font-size: 10px;
+    color: @global-secondary-color;
+    text-align: center;
+
+    .direction__icon {
+      color: inherit;
+      font-size: 36px;
+
+      svg {
+        display: block;
+        width: 20px!important;
+        min-width: 20px;
+        height: auto;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    button, a {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .direction {
+
+    &__slider {
+
+      .slick-dots {
+        bottom: 5px;
+      }
+    }
+
+    &__info {
+
+      .direction__icon {
+        margin-bottom: 5px;
+        margin-right: 0;
+
+        svg {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .direction {
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__slide-box {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__slide-content {
+      font-size: 10px;
+    }
+
+    &__image {
+      display: block;
+      width: 40%;
+      margin-left: 10px;
+    }
+
+    &__about {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    &__icon {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+    &__info {
+      display: flex;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+
+  .direction {
+
+    &__title {
+      font-size: 55px;
+    }
+
+    &__slide-content {
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    &__image {
+      margin-left: 20px;
+    }
+
+    &__icon {
+      margin-right: 15px;
+      font-size: 20px;
+    }
+
+    &__info {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .direction {
+
+    &__slide {
+      padding: 30px;
+    }
+
+    &__slide-box {
+      padding-left: 50px;
+    }
+
+    &__image {
+      width: 45%;
+    }
+  }
+}

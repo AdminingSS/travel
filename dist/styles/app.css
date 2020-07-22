@@ -80,6 +80,205 @@
 .flaticon-trailer:before {
   content: "\F113";
 }
+.direction__title {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #1868a0;
+}
+.direction__subtitle {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #000;
+  margin-top: 10px;
+  text-transform: none;
+}
+.direction__header {
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #e6f1ff, #f5faff);
+  box-shadow: 0 2px 13px 0 rgba(132, 140, 191, 0.72);
+}
+.direction__header_active {
+  overflow: visible;
+}
+.direction__header_active .slick-current {
+  position: relative;
+}
+.direction__header_active .slick-current::after {
+  content: '';
+  position: absolute;
+  top: calc(100% - 30px);
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%) rotate(45deg);
+  width: 40px;
+  height: 40px;
+  background-color: #f5faff;
+  box-shadow: 0 2px 13px 0 rgba(132, 140, 191, 0.72);
+}
+.direction__content {
+  height: 0;
+  overflow: hidden;
+}
+.direction__bg-wrap {
+  background: url(../images/trade-in.jpg) no-repeat center;
+  background-size: cover;
+}
+.direction__slider-nav {
+  font-size: 12px;
+}
+.direction__slider-nav img {
+  margin: 0 auto;
+}
+.direction__slider-nav .slick-list {
+  padding-bottom: 30px !important;
+  margin-bottom: -30px !important;
+}
+.direction__slider .slick-dots li button::before {
+  color: #fff;
+}
+.direction__slider .slick-dots li.slick-active button::before {
+  color: #5388fe;
+}
+.direction__slide {
+  padding: 30px 0;
+}
+.direction__nav-box {
+  padding: 30px 0 20px;
+  background-image: linear-gradient(to bottom, #e6f1ff, #f5faff);
+}
+.direction__slide-box {
+  position: relative;
+  padding: 20px 10px 50px;
+  line-height: 1.2;
+  background-image: linear-gradient(to bottom, #fbfdff, #f6faff);
+  border-radius: 10px;
+  box-shadow: 0 2px 13px 0 rgba(132, 140, 191, 0.72);
+}
+.direction__slide-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #000;
+}
+.direction__image {
+  display: none;
+}
+.direction__about {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.direction__icon {
+  width: auto;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #a86223;
+}
+.direction__info {
+  margin-bottom: 15px;
+  font-size: 10px;
+  color: #1868a0;
+  text-align: center;
+}
+.direction__info .direction__icon {
+  color: inherit;
+  font-size: 36px;
+}
+.direction__info .direction__icon svg {
+  display: block;
+  width: 20px!important;
+  min-width: 20px;
+  height: auto;
+}
+.direction__close {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.direction__close button,
+.direction__close a {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .direction__slider .slick-dots {
+    bottom: 5px;
+  }
+  .direction__info .direction__icon {
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+  .direction__info .direction__icon svg {
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .direction__title {
+    font-size: 40px;
+  }
+  .direction__slide-box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .direction__slide-content {
+    font-size: 10px;
+  }
+  .direction__image {
+    display: block;
+    width: 40%;
+    margin-left: 10px;
+  }
+  .direction__about {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .direction__icon {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .direction__info {
+    display: flex;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .direction__title {
+    font-size: 55px;
+  }
+  .direction__slide-content {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  .direction__image {
+    margin-left: 20px;
+  }
+  .direction__icon {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  .direction__info {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .direction__slide {
+    padding: 30px;
+  }
+  .direction__slide-box {
+    padding-left: 50px;
+  }
+  .direction__image {
+    width: 45%;
+  }
+}
 html {
   font-family: "Exo 2", sans-serif;
   font-weight: 300;
