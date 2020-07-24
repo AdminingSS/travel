@@ -6,12 +6,17 @@ $(() => {
         const $slider = $('.headslider__slider');
         const $slides = $('.headslider__slide-box');
         let slideHeight = 0;
+        let boxHeightTimer;
 
         setHeight();
 
         $window.on('resize', function () {
             $slider.one('setPosition', setHeight);
-            setHeight();
+            clearTimeout(boxHeightTimer);
+            boxHeightTimer = setTimeout(function () {
+                setHeight();
+            }, 100);
+
         });
 
         function setHeight() {
@@ -37,8 +42,12 @@ $(() => {
         const $slider = $('.headslider__slider-nav');
         const $slides = $('.headslider__nav-box');
         let height = 0;
+        let navHeightTimer;
 
-        setHeight();
+        clearTimeout(navHeightTimer);
+        navHeightTimer = setTimeout(function () {
+            setHeight();
+        }, 100);
 
         setTimeout(showHeader, 1500);
 
@@ -46,13 +55,19 @@ $(() => {
             setHeight();
             $header.height(height);
             $slider.one('setPosition', function () {
-                setHeight();
+                clearTimeout(navHeightTimer);
+                navHeightTimer = setTimeout(function () {
+                    setHeight();
+                }, 100);
                 $header.height(height);
             });
         });
 
         function showHeader() {
-            setHeight();
+            clearTimeout(navHeightTimer);
+            navHeightTimer = setTimeout(function () {
+                setHeight();
+            }, 100);
             $header.animate({
                 height: height,
             }, 500);
