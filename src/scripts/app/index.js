@@ -40,7 +40,7 @@ $(() => {
 
         setHeight();
 
-        setTimeout(showHeader, 3000);
+        setTimeout(showHeader, 1500);
 
         $window.on('resize', function () {
             setHeight();
