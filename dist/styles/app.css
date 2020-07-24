@@ -80,6 +80,9 @@
 .flaticon-trailer:before {
   content: "\F113";
 }
+.headslider {
+  margin-bottom: 10px;
+}
 .headslider__title {
   margin-bottom: 10px;
   font-size: 30px;
