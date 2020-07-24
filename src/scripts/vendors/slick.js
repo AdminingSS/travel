@@ -69,16 +69,16 @@ $(() => {
 
     })();
 
-    /* direction slider */
+    /* headslider slider */
     (() => {
-        const $slider = $('.direction__slider');
-        const $sliderNav = $('.direction__slider-nav');
+        const $slider = $('.headslider__slider');
+        const $sliderNav = $('.headslider__slider-nav');
 
         $slider.slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: false,
-            asNavFor: '.direction__slider-nav',
+            infinite: true,
+            asNavFor: '.headslider__slider-nav',
             responsive: [
                 {
                     breakpoint: 1200,
@@ -100,8 +100,8 @@ $(() => {
             slidesToShow: 4,
             slidesToScroll: 4,
             arrows: false,
-            infinite: false,
-            asNavFor: '.direction__slider',
+            infinite: true,
+            asNavFor: '.headslider__slider',
             focusOnSelect: true,
             responsive: [
                 {

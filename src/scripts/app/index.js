@@ -1,10 +1,10 @@
 $(() => {
 
-    /* direction slider-box height  */
+    /* headslider slider-box height  */
     (() => {
         const $window = $(window);
-        const $slider = $('.direction__slider');
-        const $slides = $('.direction__slide-box');
+        const $slider = $('.headslider__slider');
+        const $slides = $('.headslider__slide-box');
         let slideHeight = 0;
 
         setHeight();
@@ -30,12 +30,12 @@ $(() => {
         }
     })();
 
-    /* direction header show */
+    /* headslider header show */
     (() => {
         const $window = $(window);
-        const $header = $('.direction__header');
-        const $slider = $('.direction__slider-nav');
-        const $slides = $('.direction__nav-box');
+        const $header = $('.headslider__header');
+        const $slider = $('.headslider__slider-nav');
+        const $slides = $('.headslider__nav-box');
         let height = 0;
 
         setHeight();
@@ -67,16 +67,16 @@ $(() => {
         }
     })();
 
-    /* direction content show */
+    /* headslider content show */
     (() => {
         const $window = $(window);
-        const $header = $('.direction__header');
-        const $content = $('.direction__content');
-        const $slider = $('.direction__slider');
-        const activeClass = 'direction__header_active';
-        const $slides = $('.direction__slide');
-        const $slideses = $('.direction__slide-box');
-        const $close = $('.direction__close');
+        const $header = $('.headslider__header');
+        const $content = $('.headslider__content');
+        const $slider = $('.headslider__slider');
+        const activeClass = 'headslider__header_active';
+        const $slides = $('.headslider__slide');
+        const $slideses = $('.headslider__slide-box');
+        const $close = $('.headslider__close');
         let height = 0;
 
         setHeight();

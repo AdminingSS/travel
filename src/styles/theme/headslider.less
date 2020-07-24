@@ -2,13 +2,13 @@
 //@import "base";
 //@import "main-pageheader";
 
-.direction {
+.headslider {
 
   &__title {
     margin-bottom: 10px;
     font-size: 30px;
-    font-weight: 900;
-    color: @global-secondary-color;
+    font-weight: 300;
+    color: @global-color;
   }
 
   &__subtitle {
@@ -24,7 +24,8 @@
     height: 0;
     overflow: hidden;
     text-align: center;
-    background-image: linear-gradient(to bottom, #e6f1ff, #f5faff);
+    //background-image: linear-gradient(to bottom, #e6f1ff, #f5faff);
+    background: #ffffff;
     box-shadow: 0 2px 13px 0 rgba(132, 140, 191, 0.72);
 
     &_active {
@@ -55,7 +56,7 @@
   }
 
   &__bg-wrap {
-    background: url("../../images/trade-in.jpg") no-repeat center;
+    //background: url("../../images/trade-in.jpg") no-repeat center;
     background-size: cover;
   }
 
@@ -92,14 +93,16 @@
 
   &__nav-box {
     padding: 30px 0 20px;
-    background-image: linear-gradient(to bottom, #e6f1ff, #f5faff);
+    //background-image: linear-gradient(to bottom, #e6f1ff, #f5faff);
+    background: #ffffff;
   }
 
   &__slide-box {
     position: relative;
     padding: 20px 10px 50px;
     line-height: 1.2;
-    background-image: linear-gradient(to bottom, #fbfdff, #f6faff);
+    //background-image: linear-gradient(to bottom, #fbfdff, #f6faff);
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 13px 0 rgba(132, 140, 191, 0.72);
   }
@@ -134,11 +137,11 @@
   &__info {
     margin-bottom: 15px;
     font-size: 10px;
-    color: @global-secondary-color;
+    color: @global-color;
     text-align: center;
 
-    .direction__icon {
-      color: inherit;
+    .headslider__icon {
+      color: @global-secondary-color;
       font-size: 36px;
 
       svg {
@@ -152,19 +155,31 @@
 
   &__close {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 10px;
+    right: 20px;
 
-    button, a {
-      width: 100%;
+    a {
+      color: @global-color;
+      font-size: 20px;
+
+      background: rgba(0,0,0,0.1);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        color: lighten(@global-color, 10%);
+      }
     }
   }
 }
 
 @media (max-width: 767px) {
 
-  .direction {
+  .headslider {
 
     &__slider {
 
@@ -175,7 +190,7 @@
 
     &__info {
 
-      .direction__icon {
+      .headslider__icon {
         margin-bottom: 5px;
         margin-right: 0;
 
@@ -189,7 +204,7 @@
 
 @media (min-width: 768px) {
 
-  .direction {
+  .headslider {
 
     &__title {
       font-size: 40px;
@@ -230,7 +245,7 @@
 
 @media (min-width: 992px) {
 
-  .direction {
+  .headslider {
 
     &__title {
       font-size: 55px;
@@ -258,7 +273,7 @@
 
 @media (min-width: 1200px) {
 
-  .direction {
+  .headslider {
 
     &__slide {
       padding: 30px;
