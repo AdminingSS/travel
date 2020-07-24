@@ -100,7 +100,7 @@ $(() => {
             slidesToShow: 4,
             slidesToScroll: 4,
             arrows: false,
-            infinite: true,
+            infinite: false,
             asNavFor: '.headslider__slider',
             focusOnSelect: true,
             responsive: [
