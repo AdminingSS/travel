@@ -8,7 +8,10 @@ $(() => {
         let slideHeight = 0;
         let boxHeightTimer;
 
-        setHeight();
+        clearTimeout(boxHeightTimer);
+        boxHeightTimer = setTimeout(function () {
+            setHeight();
+        }, 100);
 
         $window.on('resize', function () {
             $slider.one('setPosition', setHeight);
@@ -44,15 +47,18 @@ $(() => {
         let height = 0;
         let navHeightTimer;
 
+        setTimeout(showHeader, 1500);
+
         clearTimeout(navHeightTimer);
         navHeightTimer = setTimeout(function () {
             setHeight();
         }, 100);
 
-        setTimeout(showHeader, 1500);
-
         $window.on('resize', function () {
-            setHeight();
+            clearTimeout(navHeightTimer);
+            navHeightTimer = setTimeout(function () {
+                setHeight();
+            }, 100);
             $header.height(height);
             $slider.one('setPosition', function () {
                 clearTimeout(navHeightTimer);
@@ -79,6 +85,8 @@ $(() => {
             $slides.each(function () {
                 height = Math.max(height, this.offsetHeight);
             });
+
+            height = 230;
         }
     })();
 
@@ -93,12 +101,19 @@ $(() => {
         const $slideses = $('.headslider__slide-box');
         const $close = $('.headslider__close');
         let height = 0;
+        let boxHeightTimer;
 
-        setHeight();
+        clearTimeout(boxHeightTimer);
+        boxHeightTimer = setTimeout(function () {
+            setHeight();
+        }, 100);
 
         $window.on('resize', function () {
             $slider.one('setPosition', setHeight);
-            setHeight();
+            clearTimeout(boxHeightTimer);
+            boxHeightTimer = setTimeout(function () {
+                setHeight();
+            }, 100);
         });
 
         $header.on('click', showContainer);
@@ -109,8 +124,12 @@ $(() => {
             if ($header.hasClass(activeClass)) return;
 
             $header.addClass(activeClass);
-            setHeightes();
-            setHeight();
+
+            clearTimeout(boxHeightTimer);
+            boxHeightTimer = setTimeout(function () {
+                setHeightes();
+                setHeight();
+            }, 100);
             $content.animate({
                 height: height,
             }, 500);
