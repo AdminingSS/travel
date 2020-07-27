@@ -1490,22 +1490,7 @@ select.disabled {
 .tm-sidemain .tm-content-panel .tm-badge.tm-badge-small {
   padding: 6px;
 }
-.tm-sidemain .tm-content-panel .tm-panel-image-wrapper {
-  position: relative;
-  width: 255px;
-  height: 255px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.tm-sidemain .tm-content-panel .tm-panel-image-wrapper img {
-  max-width: none;
-  max-height: 100%;
-  min-height: 100%;
-  width: auto;
-  object-fit: cover;
-}
-.tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-badges {
+.tm-sidemain .tm-content-panel .tm-panel-image-badges {
   position: absolute;
   top: 0;
   left: 0;
@@ -1516,16 +1501,32 @@ select.disabled {
   padding: 10px 0 8px 10px;
   transition: all 0.5s;
 }
-.tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-badges > div {
+.tm-sidemain .tm-content-panel .tm-panel-image-badges > div {
   position: relative;
   padding: 4px 8px;
   margin-bottom: 8px;
   background-color: #2a8d1d;
   border-radius: 3px;
 }
-.tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-badges > div a {
+.tm-sidemain .tm-content-panel .tm-panel-image-badges > div a {
   color: inherit;
   text-decoration: none;
+}
+.tm-sidemain .tm-content-panel .tm-panel-image-wrapper {
+  position: relative;
+  width: 255px;
+  height: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.tm-sidemain .tm-content-panel .tm-panel-image-wrapper img {
+  max-width: none;
+  max-height: 100%;
+  min-height: 100%;
+  width: auto;
+  object-fit: cover;
 }
 .tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-icons {
   position: absolute;

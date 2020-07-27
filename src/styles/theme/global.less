@@ -1388,6 +1388,31 @@ select {
       padding: 6px;
     }
 
+    .tm-panel-image-badges {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      color: @global-inverse-color;
+      padding: 10px 0 8px 10px;
+      transition: all 0.5s;
+
+      > div {
+        position: relative;
+        padding: 4px 8px;
+        margin-bottom: 8px;
+        background-color: @global-primary-background;
+        border-radius: @global-border-radius;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    }
+
     .tm-panel-image-wrapper {
       position: relative;
       width: 255px;
@@ -1396,7 +1421,7 @@ select {
       display: flex;
       align-items: center;
       justify-content: center;
-      //overflow: hidden;
+      overflow: hidden;
 
       img {
         max-width: none;
@@ -1404,31 +1429,6 @@ select {
         min-height: 100%;
         width: auto;
         object-fit: cover;
-      }
-
-      .tm-panel-image-badges {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        font-size: 10px;
-        color: @global-inverse-color;
-        padding: 10px 0 8px 10px;
-        transition: all 0.5s;
-
-        > div {
-          position: relative;
-          padding: 4px 8px;
-          margin-bottom: 8px;
-          background-color: @global-primary-background;
-          border-radius: @global-border-radius;
-
-          a {
-            color: inherit;
-            text-decoration: none;
-          }
-        }
       }
 
       .tm-panel-image-icons {
