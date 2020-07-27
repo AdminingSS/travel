@@ -1483,7 +1483,6 @@ select.disabled {
   height: 255px;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  overflow: hidden;
   display: flex;
   align-items: stretch;
   margin-bottom: 30px;
@@ -1498,7 +1497,6 @@ select.disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 .tm-sidemain .tm-content-panel .tm-panel-image-wrapper img {
   max-width: none;
@@ -1524,6 +1522,10 @@ select.disabled {
   margin-bottom: 8px;
   background-color: #2a8d1d;
   border-radius: 3px;
+}
+.tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-badges > div a {
+  color: inherit;
+  text-decoration: none;
 }
 .tm-sidemain .tm-content-panel .tm-panel-image-wrapper .tm-panel-image-icons {
   position: absolute;
