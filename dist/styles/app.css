@@ -4529,6 +4529,11 @@ ul.styled {
 .vfc-week .vfc-day span.vfc-span-day.vfc-marked {
   background-color: #1868a0 !important;
 }
+.vfc-week .vfc-day span.vfc-span-day.vfc-marked.vfc-borderd:before,
+.vfc-week .vfc-day span.vfc-span-day.vfc-marked.vfc-start-marked:before,
+.vfc-week .vfc-day span.vfc-span-day.vfc-marked.vfc-end-marked:before {
+  background: transparent!important;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
