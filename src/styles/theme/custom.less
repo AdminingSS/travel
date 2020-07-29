@@ -1190,3 +1190,23 @@ ul.styled {
 .tm-select .tm-select-pseudo-items .tm-what-tour .tm-button-primary {
   margin-bottom: 8px;
 }
+
+.vfc-calendars {
+  font-family: @global-font-family;
+  font-weight: 300;
+  font-size: @global-font-size;
+  color: @global-color;
+  line-height: normal;
+}
+
+.vfc-week .vfc-day .vfc-base-start, .vfc-week .vfc-day .vfc-base-end {
+  background: lighten(@global-secondary-background, 30%);
+}
+
+.vfc-week .vfc-day span.vfc-span-day.vfc-today {
+  background-color: lighten(@global-primary-background, 20%);
+}
+
+.vfc-week .vfc-day span.vfc-span-day.vfc-marked {
+  background-color: lighten(@global-secondary-background, 20%);
+}
