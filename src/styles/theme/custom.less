@@ -1204,9 +1204,14 @@ ul.styled {
 }
 
 .vfc-week .vfc-day span.vfc-span-day.vfc-today {
-  background-color: lighten(@global-primary-background, 20%)!important;
+  background-color: @global-tertiary-background!important;
+  color: @global-inverse-color!important;
 }
 
 .vfc-week .vfc-day span.vfc-span-day.vfc-marked {
-  background-color: lighten(@global-secondary-background, 20%)!important;
+  background-color: @global-secondary-background!important;
+}
+
+.vfc-week .vfc-day span.vfc-span-day.vfc-marked:before {
+  background-color: lighten(@global-secondary-background, 30%)!important;
 }
