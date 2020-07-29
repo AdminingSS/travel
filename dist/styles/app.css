@@ -4510,21 +4510,20 @@ ul.styled {
   margin-bottom: 8px;
 }
 .vfc-calendars {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Exo 2", sans-serif !important;
   font-weight: 300;
   font-size: 16px;
-  color: #444444;
-  line-height: normal;
+  color: #444444 !important;
 }
 .vfc-week .vfc-day .vfc-base-start,
 .vfc-week .vfc-day .vfc-base-end {
-  background: #69b4e8;
+  background: #69b4e8 !important;
 }
 .vfc-week .vfc-day span.vfc-span-day.vfc-today {
-  background-color: #4cd63a;
+  background-color: #4cd63a !important;
 }
 .vfc-week .vfc-day span.vfc-span-day.vfc-marked {
-  background-color: #3c9ee2;
+  background-color: #3c9ee2 !important;
 }
 @media (min-width: 960px) {
   .uk-section {
