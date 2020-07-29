@@ -4908,6 +4908,9 @@ ul.styled {
   }
 }
 @media (max-width: 639px) {
+  .vfc-calendar:nth-child(2) {
+    display: none;
+  }
   .uk-container {
     padding-left: 15px;
     padding-right: 15px;
