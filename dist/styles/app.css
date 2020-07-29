@@ -4515,6 +4515,9 @@ ul.styled {
   font-size: 16px;
   color: #444444 !important;
 }
+.vfc-week .vfc-day span.vfc-span-day.vfc-marked:before {
+  background-color: #69b4e8 !important;
+}
 .vfc-week .vfc-day .vfc-base-start,
 .vfc-week .vfc-day .vfc-base-end {
   background: #69b4e8 !important;
@@ -4525,9 +4528,6 @@ ul.styled {
 }
 .vfc-week .vfc-day span.vfc-span-day.vfc-marked {
   background-color: #1868a0 !important;
-}
-.vfc-week .vfc-day span.vfc-span-day.vfc-marked:before {
-  background-color: #69b4e8 !important;
 }
 @media (min-width: 960px) {
   .uk-section {
