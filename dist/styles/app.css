@@ -4534,6 +4534,9 @@ ul.styled {
 .vfc-week .vfc-day span.vfc-span-day.vfc-marked.vfc-end-marked:before {
   background: transparent!important;
 }
+.vfc-popover-container {
+  margin-bottom: 30px;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
