@@ -5142,6 +5142,9 @@ ul.styled {
   .tm-button-apply-filters.tm-visible {
     display: block;
   }
+  .tm-sidemain .adash {
+    font-size: 14px;
+  }
 }
 @media (max-width: 424px) {
   .uk-logo {
@@ -5312,6 +5315,9 @@ ul.styled {
   }
   .tm-dop-order br {
     display: block;
+  }
+  .tm-sidemain .adash {
+    font-size: 12px;
   }
 }
 @media (max-width: 359px) {
