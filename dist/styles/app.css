@@ -221,6 +221,18 @@
 .headslider__close a:hover {
   color: #5e5e5e;
 }
+.headslider .slick-prev {
+  left: -10px;
+  z-index: 1;
+}
+.headslider .slick-next {
+  right: -10px;
+  z-index: 1;
+}
+.headslider .slick-prev:before,
+.headslider .slick-next:before {
+  color: #2a8d1d;
+}
 @media (max-width: 767px) {
   .headslider__slider .slick-dots {
     bottom: 5px;
