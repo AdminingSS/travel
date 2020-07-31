@@ -119,8 +119,9 @@ $(() => {
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        centerMode: true,
-                        centerPadding: '60px',
+                        arrows: true,
+                        // centerMode: true,
+                        // centerPadding: '60px',
                         infinite: true,
                     }
                 }
