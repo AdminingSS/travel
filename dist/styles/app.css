@@ -5157,6 +5157,9 @@ ul.styled {
   .tm-sidemain .adash {
     font-size: 14px;
   }
+  .tm-panel-details .adash {
+    font-size: 16px;
+  }
 }
 @media (max-width: 424px) {
   .uk-logo {
@@ -5330,6 +5333,9 @@ ul.styled {
   }
   .tm-sidemain .adash {
     font-size: 12px;
+  }
+  .tm-panel-details .adash {
+    font-size: 16px;
   }
 }
 @media (max-width: 359px) {
