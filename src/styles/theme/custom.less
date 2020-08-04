@@ -1223,3 +1223,41 @@ ul.styled {
 .vfc-popover-container {
   margin-bottom: 30px;
 }
+
+.tm-input-number-wrapper {
+  display: flex;
+  align-items: center;
+
+  .tm-input-plus, .tm-input-minus {
+    height: 30px;
+    width: 20px;
+    line-height: 28px;
+    text-align: center;
+    background-color: @global-primary-background;
+    color: @global-inverse-color;
+    cursor: pointer;
+  }
+
+  .tm-input-plus {
+    border-radius: 0 @global-border-radius @global-border-radius 0;
+  }
+
+  .tm-input-minus {
+    border-radius: @global-border-radius 0 0 @global-border-radius;
+  }
+
+  input {
+    width: 70px;
+    -moz-appearance: textfield;
+    border-radius: 0;
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &:focus {
+      border-color: @global-primary-background;
+    }
+  }
+}

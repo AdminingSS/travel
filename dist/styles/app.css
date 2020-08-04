@@ -4549,6 +4549,38 @@ ul.styled {
 .vfc-popover-container {
   margin-bottom: 30px;
 }
+.tm-input-number-wrapper {
+  display: flex;
+  align-items: center;
+}
+.tm-input-number-wrapper .tm-input-plus,
+.tm-input-number-wrapper .tm-input-minus {
+  height: 30px;
+  width: 20px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #2a8d1d;
+  color: #ffffff;
+  cursor: pointer;
+}
+.tm-input-number-wrapper .tm-input-plus {
+  border-radius: 0 3px 3px 0;
+}
+.tm-input-number-wrapper .tm-input-minus {
+  border-radius: 3px 0 0 3px;
+}
+.tm-input-number-wrapper input {
+  width: 70px;
+  -moz-appearance: textfield;
+  border-radius: 0;
+}
+.tm-input-number-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.tm-input-number-wrapper input:focus {
+  border-color: #2a8d1d;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
