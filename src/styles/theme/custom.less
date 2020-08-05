@@ -1225,6 +1225,7 @@ ul.styled {
 }
 
 .tm-input-number-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -1250,6 +1251,9 @@ ul.styled {
     width: 70px;
     -moz-appearance: textfield;
     border-radius: 0;
+    text-align: right;
+    padding-left: 22px;
+    padding-right: 3px;
 
     &::-webkit-inner-spin-button {
       -webkit-appearance: none;
@@ -1259,5 +1263,20 @@ ul.styled {
     &:focus {
       border-color: @global-primary-background;
     }
+  }
+
+  .tm-input-desc, .tm-input-close {
+    position: absolute;
+    left: 23px;
+  }
+
+  .tm-input-desc {
+    bottom: 3px;
+  }
+
+  .tm-input-close {
+    top: 3px;
+    line-height: 3px;
+    font-weight: 600;
   }
 }
