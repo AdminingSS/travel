@@ -4663,7 +4663,9 @@ ul.styled {
     overflow-x: hidden;
   }
   .tm-sidebar .tm-popover {
-    left: 0!important;
+    top: 0!important;
+    transform: translateY(-50%);
+    left: -30px !important;
   }
   .tm-sidebar.uk-active {
     display: block;
