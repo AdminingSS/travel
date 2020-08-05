@@ -4601,6 +4601,9 @@ ul.styled {
   text-decoration: none;
   color: #444444;
 }
+.tm-input-number-wrapper:first-child {
+  margin-right: 20px;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
