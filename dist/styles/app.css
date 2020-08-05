@@ -4571,7 +4571,7 @@ ul.styled {
   border-radius: 3px 0 0 3px;
 }
 .tm-input-number-wrapper input {
-  width: 70px;
+  width: 150px;
   -moz-appearance: textfield;
   border-radius: 0;
   text-align: right;
@@ -4597,6 +4597,9 @@ ul.styled {
   top: 3px;
   line-height: 3px;
   font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #444444;
 }
 @media (min-width: 960px) {
   .uk-section {
