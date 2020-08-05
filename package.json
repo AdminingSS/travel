@@ -17,7 +17,8 @@
     "jscrollpane": "^2.2.2",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "select2": "^4.0.6-rc.1",
-    "slick-slider": "^1.8.2"
+    "slick-slider": "^1.8.2",
+    "yuicompressor": "^2.4.8"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
