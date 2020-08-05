@@ -4604,6 +4604,10 @@ ul.styled {
 .tm-input-number-wrapper:first-child {
   margin-right: 20px;
 }
+.tm-input-flex {
+  display: flex;
+  align-items: center;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
@@ -5219,6 +5223,12 @@ ul.styled {
     font-size: 16px;
     display: block;
     margin-bottom: 5px;
+  }
+  .tm-input-flex {
+    flex-wrap: wrap;
+  }
+  .tm-input-flex > div {
+    width: 100%;
   }
 }
 @media (max-width: 424px) {
