@@ -4604,7 +4604,7 @@ ul.styled {
 .tm-input-number-wrapper:first-child {
   margin-right: 20px;
 }
-.tm-input-flex {
+.tm-flex-input {
   display: flex;
   align-items: center;
 }
