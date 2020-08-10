@@ -4608,6 +4608,9 @@ ul.styled {
   display: flex;
   align-items: center;
 }
+.mobgeo {
+  display: none;
+}
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 60px;
@@ -4954,6 +4957,9 @@ ul.styled {
     height: auto;
     width: 25%;
     margin-left: auto;
+  }
+  .mobgeo {
+    display: block;
   }
 }
 @media (max-width: 767px) {
